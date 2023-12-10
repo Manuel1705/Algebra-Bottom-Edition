@@ -98,7 +98,7 @@ Per dualità vale l'analogo per i maggioranti.
     Questo deriva semplicemente dal fatto che l'estremo inferiore è il massimo dei minoranti.
 }
 
-\subsection{Ogni Parte Finita di un Reticolo è dotata di Estremi Inferiore e Superiore}
+\subsection{Ogni Parte Finita di un Reticolo è dotata di Estremo Inferiore e Superiore}
 \bottom{
     Sia \((s, \rho)\) un reticolo. Ogni sua parte finita è dotata di estremo inferiore e superiore.
 }
@@ -125,7 +125,7 @@ Per dualità vale l'analogo per i maggioranti.
     MINOR(t) = MINOR((t - \{x\}) \cup x) = MINOR(\{m, x\}).
     $$
 
-    Dato che siamo in un reticolo, la coppia \(\{m, x\}\) ha sicuramente estremo inferiore, cioè massimo di $$MINOR(\{m, x\}) = MINOR(t)$$ da cui la tesi.
+    Dato che siamo in un reticolo, la coppia \(\{m, x\}\) ha sicuramente estremo inferiore, cioè $$max(MINOR(\{m, x\})) = max(MINOR(t))$$ da cui la tesi.
 
     Per dualità, lo stesso vale per l'estremo superiore.
 }
@@ -140,7 +140,7 @@ Per dualità vale l'analogo per i maggioranti.
     $$x \vee y = SUP_{(s, \rho)}(\{x, y\}) = SUP_{(s, \rho)}(\{y, x\}) = y \vee x$$
 }
 
-\subsection{Associatività di \(\wedge\) (Wedge) e \(\vee\) (Vee)}
+\subsection{Associatività di \(\wedge\) e \(\vee\)}
 \bottom{Sia \((s, \wedge, \vee)\) un reticolo. Allora \(\wedge, \vee\) sono associative.}
 \bottomp{
     Dimostriamo per \(\vee\), la dimostrazione per \(\wedge\) è analoga per dualità.
@@ -174,7 +174,7 @@ Per dualità vale l'analogo per i maggioranti.
     $$\forall x, y \in s\ ((x \vee (x \wedge y) = x) \land (x \wedge (x \vee y) = x))$$
 }
 
-\subsection{Proprietà di Idempotenza/Iteratività di \(\wedge\) (Wedge) e \(\vee\) (Vee)}
+\subsection{Proprietà di Idempotenza/Iteratività di \(\wedge\) e \(\vee\)}
 \bottom{
     In un reticolo \((s, \rho)\) $$\forall x  \in s\ (x = x \vee x = x \wedge x )$$
 }
@@ -190,18 +190,19 @@ Per dualità vale l'analogo per i maggioranti.
 \bottom{
     Sia \(s\) un insieme non vuoto e sia \(r\) l'insieme delle relazioni d'ordine largo \(\rho\) per cui \(s\) è un reticolo.
     Sia \(b\) l'insieme delle coppie di operazioni binarie interne \((\alpha, \beta)\) tali che entrambe siano commutative, associative, e valga la legge di assorbimento in \((s, \alpha, \beta)\)
-    Allora l'applicazione $$f: \rho \in r \mapsto (\wedge_\rho, \vee_\rho) \in b \text{ è biettiva}$$ Cioè, da ogni reticolo si possono definire wedge e vee, e ogni coppia di operazioni associative, commutative, idempotenti, e per cui vale l'assorbimento sono sono wedge e vee di un qualche reticolo.
+    Allora l'applicazione $$f: \rho \in r \mapsto (\wedge_\rho, \vee_\rho) \in b \text{ è biettiva}$$ Cioè, da ogni reticolo si possono definire $\wedge$ e $\vee$, e ogni coppia di operazioni associative, commutative, idempotenti, e per cui vale l'assorbimento sono $\wedge$ e $\vee$ di un qualche reticolo.
 }
 \bottomp{
     Per dimostrare che \(f\) è biettiva, vogliamo trovare la sua inversa. Siano \((\wedge, \vee) \in b\) e definiamo \(\rho\) tale che $$\forall x, y \in s\ (x \rho y \iff x = x \wedge y)$$
     Nota che da questo segue che \(x \vee y = (x \wedge y) \vee y = y\) per assorbimento.
 
-    1) \(\rho\) così definita è di ordine largo? Per idempotenza, $$x \wedge x = x \implies x \rho x$$ quindi vale la riflessività. Se $$(x = x \wedge y) \land (y = y \wedge x)$$ dato che wedge è ipotizzata commutativa, \(x = y\) e quindi vale l'asimmetria.
-    Se \(x \rho y \land y \rho z\), allora $$(x = x \wedge y) \land (y = y \wedge z)$$ Quindi, per associatività: $$x = x \wedge (y \wedge z) = (x \wedge y) \wedge z = x \wedge z \implies x \rho z$$ quindi vale la transitività.
+    1) \(\rho\) così definita è di ordine largo? Per idempotenza, $$x \wedge x = x \implies x \rho x$$ quindi vale la riflessività. Se $$(x = x \wedge y) \land (y = y \wedge x)$$ dato che $\wedge$ è ipotizzata commutativa, \(x = y\) e quindi vale l'asimmetria.
+    Se \(x \rho y \land y \rho z\), allora $$(x = x \wedge y) \land (y = y \wedge z)$$ Quindi, per associatività: $$x = x \wedge (y \wedge z) = (x \wedge y) \wedge z = x \wedge z \implies x \rho z$$ quindi vale la transitività.\\
     \(\rho\) è effettivamente una relazione d'ordine largo.
 
     2) Vogliamo far vedere che $$INF_{(s, \rho)}(\{x, y\}) = x \wedge y$$ e che $$SUP_{(s, \rho)}(\{x, y\}) = x \vee y$$ per ogni \(x, y \in s\).
-    Per assorbimento $(x \wedge y) \vee x = x$ quindi per definizione abbiamo che $(x \wedge y) \rho x$ Analogamente $(x \wedge y) \rho y$
+    Per assorbimento $(x \wedge y) \vee x = x$ quindi per definizione abbiamo che $(x \wedge y) \rho x$.\\
+    Analogamente $(x \wedge y) \rho y$.\\
     Quindi $$x \wedge y \in MINOR_{(s, \rho)}(\{x, y)\}$$ Vogliamo far vedere che \(x \wedge y\) è il massimo dell'insieme. Sia dunque \(z\) un generico minorante. Allora si ha:
     $$z\rho y \land z \rho x \implies (z = z \wedge y) \land (z = z \wedge x)$$
     E quindi:
@@ -228,19 +229,23 @@ Per dualità vale l'analogo per i maggioranti.
 \bottomp{
     Dimostrazione \(\Leftarrow)\):
 
-    Siano \((s, \rho), (s, \rho)\) due reticoli e sia \(f\) un isomorfismo di insiemi ordinati fra essi. I reticoli possono essere espressi come strutture \((s, \wedge_\rho, \vee_\rho), (s', \wedge_{\rho'}, \vee_{\rho'})\)
+    Siano \((s, \rho), (s', \rho')\) due reticoli e sia \(f\) un isomorfismo di insiemi ordinati fra essi. I reticoli possono essere espressi come strutture \((s, \wedge_\rho, \vee_\rho), (s', \wedge_{\rho'}, \vee_{\rho'})\)
 
-    Si ha che: $$\forall x, y \in s\ (((x \wedge_\rho y) \rho x) \land ((x \wedge_\rho y) \rho y))$$
-    Applicando l'isomorfismo: $$f(x \wedge_\rho y) \rho' f(x)\text{ e } f(x \wedge_\rho' y) \rho' f(y)$$
-    Quindi $$f(x \wedge_\rho' y) \in MINOR_{(s', \rho')}(\{f(x), f(y)\})$$
+    Si ha che: $$\forall x, y \in s$$
+    $$(x \wedge_\rho y) \rho x$$
+    $$(x \wedge_\rho y) \rho y$$
+    Applicando l'isomorfismo: $$f(x \wedge_\rho y) \rho' f(x)$$
+    $$f(x \wedge_\rho y) \rho' f(y)$$
+    Quindi $$f(x \wedge_\rho y) \in MINOR_{(s', \rho')}(\{f(x), f(y)\})$$
     Sia \(z \in MINOR_{(s', \rho')}(\{f(x), f(y)\})\).
 
-    Si ha che $$z \rho' f(x) \text{ e } z \rho' f(y)$$
+    Si ha che $$z \rho' f(x)$$
+    $$z \rho' f(y)$$
     Essendo \(f\) suriettiva, $\exists w \in s\ (f(w) = z)$.
     Allora, applicando l'isomorfismo in senso inverso $w\rho x \land w \rho y$. Quindi \(w\) è minorante di \(\{x, y\}\).
     Allora si ha che:
     $$w \rho (x \wedge_\rho y) \implies f(w) \rho' f(x \wedge_\rho y) \implies z \rho' f(x \wedge_\rho y)$$
-    E quindi \(f(x \wedge_\rho y)\) è extremo inferiore di \(\{f(x), f(y)\}\), cioè:
+    E quindi \(f(x \wedge_\rho y)\) è estremo inferiore di \(\{f(x), f(y)\}\), cioè:
     $$f(x \wedge_\rho y) = f(x) \wedge_{\rho'} f(y)$$ che è la tesi.
     Analogamente si dimostra per \(\vee\).
 
@@ -252,7 +257,9 @@ Per dualità vale l'analogo per i maggioranti.
 
 \subsection{Sottoreticolo}
 \bottom{
-    Sia \((s, \wedge, \vee)\) un reticolo e sia \(t \in P(s) - \{\emptyset\}\). Se \(t\) è parte chiusa rispetto a \(\wedge, \vee\), esso si dice sottoreticolo di \((s, \wedge, \vee)\).
+    Sia \((s, \wedge, \vee)\) un reticolo e sia \(t \in P(s) - \{\emptyset\}\).\\
+    Se \(t\) è parte chiusa rispetto \(\wedge, \vee\).\\
+    $(t,\wedge,\vee)$ si dice sottoreticolo di \((s, \wedge, \vee)\).
 }
 
 \subsection{Intervallo e Intervallo Chiuso}
@@ -287,7 +294,7 @@ Per dualità vale l'analogo per i maggioranti.
 \bottomp{
     \(\Rightarrow)\) Sia \(x \in s\). Allora \(x \rho M \land x \rho x\). Dunque \(x = min(\{x, M\}) = x \wedge_\rho M\). Dunque \(M\) è neutro.
 
-    \(\Leftarrow)\) \(\forall x \in s\ (m\wedge_\rho x =x) \implies \forall x \in s\ (x \rho M)\).
+    \(\Leftarrow)\) \(\forall x \in s\ (M\wedge_\rho x =x) \implies \forall x \in s\ (x \rho M)\).
 
     Analogamente si dimostra per il minimo.
 }
@@ -316,7 +323,7 @@ Per dualità vale l'analogo per i maggioranti.
     Un reticolo \((s, \wedge, \vee)\) si dice distributivo se valgono entrambe le Leggi Distributive:
     $$\forall a, b, c \in s\ (a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c))$$
     $$\forall a, b, c \in s\ (a \vee (b \wedge c) = (a \vee b) \wedge (a \vee c))$$
-    Si dimostra che se in un Reticolo vale una legge di distributività, allora vale anche l'altra. Dunque, per essere un reticolo distributivo, basta che valga una delle due leggi dato che l'altra segue.
+    Si dimostra che se in un reticolo vale una legge di distributività, allora vale anche l'altra. Dunque, per essere un reticolo distributivo, basta che valga una delle due leggi dato che l'altra segue.
 }
 
 \subsection{Unicità dei Complementi di Reticoli Distributivi}
