@@ -1,0 +1,182 @@
+\section{Strutture Booleane}
+\subsection{Reticolo Booleano}
+\bottom{
+    Un reticolo si dice booleano se è distributivo e complementato
+}
+\subsection{Algebra di Boole}
+\bottom{
+    Una struttura della forma $(s,\land_\rho,\lor_\rho,')$ si dice Algebra di Boole se gode delle seguenti proprietà:
+    \begin{enumerate}
+        \item $\land_\rho,\lor_\rho$ sono commutative
+        \item Esse sono anche associative
+        \item Valgono le leggi di assorbimento
+        \item Vale la distributività
+        \item $\land_\rho,\lor_\rho$ hanno elementi neutri, che notiamo 0,1 rispettivamente.
+        \item $'$ è un operazione unaria interna (l'operazione complementazione) tale che:
+        $$\forall x \in s\ (x \vee_\rho x' = 1) \land (x \wedge_\rho x' = 0)$$
+    \end{enumerate}
+}
+
+\subsection{Anello Booleano}
+\bottom{
+    Un anello unitario $(a,+,\cdot)$ si dice booleano $\iff$
+    $$\forall x \in a\ (x^2 = x\cdot x=x)$$
+}
+
+\subsection{In un Anello Booleano ogni elemento è il Proprio Opposto}
+\bottom{
+    $$(a, +, \cdot) \text{ booleano} \implies \forall x \in a\ (x = -x)$$
+}
+\bottomp{
+    \begin{align*}
+        x + x &= (x + x)^2 &\text{ per proprietà degli anelli booleani}\\
+        &= x^2 + 2x^2 + x^2 &\text{ per distributività dell'anello}\\
+        &= x + 2x^2 + x
+    \end{align*}
+    Quindi $$x + x = x + 2x + x \implies 2x = 0 \implies x + x = 0 \implies x = -x$$
+}
+
+\subsection{Anelli Booleani sono Commutativi}
+\bottom{
+    Sia $(a,+,\cdot)$ un anello booleano. Allora $(\forall x, y \in a)(xy = yx)$
+}
+\bottomp{
+    Siano $x,y\in a$. Allora:
+    \begin{align*}
+        x + y &= (x + y)^2 &\text{ prop. dell'anello booleano}\\
+        &= x^2 + xy + yx + y^2 &\text{ prop. distributiva}\\
+        &= x + xy + yx + y &\text{ prop. dell'anello booleano}\\
+        &\implies xy + yx = 0 \implies xy = -yx
+    \end{align*}
+    In quanto ogni elemento dell'anello è il proprio opposto $-yx=yx$ quindi abbiamo la tesi.
+}
+
+\subsection{Per ogni Anello Booleano esiste un corrispondente Reticolo Booleano}
+\bottom{
+    Dato un anello booleano $(a,+,\cdot)$ definiamo 
+    $$\rho:\forall x,y\in a\ (x\rho y\iff xy=x)$$
+    Allora vogliamo dimostrare che $(s,\rho)$ è un reticolo.
+}
+\bottomp{
+    Iniziamo col dimostrare che $\rho\in OL(a)$
+    $$\forall x \in a\ (x \cdot x = x) \implies \forall x\ (x \rho x)$$
+    per la proprietà principale dell'anello booleano e quindi la relazione è riflessiva.
+    $$\forall x, y \in a\ (x \rho y \land y \rho x \implies xy = x \land yx = y \implies x = y)$$
+    per la commutatività dell'anello booleano e quindi la relazione è asimmetrica.
+    $$\forall x, y, z \in a$$
+    $$x \rho y \land y \rho x \implies xy = x \land yz = y \implies$$
+    $$ x = xy = x(yz) = (xy)z = xz \implies x \rho z$$
+    la relazione è dunque transitiva.
+}
+\bottomp{
+    Dimostrazione $\land$ e $\lor$
+
+    Verifichiamo per ogni coppia che INF e SUP sono così definite:
+    $$\forall x, y \in a\ (x \vee_\rho y = x+ y + xy)$$
+    $$\forall x, y \in a\ (x \wedge_\rho y = xy)$$
+    Siano $x,y\in a$.
+}
+\bottomp{
+    Dimostriamo che $x\lor_\rho y$ è maggiorante.
+    $$x \cdot (x \vee_\rho y) = x(x + y + xy) = x^2 + xy + x^2y$$
+    Per le proprietà dell'anello booleano
+    $$x^2 = x \text{ e } xy + xy = 0$$
+    Pertanto $x \cdot (x \vee_\rho y) = x \implies x \rho (x \vee_\rho y)$ perchè $x\rho y\iff xy=x$.
+
+    Lo stesso procedimento si può effettuare per $y$.
+
+    Pertanto $x\vee_\rho y$ è maggiorante.
+}
+\bottomp{
+    Dimostriamo che $x \vee_\rho y$ è estremo superiore, cioè minimo dei maggioranti.
+    Sia $z\in a$ maggiorante di $\{x,y\}$. Allora
+    \begin{align*}
+        &x\rho z\ \land\ y \rho z\\
+        &\implies (xz =x)\ \land\ (yz = y)\\
+    &\implies (x + y + xy)z = xz + yz + xyz = x + y + xy\\
+    &\implies (x + y + xy)\rho z\\
+    &\implies (x \vee_\rho y)\rho z
+    \end{align*}
+    quindi $(x\vee_\rho y)$ è sup.
+}
+\bottomp{
+    Dimostriamo che il Reticolo è limitato, distributivo e complementato.
+
+    Limitato)
+    $$\forall x \in a\ (0x = 0 \implies 0\rho x)$$
+    cioè 0 è il minimo
+    $$\forall x \in a\ (1x = x \implies x \rho 1)$$
+    cioè 1 è il massimo, quindi il reticolo è limitato.
+
+    Distributivo)
+    $$x \wedge (y \vee z) = x \wedge (y + z + yz) = x(y + z + yz) = xy + xz + xyz$$
+    pertanto il reticolo è distributivo.
+
+    Complementato) Sia $x\in a.$ Allora
+    $$x \wedge (1+x) = x(1+x) = x + x^2 = x + x = 0$$
+    $$x \vee (1+x) = x + (1+x) + x(1+x) = x + 1 + x + x + x^2 = 1$$
+    questo perchè ogni elemento è anche il suo opposto.
+}
+
+\subsection{Per ogni Reticolo Booleano esiste un corrispondente Anello Booleano}
+\bottom{
+    Sia $(s,\rho)$ un reticolo booleano con almeno due elementi e definiamo:
+    $$x + y = (x \wedge_\rho y') \vee_\rho (x' \wedge_\rho y)$$
+    $$x \cdot y = (x \wedge_\rho y)$$
+    Dimostriamo che $(s,+,\cdot)$ è un anello booleano
+}
+\bottomp{
+    Dimostrare che è un anello booleano vuol dire dimostrare che è un anello unitario dove$\forall x \in s\ (x^2 = x)$.
+
+    Associatività:
+    $$x(yz) = x \wedge (y \wedge y) = (x \wedge y) \wedge y = (xy)z$$
+    Si dimostra analogamente, ma con una LUNGA serie di calcoli, che vale lo stesso per $x+y$.
+
+    Commutatività di $+$:
+    $$x + y = (x \wedge y') \vee (x' \wedge y) = (y' \wedge x) \vee (y \wedge x') = (y \wedge x') \vee (y' \wedge x) = y+x $$
+    Definiamo $$m = min_{(s, \rho)}(s), M = max_{(s, \rho)}(s)$$ Allora
+    $$x + m = (x \wedge m') \vee (x' \wedge m) = (x \wedge M) \vee (x' \wedge m) = x \vee m = x$$
+    $$x \cdot M = x \wedge M = x$$
+    Dunque $m=0_s$ e $M=1_s$
+
+    Si dimostra tramite calcolo che vale al distributività di $\cdot$ su $+$.
+
+    Infine:
+    $$x^2 = x \cdot x = x \wedge x = x$$
+    ed abbiamo la tesi.
+}
+
+\subsection{Equivalenza di Strutture Booleane}
+\bottom{
+    Si dimostra quindi che 
+    Algebre di Boole \(\simeq\) Reticoli di Boole \(\simeq\) Anelli Booleani
+    In quanto esiste corrispondenza biunivoca fra algebre e reticoli di boole e fra reticoli e anelli booleani.
+}
+
+\subsection{L'insieme delle Parti è un Anello Booleano}
+\bottomp{
+    Dato che $(P(s),\subseteq)$ è un reticolo booleano, allora $(P(s), \cap, \cup, ')$ è un'algebra di boole, dove$$\forall x \in P(s)\ (x' = s - x)$$ per la corrispondenza biunivoca fra reticoli ed algebre di boole. Allora
+    $$(\forall x, y \in P(s))$$
+    $$x \cdot y = x \cap y$$
+    $$x + y = (x \cap (s - y)) \cup (y \cap (s -x)) = (x - y) \cup (y - x) = x \triangle y$$
+    E dunque $(P(s), \triangle, \cap)$ è un anello booleano.
+}
+
+\subsection{Teorema di Stone}
+\bottom{
+    Sia $a\not=\emptyset$ e $(a,+,\cdot)$ un anello booleano. Allora
+    $$\exists s \neq \emptyset\ (a, +, \cdot) \stackrel{\text{isomorfo}}{\simeq} (P(s), \triangle, \cap).$$
+    Se $a$ è finito, posso scegliere anche $s$ finito.
+}
+
+\subsection{Corollari del Teorema di Stone}
+\bottom{
+    \begin{enumerate}
+        \item Il Teorema di Stone si applica anche fra reticoli booleani e ${{(P(s), \subseteq)}}$.
+        \item Se $(a,+,\cdot)$ è un anello booleano e $|a|=m\in\mathbb N_2$, allora 
+        $$(\exists n \in \mathbb N - \{0\})(m = 2^n)$$
+        \item Se $(a,\rho)$ è un reticolo booleano e $|a|=m\in\mathbb N_1$, allora $$(\exists n \in \mathbb N - \{0\})(m = 2^n)$$
+        cioè la cardinalità dell'insieme sostegno di un anello booleano è sempre una potenza di due.
+        \item Due anelli booleani finiti sono isomorfi $\iff$ hanno la stessa cardinalità.
+    \end{enumerate}
+}

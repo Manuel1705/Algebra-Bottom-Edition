@@ -1,0 +1,508 @@
+\section{Strutture Algebriche}
+
+\subsection{Struttura algebrica}
+\bottom{
+    Una ennupla ordinata del tipo:
+    $$(s,*_1,*_2,\dots,*_n)$$
+    dove $s\not=\emptyset$ si dice insieme di sostegno, e $*_k$ sono le operazioni, si dice struttura algebrica.}
+
+\subsection{Operazione Interna}
+\bottom{
+    Dato un insieme $s\not=\emptyset$, una funzione
+    del tipo $$*:s\times s\to s$$ si dice operazione interna (binaria dato che
+    ha n-arietà uguale a due).
+}
+\bottom
+{
+    Se l’applicazione che stiamo usando è un’operazione, non usiamo la normale notazione di funzione, ma piuttosto poniamo il simbolo dell’operazione fra i due
+    operandi. Scriviamo cioè 
+    $$x*y \text{ invece di } *(x,y)$$
+}
+
+\subsection{Commutatività}
+\bottom{
+    Un’operazione $*$ si dice commutativa se
+    $$\forall x,y\in s$$
+    $$(x*y=y*x)$$
+}
+
+\subsection{Associatività}
+\bottom{
+    Un’operazione $*$ si dice associativa se
+    $$\forall x,y,z\in s$$
+    $$x*(y*z)=(x*y)*z$$
+    In tal caso possiamo evitare le parentesi e scrivere
+    semplicemente $$x*y*z$$
+}
+\subsection{Operazione Duale o Opposta}
+\bottom{
+    Data un'operazione \(*: s \times s \to s\), definiamo la sua operazione duale o opposta come \(\overline{*}: s \times s \to s\) tale che: $$\forall x, y \in s\ (x \overline{*} y \iff y * x)$$
+}
+
+
+\subsection{Semigruppo}
+\bottom{
+    Una struttura algebrica $(s,*)$ si dice semigruppo se $*$ è un’operazione binaria interna associativa su $s$.
+}
+
+\subsection{Elemento Neutro}
+\bottom{
+    Dato un semigruppo $(s,*)$, un elemento $e\in s$ si dice elemento neutro se
+    $$\forall x\in s$$
+    $$(e*x=x=x*e)$$
+}
+
+\subsection{Unicità dell'elemento neutro}
+\bottom{
+    Dato un semigruppo $(s,*)$, se esiste un elemento neutro, questo è unico.
+}
+\bottomp{
+    Per definizione di elementi neutri a sinistra e a destra:
+$$l=l*d=d$$
+}
+
+\subsection{Monoide}
+\bottom{
+    Una struttura algebrica $(s,*)$ si dice monoide se $*$ è un’operazione binaria interna associativa su $s$ e se $s$ ha un elemento neutro rispetto a $*$.
+
+    È possibile notare l’elemento neutro esplicitamente, in tale modo:
+    $$(s,*,u)$$
+}
+\bottom{
+    \textbf{Esempio.} $(\mathbb N, +, 0)$ è un monoide, in quanto la somma è associativa e lo zero è elemento neutro.
+}
+
+\subsection{Elemento invertibile}
+\bottom{
+    Dato un monoide $(s,*,u)$, un elemento $x\in s$ si dice invertibile se
+    $$\exists y\in s$$
+    $$(x*y=u=y*x)$$
+    In tal caso $y$ si dice inverso di $x$.
+}
+\bottom{
+    Un elemento invertibile si dice anche simmetrizzabile.
+
+    Un elemento inverso si dice anche elemento simmetrico o elemento opposto.
+
+    Usiamo la dicitura $\mathcal U(s)$ per indicare l’insieme di tutti gli elementi simmetrizzabili di $s$.
+}
+\subsection{Unicità dell'inverso}
+\bottom{
+    Dato un monoide $(s,*,u)$, se un elemento $x\in s$ è invertibile, il suo inverso è unico.
+}
+\bottomp{
+    Siano $l$ e $d$ due inversi di $x$:
+$$l=l*u=l*(x*d)=(l*x)*d=u*d=d$$
+}
+
+\subsection{Gruppo}
+\bottom{
+    Una struttura algebrica $(s,*)$ si dice gruppo se $*$ è un’operazione binaria interna associativa su $s$, se $s$ ha elemento neutro rispetto a $*$ e se ogni elemento di $s$ è invertibile rispetto a $*$.
+}
+\bottom{
+    Un gruppo $(s,*)$ si dice abeliano se $*$ è commutativa.
+}
+\bottom{
+    \textbf{Esempio.} $(\mathbb Z, +, 0)$ è un gruppo, in quanto la somma è associativa, lo zero è elemento neutro ed ogni intero è invertibile rispetto alla somma.
+}
+
+
+\subsection{Parte Stabile}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e sia $t\subseteq s$
+    non vuoto. Allora $t$ si dice parte stabile o chiusa di $s$ rispetto a $*$ se e soltanto
+    se:
+    $$\forall x,y\in t$$
+    $$ (x*y\in t)$$
+    Cioè se, effettuando un’operazione a partire da elementi di $t$, il risultato è
+    ancora in $t$.
+}
+\bottom{
+    \textbf{Esempio.} Sia $(\mathbb R, +)$ una struttura algebrica. Allora $\mathbb N$ è una parte stabile di $\mathbb R$ rispetto alla somma.
+    Non è parte chiusa rispetto alla differenza, dato che ad esempio sia 5 che 7 appartengono ad $\mathbb N$ ma
+    $(5 - 7) = -2 \not\in \mathbb N$
+}
+\bottom{
+    In generale, per ogni monoide $(s, *, u)$, $\{u\}$ è parte stabile in
+    quanto $u*u=u$. Inoltre, $s$ è sempre parte stabile di se stesso.
+}
+
+\subsection{Operazine Indotta}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e
+    $t \subseteq s$ parte stabile, allora si nota che:
+    $$*_{|t\times t}=((t\times t)\times t,g)$$
+    $$g=\{(x,y,z)\in t\times t\times t\ |\ x*y=z\}$$
+    Cioè la ridotta è un’operazione binaria interna del tipo
+    $$*_{|t\times t}:t\times t \to t$$
+
+    Definiamo quindi $*_{|t\times t}$ operazione indotta da $*$ su $t$.
+}
+\bottom{
+    Un’operazione indotta conserva sempre le proprietà di commutatività, associatività dell’operazione originale, ma può ”perdere” l’elemento neutro o gli
+    inversi se questi non fanno parte della parte chiusa.
+}
+
+\subsection{L’intersezione di Parti Stabili è una Parte Stabile}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e sia $t \subseteq \mathcal P(s)$ tale che $$\forall x\in t\ (t\text{ parte stabile di }s)$$
+    Allora $$\bigcap t\text{ è parte stabile di }s$$
+}
+\bottomp{
+    Siano $x,y\in \bigcap t$. Allora, per la definizione di intersezione unaria
+    $$\forall z\in t\ (x,y\in z)$$
+    (questo perché $x$ e $y$ appartengono a tutti gli insiemi di $t$)\\
+
+    Essendo ogni $z$ parte stabile di $s$, ciò implica che
+    $$\forall z\in t\ (x*y\in z)\iff x*y\in \bigcap t$$
+    E dunque $\bigcap t$ è parte stabile di $s$.
+}
+
+\subsection{Sottostruttura}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e sia $t\subseteq s$ parte stabile. Allora $(t, *_{|t\times t})$ è una struttura algebrica, detta sottostruttura di $(s, *)$.
+}
+\bottom{
+    Se la struttura $(s, *)$ e la sottostruttura $(t, *_{|t\times t})$ hanno le stesse proprietà allora scriveremo $t \leq s$.
+}
+
+\subsection{Elemento Neutro di un Sottogruppo}
+\bottom{
+    Sia $(s, *)$ un gruppo e sia $t\le s$. Allora l’elemento neutro di $t$ è lo stesso di $s$.
+}
+\bottomp{
+   $$1_t\in t\implies 1_t\in s\implies 1_t\cdot 1_t = 1_t = 1_t \cdot 1_s$$
+    Il che implica che sia $1_s$ e $1_t$ siano inversi di $1_t$, ma essendo l'inverso unico si ha che $$1_t = 1_s$$
+}
+
+\subsection{Sottostruttura Generata}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e sia $t\subseteq s$ parte stabile. Allora
+    $$\langle t\rangle=\bigcap\{u\le s\ |\ t\subseteq u\}$$
+    si dice sottostruttura generata da $t$.
+}
+\bottom{
+    La ragione per cui la chiamiamo ”generata” è che si può dimostrare che
+    essa è in realtà l’insieme delle combinazioni lineari dell’insieme $t$.
+
+    Per esempio,
+    il sottomonoide generata da 2 di $(\mathbb N, +)$ è l’insieme di tutti i valori che si
+    possono ottenere sommando 2
+    $$\langle 2\rangle= \{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, \dots \}$$
+}
+
+\subsection{Caratterizzazione dei Sottomonoidi Generati}
+\bottom{
+    Sia $(s, *)$ un monoide e sia $\emptyset\ne t\subseteq s$ parte stabile. Allora:
+    $$\langle t\rangle=\{ x\ \in s \mid (\exists n \in \mathbb{N})(\exists x_1, x_2, ..., x_n \in t)(x = x_1 * x_2 * ... * x_n)\} \cup \{ 1_s \}$$
+}
+\bottomp{
+    Caso \(\subseteq\)) chiamiamo l'insieme a destra dell'ipotesi \(b\) per brevità. Consideriamo che:
+\begin{itemize}
+    \item \(t \subseteq b\), perché se \(x \in t\) scelgo \(n = 1, x_1 = x\implies x \in b\)
+    \item  Ogni elemento di \(b\) è esprimibile come composizione di elementi di \(t\) e dunque di \(s\), ed essendo \(*\) un'operazione interna allora \(b \subseteq s\).
+    \item L'elemento neutro appartiene a \(b\) per costruzione.
+    \item Siano $x, y\in b$, allora per definizione di $b$
+    $$(\exists n, m \in \mathbb{N})(\exists x_1, ..., x_n, y_1, ..., y_m)(x = x_1*...*x_n \land y = y_1 * ...* y_n)$$
+Questo implica che \(x*y = x_1 * ... * x_n * y_1 * ... * y_n \implies x * y \in b\) e dunque l'operazione indotta è interna.
+\end{itemize}
+Essendo \(b \leq s \land t \subseteq b\)allora \(<t> \subseteq b\) per la definizione di sottoinsieme generato come l'intersezione di tutte le sottostrutture di tale tipo.
+
+Caso \(\supseteq\)) Vogliamo dimostrare che $$(\forall x \leq s)(t \subseteq x \implies b \subseteq x)$$ poiché da questo segue che \(b \subseteq <t>\), che è la tesi.
+Allora, siano \(x \leq s \land t \subseteq x\). Essendo \(x\) parte chiusa, allora $$(\forall n \in \mathbb{N})(\forall y_1, ... y_n \in t \subseteq x)(y_1 * ... * y_n \in x) \implies (\forall y \in b)(y \in x) \implies b \subseteq x$$
+Quindi \(b\) è parte di ogni sottostruttura contente \(t\), e dunque parte della loro intersezione, e quindi \(b \subseteq <t>\).
+}
+
+\subsection{Caratterizzazione dei Gruppi Generati}
+\bottom{
+    Sia \((g, *, 1_s)\) un gruppo e sia \(\emptyset \neq t \subseteq g\) parte stabile. Allora:
+
+$$<t> = \{x \in g \mid (\exists n \in \mathbb{N})(\exists \varepsilon_1, \varepsilon_2, ..., \varepsilon_n \in \{-1, 1\})$$
+$$(\exists x_1, x_2, ..., x_n \in t)(x = x_1^{\varepsilon_2} * x_2^{\varepsilon_2} * ... * x_n^{\varepsilon_n})\}$$
+}
+\bottomp{
+    Caso \(\subseteq\)) chiamiamo l'insieme a destra dell'ipotesi \(b\) per brevità. Consideriamo che:
+\begin{itemize}
+    \item \(t \subseteq b\), perché se \(x \in t\) scelgo \(n = 1, \varepsilon_1 = 1, x_1 = x\implies x \in b\)
+    \item Ogni elemento di \(b\) è esprimibile come composizione di elementi di \(t \subseteq s\) o dei loro inversi in \(s\), ed essendo \(*\) un'operazione interna allora \(b \subseteq s\).
+    \item Se scegliamo $n = 2, \varepsilon_1 = 1, \varepsilon_2 = -1, x_1 = x_2 = x \in t \implies $
+    $$(\exists y \in b)(y = x_1^{\varepsilon_1} * x_2^{\varepsilon_2} = x * x^{-1} = 1_s)$$
+    \item  Dalle due precedenti segue che ogni elemento di \(b\) è dotato di inverso.
+    \item Siano \(x, y \in b\), allora per definizione sono entrambi esprimibili come composizione di \(n, m \in \mathbb{N}\) elementi di \(t\) o loro inversi. Dunque la loro composizione è esprimibile come \(n + m\) elementi di \(t\) o loro inversi, quindi essa appartiene a \(b\) e l'operazione indotta è binaria interna.
+\end{itemize}
+
+Essendo \(b \leq s \land t \subseteq b\) allora \(<t> \subseteq b\) per la definizione di sottoinsieme generato come l'intersezione di tutte le sottostrutture di tale tipo.
+
+Caso \(\supseteq\)) Vogliamo dimostrare che $$(\forall x \leq s)(t \subseteq x \implies b \subseteq x)$$ poiché da questo segue che \(b \subseteq <t>\), che è la tesi.
+Allora, siano \(x \leq s \land t \subseteq x\). Essendo \(x\) parte chiusa dotata di inversi per ogni elemento, allora $$(\forall n \in \mathbb{N})(\forall \varepsilon_1, ... \varepsilon_n \in \{1, -1\})(\forall y_1, ... y_n \in t \subseteq x)(y_1^{\varepsilon_1} * ... * y_n^{\varepsilon_n} \in x) \implies$$
+$$\implies (\forall y \in b)(y \in x) \implies b \subseteq x$$
+Quindi \(b\) è parte di ogni sottostruttura contente \(t\), e dunque parte della loro intersezione, e quindi \(b \subseteq <t>\).
+}
+
+\subsection{Struttura Ciclica}
+\bottom{
+    $(s,*)$ è una struttura ciclica $\iff \exists x\in s$ tale che $<x>=s$
+}
+
+\subsection{Elemento Cancellabile}
+\bottom{
+    Sia $(s, *)$ una struttura algebrica e sia $k\in s$. Allora $k$ si dice cancellabile se
+    $$\forall x,y\in s$$
+    $$k*x=k*y\implies x=y$$
+    $$x*k=y*k\implies x=y$$
+}
+\bottom{Un elemento non è cancellabile quando
+$$k\text{ non cancellabile a sx}\iff \exists x,y\in g\ (kx=ky \land x\not=y)$$
+$$k\text{ non cancellabile a dx}\iff \exists x,y\in g\ (xk=yk \land x\not=y)$$}
+
+\subsection{Invertibilità implica Cancellabilità}
+\bottom{
+    Dato un gruppo $(g,\cdot)$
+    $$\forall x\ (x\in\mathcal U(g)\implies x\text{ cancellabile})$$
+}
+\bottomp{$$x\in\mathcal U(g)\implies \exists\Bar{x}\in g\ (x\cdot\Bar{x}=1_g=\Bar{x}\cdot x)$$
+    Siano allora $y,z\in g$ tali che 
+    $$xy=xz \implies \Bar{x} \cdot x \cdot y = \Bar{x} \cdot x \cdot z \implies 1_g \cdot y = 1_g \cdot z \implies y=z$$
+    Analogamente
+    $$yx=zx \implies y \cdot x \cdot \Bar{x} = z \cdot x \cdot \Bar{x} \implies y \cdot 1_g = z \cdot 1_g \implies y=z$$
+}
+\bottom{
+    \textbf{Attenzione.} L’opposto non è necessariamente vero: cancellabilità non implica invertibilità. Per esempio, in $(\mathbb Z, \cdot)$ nessun elemento a parte 1 è invertibile, ma tutti sono cancellabili.
+}
+
+\subsection{Funzione Traslazione}
+\bottom{
+    Sia $(s,\cdot)$ un semigruppo e sia $x\in s$.
+    $$\sigma_x: z \in s \mapsto x \cdot z \in s \text{ funzione traslazione a sinistra}$$
+    $$\delta_x: z \in s \mapsto z \cdot x \in s \text{ funzione traslazione a destra}$$
+}
+\bottom{
+    $x$ è cancellabile a sinistra $\iff$ la funzione traslazione a sx è iniettiva.
+    
+    $x$ è cancellabile a destra $\iff$ la funzione traslazione a dx è iniettiva.
+}
+
+\subsection{Tavola di Cayley}
+\bottom
+{$$\text{neutro a sx}\iff\text{riga = riga elementi}$$
+$$\text{neutro a dx}\iff\text{colonna = colonna elementi}$$
+$$\text{invertibile a sx}\iff\text{riga contiene elemento neutro}$$
+$$\text{invertibile a dx}\iff\text{colonna contiene elemento neutro}$$
+$$\text{operazione commutativa}\iff\text{tavola simmetrica}$$
+$$\text{cancellabile a sx}\iff\text{riga con elementi tutti diversi}$$
+$$\text{cancellabile a dx}\iff\text{colonna con elementi tutti diversi}$$}
+
+\subsection{Omomorfismi fra Strutture Algebriche}
+\bottom{
+    Siano $(s, *_s)$ e $(t, *_t)$ due strutture algebriche. Una funzione $f: s \to t$ si dice omomorfismo se
+    $$\forall x,y\in s$$
+    $$f(x *_s y) = f(x) *_t f(y)$$
+}
+\bottom{Un’omomorfismo è dunque una funzione che ci permette di ”passare” da una
+struttura ad un’altra conservando però le proprietà delle operazioni.
+\textbf{Esempio.}
+$$EXP: x \in \mathbb{R} \mapsto e^x \in \mathbb{R} - \{0\}$$
+Questa funzione è un'omomorfismo fra le strutture $(\mathbb{R}, +)$ e $(\mathbb{R} - \{0\}, \cdot)$ in quanto
+$$(\forall x, y \in \mathbb{R})(EXP(x + y) = e^{x + y} = e^x \cdot e^y = EXP(x) \cdot EXP(y))$$}
+
+\subsection{Monomorfismo}
+\bottom{
+    Un omomorfismo iniettivo si dice monomorfismo.
+}
+
+\subsection{Epimorfismo}
+\bottom{
+    Un omomorfismo suriettivo si dice epimorfismo.
+}
+\bottom{
+    Epimorfismi conservano l’associatività, la commutatività, i neutri, e gli inversi.
+}
+
+\subsection{Epimorfismi conservano i Neutri}
+\bottomp{
+    Siano $(s,*)$ e $(\Bar{s},\Bar{*})$ strutture algebriche,
+$\varphi: s \to\Bar{s}$
+un'epimorfismo, $1_s\in s$ elemento neutro, e sia $y\in\Bar{s}$.
+
+Essendo la funzione suriettiva
+$$\exists x\in s\ (\varphi(x)=y)$$
+Allora
+$$y\ \Bar{*}\ \varphi(1_s) = \varphi(x)\ \Bar{*}\ \varphi(1_s) = \varphi(x * 1_s) = \varphi(x) = y$$
+quindi $\varphi(1_s)$ è elemento neutro di $(\Bar{s},\Bar{*})$
+}
+
+\subsection{Epimorfismi conservano la Commutatività}
+\bottom{
+    Siano \((s, *)\) e \((\Bar{s}, \Bar{*})\) strutt. algebriche tale che \(*\) è un'operazione commutativa e sia \(\varphi: s \to \Bar{s}\) un'epimorfismo. Vogliamo dimostrare che anche l'operazione \(\Bar{*}\) è commutativa.
+}
+\bottomp{
+Siano \(y_1, y_2 \in \Bar{s}\). Essendo la funzione suriettiva $$\exists x_1, x_2 \in s\ (\varphi(x_1) = y_1 \land \varphi(x_2) = y_2)$$ Allora:
+$$y_1 \Bar{*} y_2 = \varphi(x_1) \Bar{*} \varphi(x_2) =$$
+$$= \varphi(x_1 * x_2) = \varphi(x_2 * x_1) = \varphi(x_2) \Bar{*} \varphi(x_1) = y_2 \Bar{*} y_1$$
+
+E dunque l'operazione \(\Bar{*}\) è commutativa.
+}
+
+\subsection{Isomorfismo}
+\bottom{
+    Un omomorfismo biettivo si dice isomorfismo.
+}
+
+\subsection{L'inversa di un isomorfismo è a sua volta un isomorfismo}
+\bottom{Siano \((s, *)\) e \((\Bar{s}, \Bar{*})\) due strutture algebriche. Se \(\varphi: s \to \Bar{s}\) è un isomorfismo, allora \(\varphi^{-1}: \Bar{s} \to s\) è a sua volta un isomorfismo.
+Se \(\varphi\) è biettiva, allora esiste \(\varphi^{-1}\) anch'essa biettiva. Pertanto, per dimostrare che essa è un isomorfismo, basta dimostrare che è un omomorfismo.
+
+ $$(\forall x, y \in \Bar{s})(\varphi^{-1}(x \Bar{*} y) = \varphi^{-1}(x) * \varphi^{-1}(y))$$
+ }
+\bottomp{
+    Siano \(x, y \in \Bar{s}\). Essendo $$\varphi \circ \varphi^{-1} = id_{\Bar{s}}$$ allora abbiamo che:
+
+    $$\varphi^{-1}(x \Bar{*} y) = \varphi^{-1}(\varphi(\varphi^{-1}(x))\ \Bar{*}\ \varphi(\varphi^{-1}(y)))=$$
+    $$ = \varphi^{-1}(\varphi(\varphi^{-1}(x) * \varphi^{-1}(y))) = \varphi^{-1}(x) * \varphi^{-1}(y)$$
+}
+\bottomp{
+    DIMOSTRAZIONE ALTERNATIVA
+    $$\varphi(\varphi^{-1}(x) * \varphi^{-1}(y)) = \varphi(\varphi^{-1}(x)) \Bar{*} \varphi(\varphi^{-1}(y)) = x \Bar{*} y$$
+Poiché \(\varphi\) è un isomorfismo. Se applichiamo \(\varphi^{-1}\) ad entrambi gli estremi dell'equazione qui sopra, allora otteniamo:
+
+$$\varphi^{-1}(\varphi(\varphi^{-1}(x) * \varphi^{-1}(y))) = \varphi^{-1}(x \Bar{*} y)$$
+ 
+E semplificando le funzioni inverse:
+
+$$\varphi^{-1}(x) * \varphi^{-1}(y) = \varphi^{-1}(x \Bar{*} y)$$
+
+Che è la tesi.
+}
+
+\subsection{Automorfismo}
+\bottom{
+    Un isomorfismo di una struttura algebrica in se stessa ovvero un isomorfismo \(f: a \to a\) si dice automorfismo.
+}
+
+\subsection{Anello}
+\bottom{Sia \(a \neq \emptyset\) e siano \(+, \cdot\) due operazioni binarie interne di \(a\). La struttura algebrica \((a, +, \cdot)\) si dice anello se \((a, +)\) è un gruppo abeliano, \((a, \cdot)\) è un semigruppo, e vale la proprietà distributiva di $\cdot$ su $+$:
+
+$$\forall x, y, z \in a$$
+$$x \cdot (y + z) = x \cdot y + x \cdot z$$}
+\bottom{
+    Dato un anello \((a, +, \cdot)\), indichiamo con
+    \begin{itemize}
+        \item \(0_a\) o \(0^N\) l'elemento neutro rispetto all'operazione \(+\)
+        \item \(1_a\) o \(1^N\) l'elemento neutro dell'operazione \(\cdot\) (se esiste)
+    \end{itemize}
+}
+\bottom{Dato un anello \((a, +, \cdot)\), allora definiamo:
+\begin{itemize}
+    \item \(\forall x, y \in a\ (x - y = x + (-y))\)
+    \item \(\forall x \in a\\\forall n \in \mathbb{N} - \{0\}\\ nx = x + x + ... + x \text{ (} n \text{ volte)})\)
+    \item \(\forall x \in a\\ \forall n \in \mathbb{Z} - \mathbb{N}\\ nx = -x - x - ... - x \text{ (} n \text{ volte)})\)
+    \item \(\forall x \in a\ (0x = 0_a)\)
+\end{itemize}
+ 
+Stiamo dunque definendo la differenza, e i multipli.}
+\bottom{
+    Dato un anello \((a, +, \cdot)\), allora definiamo le proprietà del prodotto:
+    \begin{enumerate}
+        \item $\forall x \in a\\ \forall n \in \mathbb{N} - \{0\}$
+        $$ x^n = x \cdot x \cdot ... \cdot x \text{ (} n \text{ volte)}$$
+        \item $\forall x \in a\\ \forall n \in \mathbb{N}- \{0\}$
+        $$ x^{-n} = x^{-1} \cdot x^{-1} \cdot ... \cdot x^{-1} \text{ (} n \text{ volte)}$$
+        \item $\forall x \in a$
+        $$ x^0 = 1_a \text{ (se esiste)}$$
+        Con queste prime tre proprietà stiamo dunque definendo la potenza per l'anello.
+        \item
+        $\forall x,y,z \in a$
+        $$ x \cdot (y - z) = x \cdot (y + (-z)) = xy + x(-z) = xy - xz$$
+        \item Per la (4), è dunque distributivo rispetto alla differenza:\\ 
+        $$\forall x, y \in a\ (x \cdot (-y) = -xy = (-x)y)$$
+        \item Se l'anello è unitario:\\
+        $\forall x \in a\\
+        \forall n \in \mathbb{N}$
+        $$(n \cdot 1_a)x = nx$$
+    \end{enumerate}
+}
+\subsection{Anello Commutativo}
+\bottom{
+    Un anello \((a, +, \cdot)\) si dice commutativo se \((a, \cdot)\) è un semigruppo commutativo.
+}
+
+\subsection{Anello Unitario}
+\bottom{
+    Un anello \((a, +, \cdot)\) si dice unitario se \((a, \cdot)\) è un monoide.
+}
+
+\subsection{Il prodotto per lo zero dell'anello è sempre zero}
+\bottom{
+Dato un anello \((a, +, \cdot)\) vogliamo dimostrare che $$\forall x \in a$$
+$$ 0_a \cdot x = 0_a= x \cdot 0_a $$
+}
+\bottomp{$$\forall x \in a$$
+$$0_a \cdot x = (x - x)x = xx - xx = 0_a$$
+$$x \cdot 0_a = x(x - x) = xx - xx = 0_a$$}
+\subsection{Legge di Annullamento del Prodotto}
+\bottom{
+    Dato un anello \((a, +, \cdot)\), diremo che nell'anello vale la legge di annullamento del prodotto se e solo se:
+
+$$\forall x, y \in a$$
+$$ x \cdot y = 0_a \implies (x = 0_a \lor y = 0_a)$$
+}
+
+\subsection{Anello Integro}
+\bottom{
+    Un anello \((a, +, \cdot)\) si dice integro se vale la legge di annullamento del prodotto.
+}
+
+\subsection{Dominio di Integrità}
+\bottom{
+    Un anello \((a, +, \cdot)\) si dice dominio di integrità se è un anello integro commutativo unitario.
+}
+
+\subsection{Divisore dello Zero}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello. Allora:
+    \begin{align*}
+        &x \in a - \{0_a\} \text{ divisore sx dello zero } :\iff \exists y \in a - \{0_a\}\ (xy = 0_a)\\
+        &x \in a - \{0_a\} \text{ divisore dx dello zero } :\iff \exists y \in a - \{0_a\}\ (yx = 0_a)\\
+        &x \in a - \{0_a\} \text{ divisore dello zero } :\iff x \text{ è divisore sx e dx dello zero}
+    \end{align*}
+}
+\subsection{Divisore dello zero $\iff$ non Cancellabile}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello. Allora:
+    \begin{align*}
+        &x \in a - \{0_a\} \text{ divisore a sx dello zero } \iff &&x \text{ non cancellabile a sx}\\
+        &x \in a - \{0_a\} \text{ divisore a dx dello zero } \iff &&x \text{ non cancellabile a dx}
+    \end{align*}
+
+}
+\bottomp{
+    Dimostriamo a sinistra, dato che a destra la dimostrazione è analoga.
+    \(\Rightarrow)\) Sia \(x \in a\) divisore sinistro dello zero, allora $$\exists y \in a - \{0_a\}\ (xy = 0_a)$$ Per assurdo, se \(x\) fosse cancellabile a sinistra, allora $$x \cdot y = 0_a \implies x \cdot y = x \cdot0_a \implies y = 0_a$$ che è assurdo, in quanto \(y \in a - \{0_a\}\).
+
+    \(\Leftarrow)\) Per ipotesi $$\exists y, z \in a\ (y \neq z \land xy = xz)$$ Quindi $$x(y - z) = xy - xz = 0$$ nonostante \(y - z \neq 0\), dunque \(x\) è divisore a sinistra dello zero in quanto esiste un valore \(y - z \neq 0: x(y - z)  = 0\)
+}
+
+\subsection{Dominio di Integrità \(\iff\) è privo di Divisori dello Zero}
+\bottomp{
+    \(\Rightarrow)\) Se l'anello è dominio di integrità, vale la legge di annullamento del prodotto. Per assurdo, sia \(x \in a\) un divisore dello zero. Allora $$\exists y \in a - \{0\}\ (xy = 0)$$ e dunque per la legge di annullamento del prodotto \(x = 0 \lor y = 0\) che va contro l'ipotesi che siano entrambi non zero.
+
+    \(\Leftarrow)\) Se nessun elemento è divisore dello zero, allora tutti gli elementi sono cancellabili. Dunque, se consideriamo $$\forall x, y \in a\ (x \neq 0 \land xy = 0 \implies y = 0)$$ che è la tesi.
+}
+
+\subsection{Corpo}
+\bottom{
+    Un anello si dice corpo se \((a - \{0_a\}, \cdot)\) è un gruppo.
+}
+
+\subsection{Campo}
+\bottom{
+    Un corpo commutativo si dice campo.
+}
+
+\subsection{Ogni Campo è un Dominio di Integrità}
+\bottomp{
+    Un campo è un corpo commutativo, ed un corpo è un anello unitario. Un anello commutativo unitario è dominio di integrità se e soltanto se è privo di divisori dello zero. Ogni elemento di un campo, eccetto lo zero, è invertibile, e dunque cancellabile. Un elemento cancellabile non può essere divisore dello zero, e quindi non esistono divisori dello zero. Dunque il campo è dominio di integrità.
+}
+
+
+

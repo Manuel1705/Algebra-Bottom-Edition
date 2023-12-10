@@ -1,0 +1,673 @@
+\section{Divisibilità}
+\subsection{ Divisori e Multipli}
+\bottom{
+    Sia \((s, \cdot)\) un semigruppo commutativo. Allora, \(\forall x, y \in s\), diremo che:
+
+    $$\substack{x | y \\
+    x \text{ divide } y\\
+    y \text{ e' multiplo di } x
+    } :\iff \exists z \in s\ (xz = y)$$
+    $$DIV_s(x) = \{y \in s \mid y | x\}$$
+    $$MULT_s(x) = \{z \in s \mid x | z\}$$
+}
+
+\subsection{ Elementi Associati}
+\bottom{
+    Sia \((s, \cdot)\) un semigruppo commutativo. Allora diremo che due elementi \(x, y\) sono associati se si dividono a vicenda.
+
+    $$x, y \text{ associati } :\iff x \in DIV_s(y) \land y \in DIV_s(x)$$
+}
+
+\subsection{ Insieme degli Associati}
+\bottom{
+    Sia \((s, \cdot)\) un semigruppo commutativo. Allora, \(\forall x \in s\), definiamo l'insieme degli associati di \(x\):
+
+    $$ASSOC_s(x) = \{y \in s \mid x|y \land y|x\}$$
+}
+
+\subsection{ Associati di un Elemento Cancellabile}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo. Se \(x \in s\) è un elemento cancellabile, allora:
+
+    $$ASSOC_s(x) = \{ xu \in s \mid u \in U(s)\}$$
+
+    Cioè tutti gli associati di un elemento cancellabile sono il prodotto di \(x\) per un elemento invertibile di \(s\).
+}
+\bottomp{
+    \(\supseteq)\) Sia \(u \in U(s)\). Allora
+    \begin{align*}
+        &&&x|xu\\
+        &\text{ma}\\
+        &&&(xu)u^{-1} = x\\
+        &\text{quindi}\\
+        &&&xu|x\\
+        &\text{Pertanto}\\
+        &&&xu \in ASSOC_s(x)
+    \end{align*}
+
+    \(\subseteq)\) Sia \(y \in ASSOC_s(x)\).
+    Allora $$\exists w,z\in s\text{ tali che }y = xw \text{ e } x = yz$$ Allora, usando la cancellabilità di \(x\):
+    $$x = xwz \implies wz = 1 \implies w, z \text{ invertibili } \implies$$
+    $$\implies w \in U(s) \implies y \in \{xu \mid u \in U(s)\}$$
+
+    Da cui la tesi.
+}
+
+\subsection{ Associati hanno stessi Divisori e Multipli}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo. Allora, \(\forall x, y \in s\):
+    $$y \in ASSOC_s(x) \stackrel{\text{(1)}}{\iff} DIV_s(x) = DIV_s(y) \stackrel{\text{(2)}}{\iff} MULT_s(x) = MULT_s(y)$$
+}
+\bottomp{
+    \(1 \Rightarrow )\) Segue dalla transitività della divisione \(|\).
+
+    \(1 \Leftarrow)\) \(y \in DIV(y) \implies y \in DIV(x) \implies y | x.\) 
+
+    Lo stesso vale per \(x\), quindi \(y \in ASSOC(x)\).
+
+    \(2 \Leftrightarrow)\) Segue immediatamente dalla definizione di insieme dei divisori e dei multiplil.
+}
+
+\subsection{ Massimi Comuni Divisori e Minimi Comuni Multipli}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo e sia \(t \subseteq s\). Allora definiamo:
+    $$MCD_s(t) = \{d \in \bigcap_{x \in t} DIV_s(X) \mid (\forall z \in \bigcap_{x \in t} DIV_s(x))(z | d)\}$$
+    $$mcm_s(t) = \{d \in \bigcap_{x \in t} MULT_s(X) \mid (\forall z \in \bigcap_{x \in t} MULT_s(x))(d | z)\}$$
+    Bisogna fare attenzione che nonostante si utilizzino i termini "massimo" e "minimo" questi non vanno intesi come terminologia delle relazioni d'ordine, in quanto la divisione non è necessariamente una relazione d'ordine. Il massimo e i minimi di un insieme sono sempre unici, mentre l'MCD e gli mcm, come si può vedere dalla definizione, sono un insieme e pertanto ne possono esistere molteplici.
+}
+
+\subsection{ Divisori Banali}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo e sia \(x \in s\). Allora definiamo l'insieme dei divisori banali:
+
+    $$BDIV_s(x) = U(s) \cup ASSOC_s(x)$$
+}
+
+\subsection{ Elemento Irriducibile (in un Dominio di Integrità)}
+\bottom{
+    Sia \((s, +, \cdot)\) un dominio di integrità e sia \(x \in s\). Allora \(x\) si dice:
+
+    $$x \text{ irriducibile } :\iff x \notin U(s) \land DIV_s(x) = BDIV_s(x)$$
+}
+
+\subsection{ Primo}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo.
+
+    $$p \in s \text{ primo } :\iff \forall a, b \in s\ (p|ab \implies p|a \lor p|b)$$
+}
+
+\subsection{ Coprimo}
+\bottom{
+    Sia \((s, \cdot, 1_s)\) un monoide commutativo. Allora:
+    $$x,y \in s \text{ coprimi } :\iff 1_s \in MCD(\{x, y\})$$
+
+    Cioè se l'unità è un loro MCD.
+}
+
+\subsection{ Monoide Cancellativo}
+\bottom{
+    Un monoide commutativo si dice cancellativo se ogni suo elemento è cancellabile.
+}
+
+\subsection{ Monoide Fattoriale}
+\bottom{
+    Un monoide commutativo \((m, \cdot)\) si dice fattoriale se vale una delle seguenti proprietà:
+    \begin{enumerate}
+        \item Ogni \(x \in m - U(m)\) è un prodotto di primi.
+        \item Ogni \(x \in m - U(m)\) è prodotto di irriducibili, ed ogni irriducibile è primo.
+        \item Ogni \(x \in m - U(m)\) è prodotto di irriducibili, ed ogni fattorizzazione è unica a meno dell'ordine dei fattori e del prodotto per invertibili.
+    \end{enumerate}
+
+    NO DIM: si dimostra che queste tre condizioni sono fra di loro equivalenti.
+}
+
+\subsection{ Anello Fattoriale}
+\bottom{
+    Un anello commutativo unitario \((a, +, \cdot)\) si dice anello fattoriale se \((a - \{0_a\}, \cdot)\) è un monoide fattoriale.
+}
+
+\subsection{ Caratterizzazione di MCD e mcm per Associati}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo, siano \(x, y \in s\). allora:
+    $$m \in MCD(x,y) \iff ASSOC(m) = MCD(x, y)$$
+    $$m \in mcm(x, y) \iff ASSOC(m) = mcm(x, y)$$
+}
+\bottomp{
+    \(\rightarrow)\) $$m|x \land m|y\ \land\ \forall z \in s\ (z|x \land z|y \implies z|m)$$ poiché esso è MCD.
+    Sia $$n \in ASSOC(m) \implies n|m \land m|n \implies n|x \land n|y\ \land\ \forall z \in s\ (z|m \implies z|n)$$
+    $$\implies n|x \land n|y\ \land\ \forall z \in s\ (z|x \land z|y \implies z|n) \implies n \in MCD(x,y)$$
+    Quindi $$ASSOC(m) \subseteq MCD(x,y)$$
+    Se invece $$n \in MCD(x,y) \implies m|n \land n|m \implies n \in ASSOC(m)$$
+    Pertanto $$MCD(x,y) \subseteq ASSOC(m) \implies ASSOC(m) = MCD(x,y)$$
+
+    \(\leftarrow)\) \(m \in ASSOC(m)\) in quanto \((s, \cdot)\) è un monoide. $$ASSOC(m) = MCD(x,y) \implies m \in MCD(x,y)$$
+}
+
+\subsection{ Fattorizzazione in Primi in un Monoide Fattoriale}
+\bottom{
+    Sia \((m, \cdot)\) un monoide fattoriale. Sia \(a \in m - U(m)\), allora $$a = p_1^{k_1} \cdot p_2^{k_2} \cdot ... \cdot p_n^{k_n}$$
+    I divisori di \(a\) sono tutti e soli gli elementi associati ad elementi del tipo $$p_1^{l_1} \cdot ... \cdot p_n^{l_n}\text{ con } 0 \leq l_i \leq k_i,\ \forall i \in I_n$$
+}
+
+\subsection{ Numero di Divisori in \(\mathbb N\)}
+\bottom{
+    Corollario di "Fattorizzazione in Primi in un Monoide Fattoriale"
+
+    Sia $$a = p_1^{k_1} \cdot p_2^{k_2} \cdot ... \cdot p_n^{k_n} \in \mathbb N$$ allora \(a\) ha esattamente $$\prod_{i = 1}^n (k_i + 1)$$ divisori.
+}
+
+\subsection{ Numero di Divisori in \(\mathbb Z\)}
+\bottom{
+    Corollario di "Fattorizzazione in Primi in un Monoide Fattoriale"
+
+    Sia $$a = p_1^{k_1} \cdot p_2^{k_2} \cdot ... \cdot p_n^{k_n} \in \mathbb Z$$ allora \(a\) ha esattamente $$2 \cdot \prod_{i = 1}^n (k_i + 1)$$ divisori.
+}
+
+\subsection{ MCD e mcm dalle Fattorizzazioni}
+\bottom{
+    Sia \((m, \cdot)\) un monoide fattoriale e siano:
+    $$a = p_1^{k_1} \cdot ... \cdot p_n^{k_n}$$
+    $$b = p_1^{l_1} \cdot ... \cdot p_n^{l_n}$$
+    Dove \(p_1, ..., p_n\) comprende tutti i primi che compaiano nelle fattorizzazioni di \(a\) o \(b\). Nel caso un primo appaia nella fattorizzazione di \(a\), ma non di \(b\) (o viceversa), allora esso può essere considerato come elevato allo zero nella fattorizzazione in cui non compare.
+
+    Poniamo inoltre 
+    $$\forall i \in \mathbb N\ (1 \leq i \leq n \implies \alpha_i = MAX(k_i, l_i) \land \beta_i = MIN(k_i, l_i))$$
+    Allora, abbiamo che:
+    $$m = p_1^{\alpha_1} \cdot ... \cdot p_n^{\alpha_n} \in mcm(a, b)$$
+    $$M = p_1^{\beta_1} \cdot ... \cdot p_n^{\beta_n} \in MCD(a, b)$$
+
+    ESEMPIO:
+    \begin{align*}
+        a &= 2 \cdot 3^2 \cdot 5 &&= 90 = 2 \cdot 3^2 \cdot 5 \cdot 11^0 \cdot 13^0 \\
+        b &= 3 \cdot 5^2 \cdot 11 \cdot 13 &&= 10725= 2^0 \cdot 3 \cdot 5^2 \cdot 11 \cdot 13 
+    \end{align*}
+    Pertanto:
+    \begin{align*}
+        &m = 2 \cdot 3^2 \cdot 5^2 \cdot 11 \cdot 13 &&=  64350 \\
+        &M =  2^0 \cdot 3 \cdot 5 \cdot 11^0 \cdot 13^0 &&= 15 
+    \end{align*}
+}
+
+\subsection{ Associati da MCD e mcm}
+\bottom{
+    Corollario di "Teorema: MCD e mcm dalle Fattorizzazioni"
+
+    Se $$m \in mcm(a, b) \land M \in MCD(a, b)$$ allora $$m\cdot M \in ASSOC(a, b)$$
+}
+
+\subsection{ Proprietà di Divisione Lineare dei Divisori Comuni}
+\bottom{
+    Sia \((s, +, \cdot)\) un anello commutativo unitario e siano \(a, b \in s\). Se $$d \in DIV_{(s, \cdot)}(a) \cap DIV_{(s, \cdot)}(b)$$ allora $$\forall x, y \in s\ (d|(xa + yb))$$
+    Cioè i divisori comuni dividono ogni combinazione lineare degli elementi.
+}
+\bottomp{
+    $$d|a \land d|b \implies (\exists h, k \in \mathbb Z)(a = dk \land b = dh)$$
+    E quindi:
+    $$\forall x, y \in Z\ (ax + by = dkx + dhy = d(kx + hy) \implies d|(ax + by))$$
+}
+
+\subsection{ Valore Assoluto}
+\bottom{
+    Sia \(n \in \mathbb Z\). Allora definiamo la funzione valore assoluto come:
+
+    $$|n|: n \in \mathbb Z \mapsto 
+    \begin{cases}
+        n & \text{ se } n \in \mathbb N \\
+        -n & \text{ se } n \in \mathbb Z - \mathbb N
+    \end{cases}$$
+}
+
+\subsection{ Teorema della Divisione Euclidea (o con Resto)}
+\bottom{
+    $$\forall m, n \in \mathbb Z\ (m \neq 0 \implies (\exists! (q,r) \in \mathbb Z \times \mathbb N)(n = mq + r \land 0 \leq r < |m|))$$
+}
+\bottomp{
+    (Caso $n\in \mathbb N$)
+
+    Dimostriamo per induzione di seconda forma su \(n\).
+
+    Allora se \(n = 0\), scelgo \(q = 0 = r\).
+
+    Se \(0 < n < |m|\), allora \(q = 0, r = n\).
+
+    Se \(n = |m|\), allora ci sono due possibilità: $$n = m \text{ e } q = 1, r = 0$$ oppure $$n = -m \text{ e } q = -1, r = 0$$
+
+    Se \(n > |m|\). Consideriamo vero $\forall i\in \mathbb N\ |m|\le i<n$. Allora prendiamo \(n - |m| < n\), e quindi per ipotesi induttiva $$\exists q_1, r_1\ (n - |m| = mq_1 + r_1 \land 0 \leq r_1 \leq |m|)$$
+    Quindi \(n = mq_1 + |m| + r_1\).
+
+    Quindi, se \(m > 0\), allora \((q, r) = (q_1 + 1, r_1)\).
+
+    Se \(m < 0\), allora \((q, r) = (q_1 - 1, r_1)\).
+
+    Allora per induzione la tesi vale \(\forall n \in \mathbb N\).
+
+    (Caso $n\in\mathbb Z-\mathbb N$)
+    sappiamo che la tesi vale \(\forall n \in \mathbb N\).
+    Supponiamo invece che \(n \in \mathbb Z - \mathbb N\). Allora $$-n \in \mathbb N \implies -n = mq_1 + r_1$$ con $$0 \leq r < |m| \implies n = m(-q_1) - r_1 = m(-q_1) - r_1 + |m| - |m|$$
+    (aggiungo $+ |m| - |m|$ cosi che $0\le r<|m|$)\\
+    Consideriamo i due casi possibili:
+    $$m > 0 \implies n = m(-q_1 - 1) + m - r \implies (q, r) = (-q_1 - 1, m - r)$$
+    $$m < 0 \implies n = m(-q_1 + 1) - m - r \implies (q, r) = (-q_1 + 1, -m - r)$$
+    Pertanto la tesi è valida anche in \(\mathbb Z\).
+
+    Dimostrazione che \((q, r)\) è unico:
+    Siano \((q_1, r_2), (q_2, r_2) \in \mathbb Z \times \mathbb N\). Ipotizziamo WLOG che \(0 \leq r_1 \leq r_2 < |m|\) e che \(n = mq_1 + r_1 = mq_2 + r_2\).
+    Allora $$m(q_1 - q_2) = r_2 - r_1$$ e quindi $$|m||q_1 - q_2| = |m(q_1 - q_2)| = |r_2 - r_1|\text{ e } 0 \leq |r_2 - r_1| < |m|$$
+    Segue che \(|m||q_1 - q_2| < |m|\) che può succedere solo, dato che \(m \neq 0\) per ipotesi, se \(|q_1 - q_2| = 0 \implies q_1 = q_2\).
+
+    E quindi $$n = mq_1 + r_1 = mq_1 + r_2 \implies r_1 = r_2$$ da cui la tesi.
+}
+
+\subsection{ Algoritmo delle Divisioni Successive}
+\bottom{
+    \includegraphics*[scale=.2]{img/ADS.png}
+
+    Siamo sicuri che l'algoritmo abbia fine perché la successione dei resti è crescente limitata inferiormente dallo zero.
+    \begin{align*}
+        a &= bq_1 + r_1 \\
+        b &= r_1q_2 + r_2 \\
+        r_1 &= r_2q_3 + r_3\\
+        &\dots\\
+        r_{t-4} &= r_{t-3}q_{t-2} + r_{t-2}\\
+        r_{t-3} &= r_{t-2}q_{t-1} + r_{t-1}\\
+        r_{t-2} &= r_{t-1}q_t + r_t
+    \end{align*}
+    con $r_t=0$\\
+    $MCD(a,b)=\pm r_{t-1}$\\    
+    Con i resti:
+    \(0 = r_t < r_{t-1} < \dots < r_1 < b\)
+}
+
+\subsection{ Teorema di Bézout}
+\bottom{
+    $$\forall (a, b) \in \mathbb Z \times \mathbb Z - \{(0, 0)\}$$
+    $$\forall d \in MCD(a, b)$$
+    $$\exists u, v \in \mathbb Z$$
+    $$(d = au + bv)$$
+    Cioè, per ogni MCD di una coppia di valori \(a, b\), esiste una combinazione lineare dei due che lo esprime.
+}
+\bottomp{
+    Si consideri l'Algoritmo delle Divisioni Successive, per equazioni. Sia \(t\) il minimo numero di passi tali che \(r_t = 0\). Se \(t = 1\), allora \(r_1 = 0\) e \(a = bq_1 \implies b \in MCD(a, b)\) e \(b = a \cdot 0 + b \cdot 1\). Quindi \((u, v) = (0, 1)\).
+
+    Se \(t = 2\), allora \(r_1 \neq 0 \land r_2 = 0\). Quindi \(r_1 \in MCD(a, b)\) e \(r_1 = a \cdot 1 + b \cdot (-q_1)\). Quindi \((u,v) = (1, -q_1)\).
+    
+    Supponiamo vero l'asserto per ogni \(r_i: 1 \leq i < t\). Dato che $$r_t = 0 \implies r_{t-1} \in MCD(a, b)$$ 
+    $$r_{t-1} = r_{t-3} + r_{t-2}(-q_{t-1})$$
+    perchè
+    $r_{t-3}=r_{t_2}q_{t-1}+r_{t-1}$\\
+     Ma per l'ipotesi induttiva, allora $$\exists u, v, w, x \in \mathbb Z\ (r_{t-3} = au + bv \land r_{t-2} = aw + bx)$$
+    Quindi $$r_{t-1} = (au + bv) + (aw + bx)(-q_{t-1}) =$$
+    $$= aw + bw - awq_{t-1} - bxq_{t-1} = a(w-wq_{t-1}) + b(v - xq_{t-1})$$
+    
+    Da cui la tesi.
+}
+
+\subsection{ Lemma di Euclide}
+\bottom{
+    Siano \(a, b, c \in \mathbb Z\). Se \(a, b\) sono coprimi, allora \(a | bc \implies a | c\).
+}
+\bottomp{
+    \(1 \in MCD(a, b)\) perché sono coprimi. Per il Teorema di Bézout, $$\exists u, v \in \mathbb Z\ (au + bv = 1)$$
+     Quindi \(c = acu + bcv\). Dato che \(a | ac\) (banalmente) e \(a | bc\) (per ipotesi), allora $$\exists h, k \in \mathbb Z\ (c =  acu + bcv = ahu + akv \implies c = a(hu+kv) \implies a | c)$$
+     ($ac=ah$ perchè $a|ac$ quindi $\exists h\in \mathbb Z (ah=ac)$)\\
+     ($bc=ak$ perchè $a|bc$ per ipotesi quindi $\exists k\in \mathbb Z (ak=bc)$)
+}
+
+\subsection{ In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}
+\bottom{
+    In \(\mathbb Z\), i primi sono tutti e soli gli irriducibili.
+    Cioè, \(p \in \mathbb Z\) primo \(\iff\) \(p\) irriducibile.
+}
+\bottomp{
+    \(\Rightarrow)\) Sia \(p \in \mathbb Z\) primo e siano \(a, b \in \mathbb Z\) tali che \(p = ab\).\\
+    \(p\) è primo \(\implies p | a \lor p|b\).\\
+    Ipotizziamo senza ledere la generallità che \(p|a\).\\
+    Quindi $$p | a \land a | p^* \implies p \in ASSOC(a) = \{a, -a\}$$
+    Quindi $$p = \pm a \implies b = \pm 1$$
+    Dunque, \(p\) ha solo divisori banali ed è dunque irriducibile.
+
+    \(\Leftarrow)\) Sia \(p \in \mathbb Z\) irriducibile, cioè \(DIV(p) = BDIV(p) = \{-1, 1, p, -p\}\).\\
+    Siano \(a, b \in \mathbb Z\) tali che \(p|ab\).\\
+    Supponendo che \(p \nmid a\), bisogna dimostrare che necessariamente \(p | b\).\\
+    Si ha che $$MCD(p, a) \subseteq DIV(p) = \{- 1, 1, -p, p\}^{**}$$
+    ma dato che \(p \nmid a\), allora \(MCD = \{-1, 1\}\) e quindi i due sono coprimi.\\
+    Per il Lemma di Euclide, \(p | b\).\\\\
+     $(^*)\ a|p$ perchè $p=ab$ per ipotesi quindi $\exists b\in \mathbb Z\ (ab=p)$.\\
+    $(^{**})$ dato che l'$MCD\subseteq DIV(p)\cap DIV(a)$.
+}
+
+\subsection{ Caratterizzazione Lineare di Classe di Resto}
+\bottom{
+    $$[a]_m = \{b \in \mathbb Z \mid m|(a-b)\} = \{a + km \mid k \in \mathbb Z\}$$
+    Questo perchè sommando e sottraendo più volte $m$ al rappresentante della classe possiamo ottenere tutti gli elementi della classe.
+}
+
+\subsection{ Operazione Parziale: Modulo}
+\bottom{
+    $$\forall (a, m) \in \mathbb (Z \times (\mathbb Z - \{0\}))\ (a \bmod m = MIN([a]_m \cap \mathbb N))$$
+
+    Il modulo è un'operazione "parziale" perché non è definita in \(\mathbb Z \times \mathbb Z\), ma in \(\mathbb Z \times (\mathbb Z - \{0\})\), cioè non è possibile effettuare \(a \bmod 0\).
+
+    \subsubsection*{ Proprietà del Modulo}
+    \bottom{
+        \begin{itemize}
+            \item \(a \bmod m < |m|\)
+            \item \(a \bmod m = \text{ resto di } DE(a, m)\)
+        \end{itemize}
+    }
+
+    \subsubsection*{ Notazioni del Modulo}
+    \bottom{
+        Le seguenti notazioni sono equivalenti:
+        \begin{itemize}
+            \item \(a \bmod m\)
+            \item \(a \text{ \% } m\)
+            \item \(REST(a, m)\)
+        \end{itemize}
+    }
+}
+
+
+
+
+
+\subsection{ Caratterizzazione di \(\mathbb Z_m\)}
+\bottom{
+    Sia \(m \in \mathbb N - \{0\}\). Allora \(\mathbb Z_m = \{[0]_m, [1]_m, \dots, [m-1]_m\}\) e in particolare si ha che \(|\mathbb Z_m| = m\)
+}
+\bottomp{
+    L'insieme \(\{[0]_m, [1]_m, \dots, [m-1]_m\}\) è un insieme di classi di equivalenza di elementi di \(\mathbb Z\), quindi per definizione dev'essere sottoinsieme del suo insieme delle classi di resto.
+    Sia \(a \in \mathbb Z\). $$DE(a, m) = (q, r) \land a = qm + r \land 0 \leq r < |m|$$ 
+    Quindi $$qm = a - r\implies m|a-r\implies [a]_m = [r]_m$$
+    Quindi $$\mathbb Z_m \subseteq \{[0]_m, [1]_m, \dots, [m-1]_m\}$$
+    Quindi, dato che si contengono a vicenda, per estensionalità $$\mathbb Z_m = \{[0]_m, [1]_m, \dots, [m-1]_m\}$$
+
+    Vogliamo adesso dimostrare che le classi di resto in \(\mathbb Z_m\) sono a due a due distinte, e sono quindi \(m\) in numero.
+    Siano $$i, j \in \mathbb Z: 0 \leq i \leq j < m \land [i]_m = [j]_m$$ Allora $$0 \leq j - i < m \land (\exists k \in \mathbb Z)(j = i + km) \implies j - i = km \implies j - i = 0$$ in quanto esso è strettamente minore di m.
+}
+
+\subsection{ Relazione di Equivalenza Compatibile}
+\bottom{
+    Sia \(s \neq \emptyset\) e \(*\) un'operazione binaria interna ad esso, e \(\sim\) una relazione di equivalenza su esso. Allora:
+
+    $$\sim \text{ compatibile a sx in } (s, *) :\iff \forall a, b, c \in s\ (a \sim b \implies c*a \sim c*b)$$
+    $$\sim \text{ compatibile a dx in } (s, *) :\iff \forall a, b, c \in s\ (a \sim b \implies a*c \sim b*c)$$
+}
+
+\subsection{ Congruenza}
+\bottom{
+    Sia \(s \neq \emptyset\) e siano \(*_1, \dots, *_n\) operazioni binarie interne ad esso, e sia \(\sim\) una relazione di equivalenza.
+
+    $$\sim \text{ congruenza in } (s, *_1, \dots, *_n) :\iff$$ $$\forall a, b, c, d \in s$$
+    $$\forall i \in \mathbb N$$
+    $$0 \leq i \leq n \implies (a \sim b \land c \sim d \implies a *_i c \sim b *_i d)$$
+}
+
+\subsection{ Epimorfismo fra Strutture e Strutture Quoziente}
+\bottom{
+    Se \(\sim\) è una congruenza in \((s, *_1, \dots, *_n)\), allora sono ben poste le operazioni $$\forall i: 0 \leq i \leq n:$$
+    $$(*_i)_\sim: ([x]_\sim, [y]_\sim) \in s/\mathord\sim \times s/\mathord\sim \mapsto [x *_i y]_\sim \in s/\mathord\sim$$
+
+    E la proiezione canonica \(\pi: x \in s \mapsto [x]_s \in s/\mathord\sim\) è epimorfismo tra le strutture \((s, *_1, \dots, *_n)\) e \((s/\mathord\sim, (*_1)_\sim, \dots, (*_n)_\sim)\)
+}
+
+\subsection{ Congruenza equivale a Compatibilità}
+\bottom{
+    Una relazione di equivalenza su una struttura \((s, *_1, \dots, *_n)\) è una\\
+    congruenza $\iff$ è compatibile con ogni operazione della struttura.
+}
+\bottomp{
+    Posso supporre un'unica operazione in \((s, *)\).
+
+    \(\Rightarrow)\) Se ipotizziamo 
+    $$a, b \in s: a \sim b$$ 
+    $$c\in s: c \sim c$$
+    abbiamo $$(c*a \sim c*b) \land (a*c \sim b*c)$$
+    \(\Leftarrow)\) Supponiamo che \(a \sim b \land c \sim d\).\\
+    Per ipotesi di compatibilità a destra
+    $$a*c \sim b*c$$
+    per compatibilità a sinistra
+    $$b*c \sim b*d$$
+    abbiamo $$a*c \sim b*c \sim b*d$$
+    quindi $$a*c \sim b*d$$
+}
+
+\subsection{ Anello Quoziente di \(\mathbb Z\)}
+\bottom{
+    Sia \(\equiv_m\) una congruenza in \((\mathbb Z, +, \cdot)\). Allora essa è epimorfa all'anello quoziente (\(\mathbb Z_m, +_m, \cdot_m)\).
+}
+
+\subsection{ Asserti Equivalenti su Anelli Quoziente di \(\mathbb Z\)}
+\bottom{
+    Sia \(m \in \mathbb Z - \{0\}.\) Sono equivalenti le seguenti affermazioni:
+\begin{enumerate}
+    \item \((\mathbb Z_m, +_m, \cdot_m)\) è un campo.
+    \item \((\mathbb Z_m, +_m, \cdot_m)\) è un dominio di integrità.
+    \item \(m\) è primo.
+\end{enumerate}
+}
+
+\bottomp{
+    \(1 \rightarrow 2)\) Ovvio perché ogni campo è dominio di integrità.
+
+    \(2 \rightarrow 3)\) Siano \(a, b \in \mathbb Z: m = ab\). Allora $$[m]_m = [0]_m = [ab]_m = [a]_m \cdot [b]_m$$ Trovandoci in un dominio di integrità, vale la Legge di Annullamento del Prodotto e $$[a]_m \cdot [b]_m = [0]_m \iff [a]_m = [0]_m \lor [b]_m = [0]_m$$
+    Suppongo senza ledere la generalità che \([a]_m = [0]_m\), cioè $$a \equiv_m 0 \iff (\exists k \in \mathbb Z)(a = km)$$ Allora $$m = ab = kmb \implies kb = 1 \implies b = \pm 1 \land a = \pm m$$ Allora \(m\) è irriducibile in \(\mathbb Z\), ed è quindi anche primo.
+
+    \(3 \rightarrow 1)\) Sia \([a]_m \neq [0]_m\). Posso scegliere \(0 < a < |m|\). \(m\) è irriducibile, cioè i suoi divisori sono \(\{\pm 1, \pm m\}\) quindi \(MCD(a, m) = \{\pm 1\}\) e per il Teorema di Bézout $$\exists u, v \in \mathbb Z\ (1 = au + mv)$$
+    Allora si ha che $$[1]_m = [au + mv]_m = [au]_m + [0]_m = [au]_m = [a]_m \cdot [u]_m$$ quindi \([a]_m\) è invertibile.\\
+    Dato che ogni elemento è invertibile ci troviamo in un Campo.
+}
+
+\subsection{ Equazione Diofantea}
+\bottom{
+    Siano \(a, b, c \in \mathbb Z\). La funzione:
+
+    $$e[a, b, c]: (x, y) \in \mathbb Z \times \mathbb Z \mapsto ax + by - c \in \mathbb Z$$
+
+    si dice equazione diofantea di 1° grado, a due incognite, con termini a, b, e c.
+}
+
+\subsection{ Notazione Sintetica di Equazione Diofantea}
+\bottom{
+    Un'equazione diofantea della forma \(e[a,b,c](x,y)\) si può esprimere sinteticamente \(ax + by = c\)
+}
+
+\subsection{ Soluzione dell'Equazione Diofantea}
+\bottom{
+    Data un'equazione diofantea \(e[a, b, c](m, n)\), la coppia \((x, y)\) per cui $$e[a, b, c](x, y) = 0 \iff ax + by = c$$ si dice, se esiste, soluzione dell'equazione diofantea.
+}
+
+\subsection{ Asserti Equivalenti al Teorema di Bézout}
+\bottom{
+    Siano \(a, b \in \mathbb Z, d \in MCD(a, b)\). Allora sono equivalenti i seguenti:
+    \begin{enumerate}
+        \item Il Teorema di Bézout
+        \item \(a, b\) coprimi \(\iff (\exists u, v \in \mathbb Z)(1 = au + bv)\)
+        \item \(<a, b> = d\mathbb Z\)
+        \item L'equazione diofantea \(ax + by = c\) ha soluzioni \(\iff d|c\)
+    \end{enumerate}
+}
+\bottomp{
+    \(1 \rightarrow 2)\) \(\rightarrow)\) Per Bézout, se \(a, b\) sono coprimi, allora esistono $$u, v: 1 = au + bv$$
+    \(\leftarrow)\) Se \(\exists u,v: 1 = au + bv \implies d|1\), ma \(d \in MCD(a,b)\), quindi \(1 \in MCD(a, b)\) e dunque essi sono coprimi.
+
+    \(2 \rightarrow 3)\) \(a, b \in d\mathbb Z\) e \(d\mathbb Z\) sottogruppo, quindi \(<a,b> \subseteq d\mathbb Z\). Scrivo $$a = a_1d \land b = b_1d$$ Poiché \(d \in MCD(a, b)\), \(a_1, b_1\) sono coprimi. Allora, per (2), trovo $$u, v \in \mathbb Z: 1 = a_1u + b_1v \implies d = a_1du + b_1dv = au + bv \in <a, b>$$
+    Per asimmetria dunque \(d\mathbb Z = <a, b>\).
+
+    \(3 \rightarrow 4)\) \(\rightarrow)\) Ci sono $$m,n \in \mathbb Z: am + bn = c$$ $$d | a \land d|b \implies d|c$$
+    \(\leftarrow)\) Sia \(d|c\), allora \(c \in d\mathbb Z = <a, b>\) per (3). Ma allora $$\exists m,n \in \mathbb Z\ (am + bn = c)$$
+    \(4 \rightarrow 1)\) Se prendo \(d = c\), ha soluzioni \(ax + by = d\), cioè $$\exists m,n \in \mathbb Z\ (am + bn = d)$$ che è esattamente Bézout.
+}
+
+\subsection{ Caratterizzazione dell'Insieme delle Soluzioni di Equazioni Diofantee}
+\bottom{
+    Sia \(ax + by = c\) un'equazione diofantea con soluzione \((x_0, y_0)\). Allora se \(d \in MCD(a, b)\), l'insieme delle soluzioni dell'equazione è $$\{(x_0 + \frac b d k, y_0 - \frac a d k) \mid k \in \mathbb Z\}$$
+}
+\bottomp{
+    Chiamiamo l'insieme delle soluzioni \(s\), e l'insieme che vogliamo dimostrare equivalente \(m\), per comodità. Vogliamo dunque dimostrare che \(m = s\).
+
+    \(\subseteq)\)Sostituendo si vede che $$m \subseteq s:
+    a(x_0 + \frac b d k) + b(y_0 - \frac a d k) = ax_0 + by_0 + \cancel{\frac{ab}{d}k} - \cancel{\frac{ab}{d}k} = c$$
+
+    \(\supseteq)\) Sia \((x, y) \in s\). Cioè, \(ax + by = c = ax_0 + by_0\).
+    Allora $$a(x - x_0) = b(y_0 - y) \implies \frac a d (x-x_0) = \frac b d (y_0 - y)$$ dato che $d \in MCD(a, b)$
+
+    \(\frac a d, \frac b d\) sono coprimi, quindi per il lemma di Euclide:
+    $$\exists h, k \in \mathbb Z: \begin{cases}
+    h\frac a d = y_0 - y \\
+    k\frac b d = x - x_0
+    \end{cases}$$
+
+    E quindi, sostituendo:
+
+    $$
+    \frac a d (k \frac b d) = \frac b d (h \frac a d) \implies h = k \implies x = x_0 + k \frac b d \land y = y_0 - k \frac a d
+    $$
+    Da cui la tesi.
+}
+
+\subsection{ Equazione Congruenziale}
+\bottom{
+    \(m \in \mathbb Z - \{0\}, a, b \in \mathbb Z\). Allora la funzione:
+
+    $$ec[a, b, m]: [n]_m \in \mathbb Z_m \mapsto [an - b]_m \in \mathbb Z_m$$
+
+    Si dice equazione congruenziale di 1° grado, con una incognita, di termini a e b e modulo m.
+}
+
+\subsection{ Soluzione dell'Equazione Congruenziale}
+\bottom{
+    \(n \in \mathbb Z\) si dice soluzione di un'equazione congruenziale \(ec[a, b, m]\) se \(ec[a, b, m](n) = [0]_m\), ovvero se \(an \equiv_m b\).
+    Chiaramente, dalla definizione di classi di resto, si ottiene che ogni valore congruente ad \(n\), cioè appartenente a \([n]_m\), è a sua volta soluzione.
+}
+
+\subsection{ Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}
+\bottom{
+    Siano \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}, d \in MCD(a, m)\). Allora \(ax \equiv_m b\) ha soluzioni \(\iff d|b\).
+}
+\bottomp{
+    L'equazione congruenziale \(ax \equiv_m b\) può essere espressa come equazione diofantea \(ax + my = b\). Per la $4^a$ Tesi di "Teorema sugli Asserti Equivalenti al Teorema di Bézout", allora l'equazione diofantea ha soluzioni solo se \(d \in MCD(a, m)\) divide \(b\).
+}
+
+\subsection{ Primo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}
+\bottom{
+    Siano \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}, d \in MCD(a, m)\). Allora:
+
+    $$[a]_m \in U(\mathbb Z_m) \iff a,m \text{ coprimi}$$
+}
+\bottomp{
+    \(\rightarrow)\) Esiste \([u]_m\) tale che \([a]_m \cdot [u]_m = [1]_m\). Ma quindi l'equazione congruenziale \(ax \equiv_m 1\) ha soluzione \(u\), e questo implica (per il Teorema sull'Esistenza di Soluzioni) che \(d|1\). Ma \(1|d\) quindi i due sono associati e \(1\) è MCD, quindi \(a\) e \(m\) sono coprimi.
+
+    \(\leftarrow\) Se \(a,m\) sono coprimi, allora \(1\) è MCD e ovviamente \(1|1\) quindi per il Teorema sull'Esistenza delle Soluzioni, l'equazione congruenziale \(ax \equiv_m 1\) ha soluzioni e quindi esiste un \([a]_m\) è invertibile.
+}
+
+\subsection{ Secondo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}
+\bottom{
+    Siano \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}, d \in MCD(a, m)\). Allora:
+
+    $$[a]_m \in U(\mathbb Z_m) \iff [a]_m \text{ non è divisore dello zero}$$
+}
+\bottomp{
+    \(\rightarrow)\)Per assurdo, sia \([a]_m\) divisore dello zero. Allora $$\exists [b]_m \in \mathbb Z_m - \{[0]_m\}: [a]_m[b]_m = [0]_m$$ Ma invertibilità implica cancellabilità, e quindi si avrebbe \([b]_m = [0]_m\) il che è assurdo.
+
+    \(\leftarrow)\) Per assurdo, sia \([a]_m\) non invertibile. Allora per il 1° Corollario, \(a, m\) non sono coprimi. Allora prendo \(d \in \mathbb Z\) con \(d \neq 1\) tale che $$\exists k \in \mathbb Z\ (ad = km)$$ Quindi:
+    $$[a]_m[d]_m = [ad]_m = [km]_m = [0]_m
+    $$ che è assurdo.
+}
+
+\subsection{ Risoluzione di Eq. Congruenziali: Termini Congruenti}
+\bottom{
+    \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}\).
+
+    L'equazione congruenziale \(ax \equiv_m b\) ha lo stesso insieme di soluzioni dell'equazione congruenziale \(a'x \equiv_m b'\), per ogni  \(a' \in [a]_m, b' \in [b]_m\).
+}
+\bottomp{
+    Dato che \([a']_m = [a]_m \land [b']_m = [b]_m\) per ipotesi:
+    $$ax \equiv_m b \iff [a]_m[x]_m = [b]_m \iff a'x \equiv_m b'x$$
+}
+
+\subsection{ Equazione Congruenziale come Equazione Diofantea}
+\bottom{
+    Un'equazione congruenziale \(ax \equiv_m b\) si può esprimere nella forma:
+    $$ax + my = b$$
+    
+    Cioè come equazione diofantea.
+}
+\bottomp{
+    $$ax \equiv_m b \implies m|(ax - b) \implies \exists k \in z\ (mk = ax - b)$$
+    E quindi:
+    $$ax - mk = b$$
+    Ponendo \(y = -k\) abbiamo la tesi.
+}
+
+\subsection{ Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}
+\bottom{
+    \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}\).
+
+Osserviamo che, nel risolvere \(ax \equiv_m b\), allora \(\forall k \in \mathbb Z - \{0\}\) si ha che l'equazione \(akx \equiv_{mk} bk\) ha lo stesso insieme di equazioni.
+}
+\bottomp{
+    Questo deriva semplicemente dal fatto che:
+    $$ax + my = b \iff akx + mky = bk$$
+
+    E da questo segue che se abbiamo che $$\exists k \in \mathbb Z\ (a = a'k \land b = b'k \land m = m'k)$$ allora l'equazione \(a'x \equiv_{m'} b'\) ha lo stesso insieme di soluzioni di \(ax \equiv_m b\).
+}
+
+\subsection{ Risoluzione di Eq. Congruenziali: Coprimi del Modulo}
+\bottom{
+    \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}\).
+
+    Per ogni \(k\) coprimo ad \(m\), l'equazione \(akx \equiv_m bk\) ha lo stesso insieme di soluzioni di \(ax \equiv_m b\).
+}
+\bottomp{
+    Sia \(x\) soluzione dell'equazione congruenziale \(akx \equiv_m bk\).
+    Quindi $$[a]_m[k]_m[x]_m = [b]_m[k]_m$$
+    Dato che \(k\) è coprimo ad \(m\), \([k]_m\) è invertibile e dunque cancellabile.
+}
+
+\subsection{ Algoritmo per la Soluzione di Equazioni Congruenziali}
+\bottom{
+    Data \(ax \equiv_m b\), allora per risolverla seguiamo i seguenti step:
+    \begin{enumerate}
+        \item Ridurre \(a, b\) in modo tale che \(0 \leq a, b \leq m - 1\).
+        \item Prendere \(d \in MCD(a,m)\). Se \(d \nmid b\), non ho soluzioni. Se \(d|b\), continuo.
+        \item Scrivo \(a = a'd, b = b'd, m = m'd\). Passo all'equazione equivalente \(a'x \equiv_{m'} b'\).
+        \item Trovo l'inverso (in \((\mathbb Z_{m'}, \cdot)\)) di \([a']_{m'}\), tramite l'algoritmo delle divisioni successive esteso, e lo dico \([k]_{m'}\).
+        \item L'insieme delle soluzioni è \([b'k]_{m'}\), poiché è una classe di resto di modulo m/d con \(d \in MCD(a,m)\)
+    \end{enumerate}
+}
+
+\subsection{ Elemento Periodico di un Gruppo}
+\bottom{
+    Sia \((g, \cdot)\) un gruppo, \(x \in g\). \(x\) si dice periodico se:
+
+    $$\exists n \in \mathbb N - \{0\}\ (x^n = 1_g)$$
+}
+
+\subsection{ Periodo di un Elemento Periodico}
+\bottom{
+    Siano \((g, \cdot)\) un gruppo ed $ x \in g$ un suo elemento periodico. $$\text{Il minimo } n \in \mathbb N - \{0\}: x^n = 1_g$$ si dice periodo di \(x\) e si indica \(|x|\).
+}
+
+\subsection{ Relazione fra Periodo e Cardinalità del Sottogruppo Generato}
+\bottom{
+    Siano \((g, \cdot), x \in g\) un gruppo ed un suo elemento periodico. Allora:
+
+    \(|x| = n \iff |<x>| = n\)
+
+    Cioè il periodo di \(x\) è uguale alla cardinalità del sottogruppo generato da \(x\).
+}
+
+\subsection{ Teorema su Esponenti di Elementi Periodici e Congruenza}
+\bottom{
+    Siano \((g, \cdot), x \in g\) un gruppo ed un suo elemento periodico, tale che \(|x| = m \in \mathbb N - \{0\}\). Allora:
+    $$\forall a, b \in \mathbb Z\ (x^a = x^b \iff a \equiv_m b)$$
+}
+\bottomp{
+    Sia \(x^a = x^b\). Moltiplichiamo ambo i membri per l'inverso di \(x^b\) e abbiamo quindi che
+    $$x^a = x^b \iff x^a \cdot x^{-b} = x^b \cdot x^{-b} = x^{b-b} = 1_g \iff x^{a-b} = 1_g = x^0$$
+    
+    Prendiamo \(DE(a - b, m) = (q, r)\). Quindi $$1_g = x^{a-b} = x^{qm + r} = (x^m)^q \cdot x^r = (1_g)^q \cdot x^r = x^r$$
+    Dato che \(0 \leq r < m\), allora \(r = 0\) e quindi \(a \equiv_m b\).
+}

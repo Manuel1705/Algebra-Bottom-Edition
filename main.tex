@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
+\usepackage{cancel}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\newcommand{\bottom}[1]{\begin{tcolorbox}[enhanced,colback=white,colframe=black]
+    #1
+\end{tcolorbox}}
+
+\newcommand{\bottomp}[1]{\begin{tcolorbox}[enhanced,colback=white,colframe=black]
+    \begin{proof}
+        #1
+    \end{proof}
+\end{tcolorbox}}
+
+\title{Algebra}
+\author{Manuel Mignogna}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\include{Capitoli/Assiomi}
+\include{Capitoli/Operazioni_tra_Insiemi}
+\include{Capitoli/Strutture_Algebriche}
+\include{Capitoli/Relazioni_Binarie}
+\include{Capitoli/Teorema_Fondamentale_di_Omomorfismi_per_Insiemi}
+\include{Capitoli/Teorema_Fondamentale_dell'Aritmetica}
+\include{Capitoli/Insiemi_Ordinati}
+\include{Capitoli/Reticoli}
+\include{Capitoli/Principio_di_Induzione}
+\include{Capitoli/Calcolo_Combinatorio}
+\include{Capitoli/Strutture_Booleane}
+\include{Capitoli/Stringhe}
+\include{Capitoli/Divisibilità}
+\include{Capitoli/Polinomi}
+\include{Capitoli/Grafi}
+\end{document}

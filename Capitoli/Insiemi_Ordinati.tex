@@ -1,0 +1,268 @@
+\section{Insiemi Ordinati}
+\subsection{Insieme delle Relaioni d'Ordine}
+\bottom{
+    Dato $a$, allora definiamo gli insiemi:
+    \begin{align*}
+        &OL(a) = \{\rho \in P(P(P(a \times a))) \mid \rho \text{ riflessiva, asimmetrica, transitiva}\}\\
+        &OS(a) = \{\rho \in P(P(P(a \times a))) \mid \rho \text{ antiriflessiva, asimmetrica, transitiva}\}
+    \end{align*}
+}
+
+\subsection{Le relazioni appartengono a \texorpdfstring{$P(P(P(a \times a)))$}{PPPaa}}
+\bottomp{
+    Consideriamo la relazione
+    $$\rho = (a \times a, g) = \{\{a \times a\}, \{a\times a, g\}\}$$
+    \begin{align*}
+        &&&a \times a \subseteq a \times a \implies a \times a\ \in P(a \times a)\\
+        &&&g \subseteq a \times a \implies g \in P(a \times a)\\
+        &\text{Questo implica che}\\
+        &&&\{a \times a\} \in P(P(a \times a))\\
+        &&&\{a \times a, g\} \in P(P(a \times a))\\
+        &\text{E dunque}\\
+        &&&\{\{a \times a\}, \{a \times a, g\}\} \in P(P(P(a \times a)))
+    \end{align*}
+}
+
+\subsection{DA \texorpdfstring{\textit{OL}}{OL} a \texorpdfstring{\textit{OS}}{OS} e viceversa}
+\bottom{
+    \begin{align*}
+        &\text{Sia } \rho \in OL(a)\text{, definisco}\\
+        &&&\rho^\land :\Leftrightarrow (\forall x, y \in a)(x \rho^\land y \iff (x \rho y \land x \neq y))\\
+        &\text{Sia } \rho \in OS(a)\text{, definisco}\\
+        &&&\rho^\lor :\Leftrightarrow (\forall x, y \in a)(x \rho^\lor y \iff (x \rho y \lor x = y))
+    \end{align*}
+    Si dimostra che $$f: \rho \in OL(a) \mapsto \rho^\land \in OS(a)$$ è biettiva e la sua inversa è $$f^{-1}: OS(a) \mapsto \rho^\lor \in OL(a)$$
+    Pertanto, per ogni relazione d'ordine stretto esiste una corrispondente relazione d'ordine largo e viceversa.
+}
+
+\subsection{Insieme Ordinato}
+\bottom{
+    Sia $s\not=\emptyset$ e sia $\rho$ una relazione d'ordine su $s$. La coppia $(s,\rho)$ si dice insieme ordinato.
+}
+
+\subsection{Relazione d'ordine Indotto}
+\bottom{
+    Sia $(s,\rho)$ un insieme ordinato e sia $t\subseteq s$. Definiamo relazione d'ordine indotto da $(s,\rho)$ su $t$ la relazione d'ordine:
+$$\rho_t = (t \times t, g_\rho \cap (t \times t))$$
+}
+
+\subsection{Sottoinsieme Ordinato}
+\bottom{
+    Dato un'insieme ordinato \((s, \rho)\) e dato \(t \subseteq s\) e \(\rho_t\) la relazione d'ordine indotta da \((s, \rho)\) su \(t\), allora definiamo \((t, \rho_t)\) sottoinsieme ordinato di \((s, \rho)\).
+}
+
+\subsection{Elementi Confrontabili}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\), due elementi \(x, y \in s\) si dicono confrontabili $\iff$ 
+    $$x \rho y \lor y \rho x$$
+}
+
+\subsection{Relazione d'Ordine Totale}
+\bottom{
+    Data una relazione d'ordine \((s, \rho)\), se ogni elemento di \(s\) è confrontabile, allora \(\rho\) si dice relazione d'ordine totale e \((s, \rho)\) si dice insieme totalmente ordinato.
+}
+
+\subsection{Minimo e Massimo di un Insieme Ordinato}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) allora:
+
+    $$ m \in s \text{ massimo di } s :\iff \forall x \in s\ (x \rho m) $$
+    $$ m \in s \text{ minimo di } s :\iff \forall x \in s(m \rho x) $$
+}
+
+\subsection{Insieme Ben Ordinato}
+\bottom{
+    Un insieme ordinato \((s, \rho)\) si dice ben ordinato se ogni suo sottoinsieme non vuoto (incluso sé stesso) è dotato di minimo.
+}
+
+\subsection{Unicità di Minimi e Massimi di un Insieme Ordinato}
+\bottom{
+    Se esiste minimo e/o massimo in un insieme ordinato \((s, \rho)\) allora essi sono unici.
+}
+\bottomp{
+    Dimostriamo per il minimo, il caso del massimo è del tutto analogo. 
+    \begin{align*}
+        &&&Siano\ m_1, m_2 \in s\ minimi\ di\ s.\\
+        &\text{Per definizione di minimo:}\\
+        &&&\forall x \in s\ (m_1 \rho x)\ \land\ \forall x \in s\ (m_2 \rho x)\\
+        &\text{Per l'asimmetria di } \rho \text{ segue:}\\
+        &&& (m_1 \rho m_2\ \land\ m_2 \rho m_1) \implies m_1 = m_2
+    \end{align*}
+}
+
+\subsection{Notazione di Minimo e Massimo di un Insieme}
+\bottom{
+    Essendo minimo e massimo di un insieme $t$ unici li noteremo come $max(t)$ e $min(t)$.
+}
+
+\subsection{Buon Ordine implica Ordine Totale}
+\bottom{Se \((s, \rho)\) è un insieme ben ordinato, allora esso è anche totalmente ordinato.}
+\bottomp{
+    $$\forall x, y \in s$$
+    $$ \exists n \in \{x, y\}$$
+    $$ n = min(\{x, y\}) \implies n = x \lor n = y \implies x \rho y \lor y \rho x$$
+}
+
+\subsection{Relazione di Copertura}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) ed \(x, y \in s\) diremo che:
+
+    \(y \text{ COPRE } x :\iff x \rho y\ \land\ \nexists z \in s\ (z \neq x\ \land\ z \neq y\ \land\ x \rho z\ \land z \rho y)\)
+}
+
+\subsection{Predecessore/Successore Immediato}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) e \(x, y \in s\) tale che \(y\) copre \(x\), allora diremo che \(y\) è l'immediato successore \(x\) e che \(x\) è l'immediato predecessore di \(y\).
+}
+
+\subsection{Diagramma di Hasse}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) definiremo il suo diagramma di Hasse la coppia \((s \times s, g)\) tale che 
+    $$\forall x, y \in s\ \ (x, y) \in g \iff y \text{ COPRE } x$$
+}
+
+\subsection{Rappresentazione Grafica del Diagramma di Hasse}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) su cui definiamo un diagramma di Hasse, lo rappresenteremo graficamente assegnando ad ogni elemento di \(s\) un vertice, connettendo due vertici con un lato solo se uno copre l'altro, con il vertice che copre piazzato più in alto rispetto a quello coperto.
+}
+
+\subsection{Ordine Totale e Diagrammi di Hasse}
+\bottom{
+    Si osserva che se l'insieme è totalmente ordinato, il suo diagramma di Hasse è una linea.
+}
+
+\subsection{Funzione Crescente fra Insiemi Ordinati}
+\bottom{
+    Dati due insiemi ordinati \((s, \rho)\) e \((\Bar{s}, \Bar{\rho})\), diremo che la funzione \(f: s \to \Bar{s}\) è crescente \(:\iff\)
+    $$ \forall x, y \in s\ (x \rho y \implies f(x)\ \Bar{\rho}\ f(y))$$
+}
+
+\subsection{Isomorfismo di Insiemi Ordinati}
+\bottom{
+    Dati due insiemi ordinati \((s, \rho)\) e \((\Bar{s}, \Bar{\rho})\), diremo che la funzione \(f: s \to \Bar{s}\) è isomorfismo \(:\iff\)
+    $$ \forall x, y \in s\ (x \rho y \iff f(x)\ \Bar{\rho}\ f(y))$$
+}
+
+\subsection{Insiemi Ordinati Finiti sono Isomorfi solo se hanno lo stesso Diagramma di Hasse }
+\bottom{
+    Siano \((s, \rho)\) e \((\Bar s, \Bar \rho)\) due insiemi ordinati finiti e sia \(f: s \to \Bar s\) un isomorfismo \(\iff\) hanno lo stesso Diagramma di Hasse
+}
+
+\subsection{Minimali e Massimali di un Insieme Ordinato}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) e un suo sottoinsieme ordinato \(t \subseteq s\), diremo che:
+
+    \(m \in s \text{ massimale di } t :\iff\)
+    $$ \forall x \in t\ (x \rho m \lor m \rho x \implies x \rho m)$$
+    \(m \in s \text{ minimale di } t :\iff\)
+    $$ \forall x \in t\ (x \rho m \lor m \rho x\implies m \rho x)$$
+
+    Cioè un elemento è massimale (o minimale) solo se è più grande (o più piccolo) di ogni elemento con cui è confrontabile.
+}
+\subsection{Maggioranti e Minoranti di un Insieme Ordinato}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) e un suo sottoinsieme ordinato \(t \subseteq s\), diremo che:
+
+    \(m \in s \text{ maggiorante di } t :\iff\)
+    $$\forall x \in t\ (x \rho m)$$
+    \(m \in s \text{ minorante di } t :\iff\)
+    $$ \forall x \in t\ (m \rho x)$$
+
+    Cioè un elemento di \(s\) è maggiorante (o minorante) solo se è più grande (o più piccolo) di ogni elemento di \(t\).
+}
+
+\subsection{Relazione fra Massimali/Maggioranti/Massimi e Minimali/Minoranti/Minimi}
+\bottom{
+    \begin{align*}
+    &\text{massimo} \implies \text{maggiorante} \implies \text{massimale} \\
+    &\text{minimo} \implies \text{minorante} \implies \text{minimale}
+    \end{align*}
+}
+
+\subsection{Notazione di Insieme dei Maggioranti e di Insieme dei Minoranti}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) e un suo sottoinsieme ordinato \(t \subseteq s\). Allora noteremo:
+    \begin{align*}
+        &MAGGIOR_{(s, \rho)}(t) := \text{ insieme dei maggioranti di } t \text{ in } s\\
+        &MINOR_{(s, \rho)}(t) := \text{ insieme dei minoranti di } t \text{ in } s
+    \end{align*}
+}
+
+\subsection{Insieme Limitato}
+\bottom{
+    Sia \((s, \rho)\) un insieme ordinato e \(t \subseteq s\). Allora:
+    \begin{align*}
+        &t \text{ è limitato inferiormente } :\iff MINOR_{(s, \rho)}(t) \neq \emptyset\\
+        &t \text{ è limitato superiormente } :\iff MAGGIOR_{(s, \rho)}(t) \neq \emptyset
+    \end{align*}
+
+    Cioè se è dotato di minorante e/o maggiorante.
+}
+
+\subsection{Insieme Naturalmente Ordinato}
+\bottom{
+    \((s, \rho)\) insieme ordinato è naturalmente ordinato \(:\iff\) è ben ordinato e ogni sua parte non vuota superiormente limitata ha massimo.
+}
+
+\subsection{Il buon ordine implica l'ordine largo}
+\bottomp{
+    Sia \((s, \rho)\) un insieme ben ordinato. Allora:
+
+    $$\forall x \in s\ (\{x\} \text{ ha minimo } \implies x \rho x)$$
+}
+
+\subsection{Assioma dei Numeri Naturali}
+\bottom{
+    Esiste un insieme naturalmente ordinato non limitato superiormente e questo insieme è \(\mathbb{N}\). Questo assioma è equivalente all'Assioma dell'Infinito.
+}
+
+\subsection{Principio di Dualità per Insiemi Ordinati}
+\bottom{
+    Dato \((s, \rho)\) e la duale \(\overline\rho\), allora si osserva che:
+    \(max(s, \rho) = min(s, \overline\rho)\)
+    Cioè, ogni massimo è minimo per la duale, e ogni minimo è massimo per la duale.
+    Quindi, se dimostriamo un teorema per il massimo, allora esso varrà anche per il minimo (cioè il massimo della duale), e viceversa.
+}
+
+\subsection{Il Minimo (Massimo) è l'unico Minimale (Massimale)}
+\bottom{
+    Dato un insieme ordinato \((s, \rho)\) con \(m = min(s, \rho)\), allora esso è l'unico minimale interno ad \((s, \rho)\) (per dualità, lo stesso vale per il massimo).}
+    \bottomp{Sia \(n \in s\) minimale di \((s, \rho)\). Per definizione di minimo, si ha che \(m \rho n\). Ma questo vuol dire che \(m, n\) sono confrontabili, quindi per definizione di minimale \(n \rho m\). Per asimmetria, allora i due coincidono.
+}
+
+\subsection{Ogni Insieme Ordinato Finito Non Vuoto di Ordine Largo ha Minimali e Massimali}
+\bottom{
+    $$(s, \rho) \land \rho \in OL(s) \implies (s, \rho) \text{ ha minimali} \in s$$
+    Per dualità, allora ha anche massimali.}
+\bottomp{
+    Sia \(x \in s\). Per assurdo, ipotizziamo che \((s, \rho)\) non abbia minimali, e dunque \(x\) non è un minimale. Se \(s = \{x\}\), allora \(x\) sarebbe minimale, il che è assurdo. Quindi \(s \neq \{x\}\). Ipotizziamo che \(s\) sia di due elementi. Allora \(\exists y \in s\ (x \neq y)\). Ma \(y\), per ipotesi di assurdo, non è minimale. Quindi si deve avere che \(x \rho y\), ma ciò implicherebbe che \(x\) è minimale. Pertanto, deve \(\exists z \in s\ (z \neq x \land z \neq y)\). Ma per ipotesi di assurdo, \(z\) non è minimale, quindi si deve avere che \(x\rho z \lor y \rho z\), ma questo implicherebbe che uno di loro è minimale. Allora deve esistere un elemento \(w\)... ma chiaramente questo continua all'infinito, e \(s\) è un insieme finito. Pertanto, c'è l'assurdo e deve esistere un minimale.
+}
+
+\subsection{In Insiemi Finiti l'unico Minimale (Massimale) è Minimo (Massimo)}
+\bottom{
+    Questo non vale per gli insiemi infiniti.
+}
+
+\subsection{Relazione d'Ordine Indotta da una Funzione}
+\bottom{
+    Sia \(f: a \to b\) e sia \(\rho \in OL(b)\). Allora definiamo la relazione \(\rho_f\) tale che:
+
+    $$\forall x, y \in a\ (x \rho_f y \iff f(x) \rho f(y))$$
+
+    la relazione d'ordine indotta da \(f\) su \(a\).
+}
+
+\subsection{Estremo Superiore ed Estremo Inferiore}
+\bottom{
+    Sia \((s, \rho)\) un insieme ordinato e \(t \subseteq s\). Definiamo l'estremo inferiore e l'estremo superiore rispettivamente:
+
+    $$SUP_{(s, \rho)}(t) = min(MAGGIOR_{(s, \rho)}(t)) \text{ (se esiste)}$$
+    $$INF_{(s, \rho)}(t) = max(MINOR_{(s, \rho)}(t)) \text{ (se esiste)}$$
+}
+
+
+
+
+
+
+

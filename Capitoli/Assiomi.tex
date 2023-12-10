@@ -1,0 +1,124 @@
+\section{Assiomi}
+\subsection{Assioma del Vuoto}
+\bottom{
+    Esiste un insieme, detto l'insieme vuoto $\emptyset$,
+    che non contiene nulla.
+    $$\exists\emptyset\ (\forall x\ (x\not\in\emptyset))$$
+}
+
+\subsection{Assioma di Estensionalità}
+\bottom{
+    Due insiemi coincidono se e solo se
+    ogni elemento del primo insieme appartiene al secondo e viceversa.
+    $$\forall x,y\ ( x=y \iff \forall z\ (z\in x \iff z\in y))$$
+}
+
+\subsection{Assioma di Separazione}
+\bottom{
+    Esiste sempre l'insieme degli elementi di un insieme $s$ che verificano un predicato $\rho$.
+    $$\{x\ |\ x\in s \land \rho(x)\}$$
+}
+
+\subsection{Assioma di Esistenza dell'insieme delle Parti}
+\bottom{
+    Per ogni insieme $s$ esiste l'insieme delle parti $\mathcal P(s)$, ovvero l'insieme di tutti i sottoinsiemi di $s$.
+    $$\forall s \ \exists\mathcal P(s)\ (\forall x\ (x\in \mathcal P(s) \iff x\subseteq s))$$
+}
+
+\subsection{Assioma della Coppia}
+\bottom{
+    Per ogni coppia si insiemi $x,y$ esiste l'insieme coppia $\{x,y\}$.
+    $$\forall x,y\ \exists c\ (\forall z\ (z\in c \iff (z=x \lor z=y)))$$
+}
+
+\subsection{Assioma di Unione}
+\bottom{
+    Per ogni insieme di insiemi $a$ esiste l’insieme
+    unione unaria di $a$, cioè l’insieme unione di tutti gli insiemi che sono elementi
+    di $a$.
+    $$\forall a\ \exists u\ (\forall x\ (\exists y\ (x\in u \iff (z\in y \land y \in a))))$$
+}
+
+\subsection{Assioma della Scelta}
+\bottom{
+   Data una famiglia non vuota di insiemi non
+    vuoti esiste una funzione che ad ogni insieme della famiglia fa corrispondere un
+    suo elemento.
+}
+
+\subsection{Assioma dell'infinito}
+\bottom{
+    Esiste un insieme infinito, e tale insieme è $\mathbb N$.
+}
+
+\section{Teoremi derivanti dagli assiomi}
+\subsection{Unicità dell'insieme vuoto}
+\bottomp{
+    Siano $a$ e $b$ due insiemi vuoti. Dalla definizione di insieme vuoto segue che, per ogni elemento generico $x$:
+    $$\forall x\ (x\not\in a \land x\not\in b)$$
+    Le implicazioni
+    $$x\in a \implies x\in b$$
+    $$x\in b \implies x\in a$$
+    sono entrambe vere perchè l'antecedente è sempre falso.\\
+    Pertanto per l'assioma di estensionalità
+    $$(x\in a \iff x\in b) \implies a=b$$
+    Quindi esiste un unico insieme vuoto.
+}
+
+\subsection{Ogni insieme contiene l'insieme vuoto}
+\bottomp{
+    La formula
+    $$\forall z\ (z\in \emptyset \implies z\in \emptyset)$$ 
+    è una tautologia perchè $z\in \emptyset$ è sempre falso e dunque l'implicazione è vera. Pertanto $\emptyset \subseteq \emptyset$.
+    Similarmente, la formula
+    $$\forall x\ \forall z\ (z\in\emptyset \implies z\in x)$$
+    è una tautologia, pertanto $\forall x\ (\emptyset\subseteq x)$
+}
+
+\subsection{Unicità dell'insieme delle parti}
+\bottomp{
+    Sia $x$ un insieme e siano $u$ e $w$ insiemi delle sue parti. Dall’assioma
+    di esistenza dell’insieme delle parti abbiamo che 
+    $$\forall z\ (z\in u \iff z\subseteq x)$$
+    $$\forall z\ (z\in w \iff z\subseteq x)$$
+    Da questo segue che 
+    $$\forall z\ (z \in u \iff z \subseteq x \iff z \in w)$$
+    e quindi
+    $$\forall z\ (z \in u  \iff z \in w)$$
+    Dall’assioma di estensionalità si ha dunque
+    che $u = w$.
+}
+
+\subsection{Paradosso di Russel}
+\bottom{
+    Non esiste l’insieme degli insiemi che
+    non appartengono a se stessi.
+}
+\bottomp{
+    Ipotizziamo per assurdo che tale insieme esita
+    $$r :=\{ x\ |\ x\not\in x\}$$
+    Esistono solo due possibilità: $r\in r$ oppure $r\not\in r$.
+    Se $r\in r$, allora per definizione non appartiene a sé stesso
+    $$r\in r \implies r\not\in r$$
+    il che è chiaramente assurdo.
+    Se $r\not\in r$, allora è un insieme che non appartiene a se stesso, e deve per definizione appartenere a se stesso
+    $$r\not\in r \implies r \in r$$
+    il che è chiaramente assurdo.
+}
+
+\subsection{L'insieme di tutti gli insiemi non esiste}
+\bottomp{
+    Sia \(f(x) = \neg (x \in x)\) ed assumiamo per assurdo che esista $I$ l'insieme di tutti gli insiemi. Allora, definiamo \(r = \{x \in I \mid f(x)\}\), che dovrebbe esistere per l'assioma di separazione ma che non può esistere per il paradosso di Russell. Si ha quindi l'assurdo.
+}
+
+\subsection{Parti del Vuoto}
+\bottom{$\emptyset$ è un insieme, quindi dall’assioma di esistenza dell’insieme delle parti segue che deve esistere $P(\emptyset)$. A cosa è uguale?
+$$\mathcal P(\emptyset)=\{x\subseteq\emptyset \iff \forall z\ (z\in x \implies z\in \emptyset) \}$$
+C’è un solo insieme tale che ogni suo elemento z appartiene anche all’insieme
+vuoto... l’insieme vuoto stesso!
+
+Pertanto $\mathcal P(\emptyset)=\{\emptyset\}$ cioé il singleton dell'insieme vuoto. Proviamo adesso a chiederci, chi è $\mathcal P(\mathcal P(\emptyset))$, cioè $\mathcal P(\{\emptyset\})$.
+
+Un insieme è sottoinsieme di $\{\emptyset\}$ soltanto se è l’insieme vuoto (abbiamo dimostrato tramite un teorema che l'insieme vuoto è sottoinsieme di ogni insieme) oppure se è $\{\emptyset\}$ stesso (dato che
+ogni insieme è proprio sottoinsieme). Da questo segue che:
+$$\mathcal P(\mathcal P(\emptyset)) = \mathcal P(\{\emptyset\})= \{\emptyset,\{\emptyset\}\}$$}

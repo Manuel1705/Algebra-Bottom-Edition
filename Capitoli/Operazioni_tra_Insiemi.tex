@@ -1,0 +1,438 @@
+\section{Operazioni tra Insiemi}
+\subsection{Leggi di De Morgan}
+\bottom{
+    $\forall a, b, c$
+    $$c - (a \cup b) = (c - a) \cap (c - b)$$
+    $$c - (a \cap b) = (c - a) \cup (c - b)$$
+}
+\bottomp{
+    \begin{align*}
+        c - (a \cup b) &= \{z \in c \mid \neg(z \in (a \cup b))\} \text{ (def. di diff. di insiemi)} \\
+        &= \{z \in c \mid \neg (z \in a \lor z \in b)\} \text{ (def. di unione)} \\
+        &= \{z \in c \mid \neg(z \in a) \land \neg(z \in b)\} \text{ (De Morgan)} \\
+        &= \{z \mid (z \in c) \land (\neg(z \in a) \land \neg(z \in b))\} \text{ (ass. di separazione)} \\
+        &= \{z \mid ((z \in c) \land \neg(z \in a)) \land ((z \in c) \land \neg(z \in b))\}\\ &\text{ (distrib. di and su and)} \\
+        &= \{z \mid (z \in (c - a)) \land (z \in (c - b)\} \text{ (def. di diff. di insiemi)} \\
+        &= (c - a) \cap (c - b) \text{ (def. di intersezione)}
+        \end{align*}
+}
+
+\subsection{Unione di Insiemi}
+\bottom{
+    Dati due insiemi $A$ e $B$, definiamo:
+
+    $$A \cup B = \bigcup\{A, B\}$$
+    
+    Questo insieme esistente sicuramente grazie agli assiomi d'unione e della coppia.
+}
+
+\subsection{Intersezione di Insiemi}
+\bottom{
+    Dati due insiemi $A$ e $B$, definiamo:
+
+    $$A \cap B = \{x \mid x \in A \land x \in B\}$$
+
+    Che è un insieme sicuramente esistente per l'assioma di separazione.
+}
+
+\subsection{Insiemi Disgiunti}
+\bottom{
+    Due insiemi \(a\) e \(b\) si dicono disgiunti se e solo se \(a \cap b = \emptyset\)
+}
+
+\subsection{Differenza di Insiemi}
+\bottom{
+    Dati due insiemi $A$ e $B$, definiamo la differenza di insiemi come:
+
+    $$B - A = \{ Z \in B \mid Z \notin A\}$$
+
+    Che è sicuramente un insieme grazie all'assioma di separazione.
+}
+
+\subsection{Differenza Simmetrica di Insiemi}
+\bottom{
+    Definiamo la differenza simmetrica di $a$ e $b$ come:
+
+    $$a \triangle b = \{x \in a \cup b \mid x \in a \oplus x \in b\}$$
+    
+    Che è un insieme sicuramente esistente per l'assioma di separazione.
+}
+
+\subsection{Coppia Ordinata}
+\bottom{
+    Dati $x$, $y$ due insiemi. Allora definiamo la coppia ordinata $(x, y)$ come:
+
+    $$(x, y) := \{\{x\}, \{x, y\}\}$$
+}
+
+\subsection{Caratterizzazione di Coppie Ordinate}
+\bottom{
+    $$x = y \iff (x, y) = (y, x)$$
+}
+\bottomp{
+    Dimostriamo $$x = y \implies (x, y) = (y, x)$$ Si ha che:
+
+    $$x = y \implies (\{x\} = \{y\}) \land (\{x, y\} = \{y, x\} = \{x, x\} = \{x\})$$
+    E dunque:
+
+    $$(x, y) = \{\{x\}, \{x, y\}\} = \{\{x\}, \{x\}\} = \{\{x\}\}$$ 
+    $$(y, x) = \{\{y\}, \{y, x\}\} = \{\{x\}, \{x\}\} = \{\{x\}\}$$
+    Dunque $(x, y) = (y, x)$\\
+    Dimostriamo $$(x, y) = (y, x) \implies x = y$$
+
+    Allora $$\{\{x\}, \{x, y\}\} = \{\{y\}, \{y, x\}\}$$ e dunque \(\{x\}\) è membro sia del primo insieme che del secondo per estensionalità e allora $$\{x\} = \{y\} \lor \{x\} = \{x, y\}$$ In entrambi i casi, ciò implica la tesi.
+}
+
+\subsection{Ennupla Ordinata}
+\bottom{
+    Iniziamo col definire la terna ordinata come:
+
+    $$(x, y, z) = ((x, y), z)$$
+
+    Dunque, dati n+1 elementi \(i_1, i_2, i_3, ..., i_n, i_{n+1}\) allora definiamo la ennupla ordinata di n+1 elementi come:
+
+    $$(i_1, i_2, i_3, ..., i_n, i_{n+1}) = ((i_1, i_2, i_3, ..., i_n), i_{n+1})$$
+}
+\subsection{Prodotto Cartesiano}
+\bottom{
+    $$a\times b := \{z\in \mathcal P(\mathcal P(a \cup b))\ |\ \exists x,y\ (x\in a \land y\in b \land z=(x,y))\}$$
+}
+\subsection{Corrispondenza fra Insiemi}
+\bottom{
+    Dati due insiemi $a$ e $b$ e \(g \subseteq a \times b\), la coppia ordinata \((a \times b, g)\) si definisce corrispondenza fra $a$ e $b$ di grafico $g$.
+}
+\bottom{
+    Data una corrispondenza fra due insiemi $a$ e $b$ \(\rho = (a \times b, g)\). Dati \(x \in a\) e \(y \in b\) scriveremo:
+
+    $$x \rho y \iff (x, y) \in g$$
+
+    e diremo che $x$ ed $y$ sono in corrispondenza o relazione fra loro.
+}
+\bottom{
+    \(\rho = (a \times b, g)\)
+    $$\forall x \in a$$
+    $$\forall y \in b$$
+    $$(x, y) \in g \iff \varphi(x, y)$$
+
+    Cioè stiamo definendo g in base ad una proprietà definita dalla formula binaria \(\varphi(x_1, x_2)\).
+}
+
+
+\subsection{Definizione di Relazione Binaria}
+\bottom{
+    Dato un insieme $a$, una corrispondenza fra $a$ ed $a$ stesso si definisce relazione binaria.
+}
+
+\subsection{Insieme delle Corrispondenze}
+\bottom{
+    Dati due insiemi $a$ e $b$, notiamo con \(CORR(a, b)\) l'insieme delle corrispondenze definibili fra $a$ e $b$.
+}
+
+\subsection{Insieme delle Relazioni}
+\bottom{
+    Dato un insieme $a$, notiamo con \(REL(a)\) l'insieme delle relazioni binarie definibili su $a$. Si nota chiaramente che \(REL(a) = CORR(a, a)\).
+}
+
+\subsection{Definizione di Applicazione/Funzione}
+\bottom{
+    Sia $f$ una corrispondenza fra due insiemi $a$ e $b$. La definiremo:
+
+    $$f = (a \times b, g) \text{ applicazione} :\iff \forall x \in a\ \exists! y \in b\ (x f y)$$
+
+    Che equivale a dire:
+
+    $$f = (a \times b, g) \text{ applicazione} :\iff \forall x \in a\ \exists! y \in b\ ((x, y) \in g)$$
+    Descrizione esplicita di una funzione
+    $$f: x \in a \mapsto f(x) \in b$$
+
+    Esempio: \(f: x \in \mathbb{N} \mapsto (n+1) \in \mathbb{N}\)
+}
+
+\subsection{Dominio e Codominio di un'Applicazione}
+\bottom{
+    Data un'applicazione \(f = (a \times b, g)\), chiameremo $a$ il dominio di $f$ e $b$ il codominio di $f$.
+}
+
+\subsection{Immagine di un'Applicazione}
+\bottom{
+    Data una funzione \(f = (a \times b, g)\), definiremo l'insieme immagine di $f$ 
+    $$Im(f) = \{ y \in b \mid \exists x \in a\ (f(x) = y)\}$$
+}
+\bottom{
+    Definizione Alternativa Semplificata della Notazione di $Im(f)$
+$$Im(f) = \{ f(x) \mid x \in a\}$$
+
+Chiaramente questa non è, da sola una formula ben formata, ed è per questo che utilizziamo la definizione originale di $Im(f)$.
+
+}
+
+\subsection{Funzione Ben Posta}
+\bottom{
+    Definiremo come ben posta ogni corrispondenza che sia un'applicazione. Ovviamente, ciò è equivalente a dire che la funzione è, difatti, una funzione. E' un modo colloquiale per assicurare che una data corrispondenza che chiamiamo funzione è una funzione per davvero, dato che non è sempre ovvio se una corrispondenza sia una funzione o meno.
+}
+
+\subsection{Definizione di Prodotto Relazionale (o tra Corrispondenze)}
+\bottom{
+    Siano $a$, $b$, $c$, $d$ insiemi  e siano \(\rho = (a \times b, g_1)\) e \(\sigma = (c \times d, g_2)\) due corrispondenze.
+    Definiamo quindi il prodotto relazionale come la corrispondenza \(\rho\sigma = (a \times d, g_3)\) tale che:
+
+    $$\forall x \in a$$
+    $$\forall y \in d$$
+    $$(x, y) \in g_3 \iff \exists z\ ((x, z) \in g_1 \land (z, y) \in g_2)$$
+}
+
+\subsection{Associatività del Prodotto Relazionale}
+\bottom{
+    Date tre corrispondenze $\sigma,\rho,\varphi$, volgiamo dimostrare che:
+    $$\sigma(\rho\varphi)=(\sigma\rho)\varphi$$
+}
+\bottomp{
+    $$(x,y)\in g_{\sigma(\rho\varphi)} \implies \exists z:\ (x,z)\in g_\sigma \land (z,y)\in g_{\rho\varphi}$$
+    $$\implies \exists w:\ (z,w)\in g_\rho \land (w,y)\in g_{\varphi}$$
+    $$\implies (x,w)\in g_{\sigma\rho} \land (w,y)\in g_{\varphi}$$
+    $$\implies (x,y)\in g_{(\sigma\rho)\varphi}$$
+    La dimostrazione inversa è analoga.
+}
+
+\subsection{Composizione di Applicazioni}
+\bottom{
+    Date due funzioni $$f: a \to b$$ $$g: b \to c$$ definiamo la funzione $$g \circ f = fg$$ (cioè prodotto relazionale di $f$ e $g$), e la chiamiamo "$g$ composta $f$" o "composta di $g$ e $f$".\\
+    Forma esplicita della composizione di funzioni
+    $$g \circ f: x \in a \to g(f(x)) \in c$$
+}
+
+\subsection{Funzione Immersione}
+\bottom{
+    Siano due insiemi \(a, b: a \subseteq b\). Allora la funzione $$f: x \in a \to x \in b$$ si dice immersione di $a$ in $b$.
+}
+
+\subsection{Funzione Identità}
+\bottom{
+    La funzione $$Id_a : x \in a \to x \in a$$ si dice identità di a.
+}
+
+\subsection{Restrizione di una Funzione}
+\bottom{
+    Data una funzione \(f: a \to b\), definito \(s \subseteq a\), allora definiamo la restrizione di $f$ in $s$ la funzione:
+
+    $$f_{\mid s}: x \in s \mapsto f(x) \in b$$
+}
+
+\subsection{Prolungamento di una Funzione}
+\bottom{
+    Data una funzione \(f: a \to c\), una funzione \(g: b \to c\) si dice prolungamento di f se \(\exists s \subseteq b: g_{\mid s} = f\), cioè se esiste un sottoinsieme di $b$ uguale ad $a$.
+}
+
+\subsection{Funzione Ridotta / Riduzione di una Funzione}
+\bottom{
+    Dati $f: a \to b$, $s \subseteq b: Im_f \subseteq s$, la funzione $$g: x \in a \mapsto f(x) \in s$$  si chiama ridotta di $f$ ad $s$.
+}
+
+\subsection{Applicazione Costante}
+\bottom{
+    Dati due insiemi \(a, b\) e \(\overline{y} \in b\). La funzione $$f: x \in a \to \overline{y} \in b$$ si dice funzione costante di valore \(\overline{y}\)
+}
+
+\subsection{Funzione Immagine}
+\bottom{
+    $$\overrightarrow{f}:\ \overline{a}\in\mathcal P(a) \to  \{ f(z)\ | \ z\in \overline{a}\}\in \mathcal P(b)$$
+}
+\subsection{Funzione Antimmagine}
+\bottom{
+    $$\overleftarrow{f}:\ \overline{b}\in\mathcal P(b) \to  \{ z\in a\ | \ f(z)\in \overline{b}\}\in \mathcal P(a)$$
+}
+
+\subsection{Immagine di un Insieme}
+\bottom{
+    Dato un insieme $a$ e una funzione $f: a \to b$, definiamo l'immagine di $a$ come:
+    $$Im(a)=\{f(x)\ |\ x\in a\}$$
+}
+
+\subsection{Antimmagine di un Insieme}
+\bottom{
+    Data una funzione \(f: a \to b\) ed un insieme \(s \subseteq b\), definiamo l'antimmagine (o controimmagine, preimmagine, immagine inversa) dell'insieme $s$ per la funzione $f$ come l'insieme:
+
+    $$\overleftarrow{f}(s)=\{z \in a \mid f(z) \in s\}$$
+
+}
+\subsection{Immagine del Dominio ed Antimmagine del Codominio}
+\bottom{
+    Per ogni funzione \(f: a \to b\) si osserva che:
+
+    $$\overrightarrow{f}(a) = Im(f)$$
+    $$\overleftarrow{f}(b) = a$$
+}
+\subsection{Immagine ed Antimmagine dell'Insieme Vuoto}
+\bottom{
+    Per ogni \(f: a \to b\), si ha:
+
+    $$\overrightarrow{f}(\emptyset) = \overleftarrow{f}(\emptyset) = \emptyset$$
+}
+
+\subsection{Funzione Suriettiva}
+\bottom{
+    Una funzione $f: a \to b$ si dice \textit{suriettiva} se e soltanto se:
+    $$Im(f)=b$$
+    oppure in modo più esplicito
+    $$\forall y\in b\ (\exists x\in a\ (f(x)=y))$$
+    Negazione della suriettiva
+    $$\exists y \in b\ (\forall x \in a\ (f(x) \neq y))$$
+}
+
+\subsection{Funzione Iniettiva}
+\bottom{
+    Una funzione $f: a \to b$ si dice \textit{iniettiva} se e soltanto se:
+    $$\forall x,y\in a\ (f(x)=f(y) \iff x=y)$$
+    oppure analogamente
+    $$\forall x,y\in a\ (x\not=y \implies f(x)\not=f(y))$$
+    Negazione dell'iniettiva
+    $$\exists x, y \in a\ (f(x) = f(y) \land x \neq y)$$
+}
+
+\subsection{Funzione Biettiva}
+\bottom{
+    Una funzione $f: a \to b$ si dice \textit{biettiva} se e soltanto se:
+    $$\forall y\in b\ (\exists! x\in a\ (f(x)=y))$$
+    ovvero se è iniettiva e suriettiva\\
+    Negazione della biettività
+    $$(\exists y \in b)(\forall x \in a)(f(x) \neq y) \lor (\exists x, y \in a)(f(x) = f(y) \land x \neq y)$$
+}
+
+\subsection{Definizione di Iniettivà tramite Antimmagine}
+\bottom{
+    Una funzione è iniettiva se e soltanto se per ogni singleton sottoinsieme del suo codominio, la sua antimmagine è vuota o ha un solo elemento.
+    $$\forall y \in \mathcal P_1(b)$$
+    $$ \overleftarrow{f}(y)=\emptyset \lor \exists!x\in a\ (\overleftarrow{f}(y)=\{x\})$$
+}
+\bottomp{
+    DIM \(\Rightarrow\):
+    Sia \(y \in \mathcal{P}_1(b)\) e supponiamo che \(\overleftarrow{f}(y) \neq \emptyset\). Allora, dalla definizione di antimmagine \(\exists x(f(x) \in y)\). Ma, essendo f iniettiva, si ha che $$\forall z \in a\ (f(z) = y \iff z = x)$$ e dunque \(\overleftarrow{f}(y) = \{x\}\)
+
+    DIM \(\Leftarrow\):
+    Siano \(x, y \in a\) tali che \(f(x) = f(y)\). Allora $$\overleftarrow{f}(\{f(x)\}) = \overleftarrow{f}(\{f(y)\}) = \{x\} = \{y\} \implies x = y$$ e dunque la funzione è iniettiva. 
+}
+
+\subsection{Definizione di Suriettività tramite Antimmagine}
+\bottom{
+    Una funzione è suriettiva se e soltanto se per ogni singleton sottoinsieme del suo codominio,
+    la sua antimmagine è non vuota
+    $$\forall y \in \mathcal P_1(b)\smallsetminus\{\emptyset\}\ \overleftarrow{f}(y)\not=\emptyset$$
+}
+\bottomp{
+    DIM \(\Rightarrow\):
+$$\text{f suriettiva } \implies (\forall y \in b)(\exists x \in a)(f(x) = y) \implies$$
+$$\implies (\forall \{y\} \in \mathcal{P}_1(b))(\exists x)(x \in \overleftarrow{f}(\{y\})$$
+
+DIM \(\Leftarrow\):
+$$(\forall y \in \mathcal{P}_1(b) - \{\emptyset\})(\overleftarrow{f}(y) \neq \emptyset)\implies$$ $$\implies (\forall y \in b)(\exists x \in \overleftarrow f(y))(f(x)= y) \implies \text{f suriettiva}$$
+}
+
+\subsection{Definizione di Biettività tramite Antimmagine}
+\bottom{
+    Una funzione è biettiva se e soltanto se per ogni singleton sottoinsieme del suo codominio,
+    la sua antimmagine è un singleton
+    $$\forall y \in \mathcal P_1(b)\ \overleftarrow{f}(y)=\{x\}$$
+}
+
+\subsection{Sezione di una funzione}
+\bottom{
+    Date due funzioni $f: a \to b$ e $g: b\to  a$, se
+    $$f\circ g = id_b$$
+    $g$ si dice sezione di $f$
+}
+
+\subsection{Retazione di una funzione}
+\bottom{
+    Date due funzioni $f: a \to b$ e $g: b\to  a$, se
+    $$g\circ f = id_a$$
+    $g$ si dice retrazione di $f$
+}
+\subsection{Caratterizzazione di Iniettività tramite Retrazione}
+\bottom{
+    Una funzione è iniettiva se e soltanto se il suo dominio è vuoto o esiste una sua retrazione.
+    $$a=\emptyset \lor \exists g:b\to  a\ (g\circ f = id_a)$$
+}
+\bottomp{
+    Dimostrazione \(\Leftarrow\):
+    Se $a$ è l'insieme vuoto, si verifica banalmente l'iniettività. Se $$(\exists g: b \to a)(g \circ f = id_a)$$ allora essendo \(id_a\) iniettiva, f è iniettiva.\\
+    Questo perchè se $f$ non fosse iniettiva allora esisterebbero $x_1, x_2 \in a$ tali che $x_1 \neq x_2$ e $f(x_1) = f(x_2)$. Ma allora $$(g \circ f)(x_1) = g(f(x_1)) = g(f(x_2)) = (g \circ f)(x_2)$$ e dunque $g \circ f$ non sarebbe iniettiva, il che è assurdo perchè $id_a$ è iniettiva.\\
+    Dimostrazione \(\Rightarrow\):
+    Definisco la funzione $$g: y \in b \mapsto \begin{cases}
+    x_y \text{ se } y \in Imf \\
+    \overline{x} \text{ se } y \notin Imf
+    \end{cases}$$
+
+    Dove \(x_y\) è definito come l'unico elemento di \(\overleftarrow{f}(\{y\})\) (vedi "Caratterizzazione dell'Iniettività tramite Antimmagine"). Si verifica semplicemente che g è una retrazione:
+    $$g \circ f(x) = g(f(x)) = g(y) = x_y$$ tale che $$f(x_y) = f(x) \implies x_y = x$$ per iniettività di f, e quindi la funzione g è una retrazione.
+}
+
+\subsection{Caratterizzazione di Suriettività tramite Sezione}
+\bottom{
+    Una funzione è suriettiva se e soltanto se esiste una sua sezione.
+    $$\exists g:b\to  a\ (f\circ g = id_b)$$
+}
+\bottomp{
+    Dimostrazione \(\Leftarrow:\)
+    $$(\exists g: b \to a)(f \circ g = id_b)$$ implica che f sia suriettiva dato che \(id_b\) è suriettiva.\\
+    Questo perchè se $f$ non fosse suriettiva allora esisterebbe $y \in b$ tale che \(\overleftarrow{f}(\{y\}) = \emptyset\). Ma allora $$(f \circ g)(y) = f(g(y)) = f(x)$$ per qualche \(x \in a\), ma allora \(x \notin \overleftarrow{f}(\{y\})\) e quindi \(f(x) \neq y\), il che è assurdo perchè \(id_b\) è suriettiva.\\
+    Dimostrazione \(\Rightarrow\):
+    Dalla caratterizzazione di suriettività tramite antimmagine si ha che $$\text{f è suriettiva } \iff \forall y \in b\ (\overleftarrow{f}(\{y\}) \neq \emptyset)$$ Per l'assioma della scelta esiste la funzione $$\varphi: \overleftarrow{f}(\{y\}) \in \mathcal{P}(a) \mapsto (x \in a)(x \in \overleftarrow{f}(\{y\}))$$
+
+    Definiamo quindi $$g: y \in b \mapsto \varphi(\overleftarrow{f}(\{y\})) \in a$$ che è una sezione in quanto:
+    $$f \circ g(y) = f(g(y)) = f(\varphi(\overleftarrow{f}(\{y\}))) = y$$
+}
+
+\subsection{Inversa di una Funzione}
+\bottom{
+    Date due funzioni \(f: a \to b\) e \(g: b \to a\), se g è sia retrazione che sezione di f, allora g si dice inversa di f.
+}
+
+\subsection{Caratterizzazione della Biettività tramite Inversa}
+\bottom{
+    Una funzione è biettiva se e soltanto se esiste una sua inversa.
+    $$\exists g:b\to  a\ (f\circ g = id_b) \land (g\circ f = id_a)$$
+}
+
+\subsection{Unicità dell'Inversa}
+\bottom{
+    Se una funzione $f$ che ha una sezione $s$
+    ed una retrazione $r$, allora si ha che $r = s$ ed essa è la sua unica inversa.
+}
+\bottomp{
+    $$r\circ f=id_a \land f\circ s=id_b$$
+    allora
+    $$(r\circ f)\circ s=id_a\circ s=s$$
+    $$r\circ(f\circ s)= r\circ id_b=r$$
+    Ma per l'associatività del prodotto relazionale
+    $$(r\circ f)\circ s=r\circ(f\circ s)$$
+    e dunque $r=s$.
+}
+
+\subsection{Una funzione con una sola sezione è biettiva}
+\bottom{Se una funzione
+$f$ ha una ed una sola sezione $s$, allora essa è una funzione biettiva ed $s$ è la sua
+inversa.}
+\bottomp{
+    $$(\exists! g: b \to a)(f \circ g = id_b) \implies (\forall y \in b)(\exists! x \in a)(f(x) = y)$$
+
+    Supponiamo per assurdo che \(\exists x_1, x_2 \in a: x_1 \neq x_2 \land f(x_1) = f(x_2) = y\), cioè che f non sia iniettiva. Ciò implica che possono esistere \(g_1, g_2\) sezioni distinte (definite in basso) tali che \(g_1(y) = x_1\) e \(g_2(y) = x_2\), il che va contro l'ipotesi. Quindi $f$ dev'essere iniettiva, il che implica che essa abbia una retrazione. Avendo entrambe una sezione ed una retrazione, esse coincidono e sono anche l'inversa, e dunque la funzione è biettiva.
+
+    $$g_1: g(f(x_1)) = x_1$$
+    $$g_2: y \in b \mapsto \begin{cases}
+    g(y) \text{ se } y \neq f(x_1) \\
+    x_2 \text{ se } y = f(x_2)\end{cases}$$
+}
+
+\subsection{Affermazioni equivalenti alla Biettività}
+\bottom{
+    \begin{enumerate}
+        \item $f$ è biettiva
+        \item $f$ ha inversa
+        \item $f$ ha sezioni e retrazioni
+        \item $f$ ha una sola sezione
+        \item $\forall y\in b\ (\exists!x\in a\ (f(x)=y))$
+    \end{enumerate}
+}
+
+
+

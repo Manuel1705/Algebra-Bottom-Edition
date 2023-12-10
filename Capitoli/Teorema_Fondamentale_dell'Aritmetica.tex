@@ -1,0 +1,110 @@
+\section{Teorema Fondamentale dell'Aritmetica}
+\subsection{Lemma sui Divisori dei Primi}
+\bottom{
+    Se $p\in \mathbb Z$ è primo, allora $$\{n\in \mathbb Z\ |\ n|p\}=\{-1,1,p,-p\}$$
+Cioè un numero primo è divisibile solo dalle unità, se stesso ed il proprio opposto.
+}
+\bottomp{
+    Sia $n\in \mathbb Z$ tale che $$n|p\iff(\exists k\in \mathbb Z\ (nk=p\implies p|n\lor p|k))$$ (questo per la definizione di primo dato che $p|nk$ perchè $p=nk$).
+
+Nel caso $$p|n\iff \exists h\in \mathbb Z\ (ph=n) \implies phk=nk\implies phk=p\implies hk=1$$
+Allora $$(h=k=1)\lor (h=k=-1)\implies n=\pm p$$
+Nel caso $$p|k\iff \exists h\in \mathbb Z\ (ph=k) \implies nph=nk\implies nph=p\implies nh=1$$
+Allora $$(n=h=1)\lor (n=h=-1)\implies n=\pm 1$$
+}
+
+\subsection{Secondo Lemma per il Teorema Fondamentale dell'Aritmetica}
+\bottom{
+    Siano $a,b\in \mathbb N\smallsetminus \{0\}$ e sia $$x=\{n\in\mathbb N\smallsetminus \{0\}\ |\  a|nb\}$$
+    Allora $\forall n \in x\ (min(x) | n)$
+}
+\bottomp{
+    Per assurdo, sia non vuoto l'insieme degli elementi di $x$ non divisibili per il minimo e sia $z$ il minimo di tale insieme.
+
+    Poniamo $m=min(x)$. Essendo $$z, m \in x \implies a | zb \land a | mb \implies \exists h, k \in \mathbb N\ (ah = zb \land ak = mb)$$
+    Dunque
+    $$a(h - k) = ah - ak = zb - mb = (z - m)b \implies a |(z - m)b$$
+    Quindi $z-m\in x$, ma $z-m<z$, e $z$ era stato ipotizzato il minimo degli elementi non divisibili da $m$, il che implica che $$m|(z-m)\iff\exists l\ (ml=z-m)\implies m(l+1)=z\implies m|z$$ che è assurdo.
+}
+
+\subsection{Lemma sui divisori dei non primi}
+\bottom{
+    $\forall m\in\mathbb Z$ non primo ha divisori oltre $\pm 1,\pm m$.
+}
+\bottomp{
+    $$m\in \mathbb N \text{ non primo } \iff \exists h,k\ (m|hk\land\ m\not|h\land m\not| k)$$
+    Per assurdo, ipotizziamo che $$\{n\in\mathbb N\ |\ n|m\}=\{1,m\}$$
+    cioè che $m$ sia divisibile solo dall'1 e sé stesso. Sia 
+    $$x=\{n\in\mathbb N\smallsetminus\{0\}\ |\ m|nk\}$$ e sia $s=min(x)$.
+    Dato che $h,m\in x$, per il Secondo Lemma $$s|h\land s|m$$
+    ma per ipotesi solo 1 ed m sono divisori di m, quindi $$s=1\lor s=m$$
+    Se $$s=1\implies m|1k \implies m|k$$che va contro l'ipotesi. Se $$s=m\implies m|h$$ (perchè per il secondo Lemma $s|h\land s|m$) che va contro l'ipotesi. In entrambi i casi abbiamo l'assurdo e quindi $m\in\mathbb Z$ ha divisori oltre $\pm1,\pm m$.
+}
+
+\subsection{2 è Primo}
+\bottomp{
+    $$\text{2 è primo } \iff \forall a,b\in\mathbb N\ (2|ab\implies 2|a\lor 2|b)$$
+    Supponiamo che $2\not|a$ dimostriamo che necessariamente $2|b$.
+    $$2|ab\ \land\ 2\not|a \implies\exists k\in\mathbb N\ (2k=ab)\ \land\ \exists h\in\mathbb N\ (a=2h+1)^*\implies2k=2hb+b$$
+    E dunque $$2k-2hb=b\implies 2(k-hb)=b\implies 2|b$$ che è la tesi.\\
+    (* perchè $a$ non è pari, dato che $2\not|a$).
+}
+
+\subsection{Prima Tesi del Teorema fondamentale dell'Aritmetica}
+\bottom{
+    Sia $m\in \mathbb Z\smallsetminus\{-1,0,1\}$, allora $\exists p_1,p_2,\dots,p_n\in\mathbb Z$ primi tali che $m=p_1\cdot p_2\cdot\dots\cdot p_n$
+}
+\bottomp{
+    Dimostriamo tramite principio di seconda forma.
+
+    \textbf{Caso base:} abbiamo dimostrato che 2 è primo, quindi vale per esso la tesi induttiva. Ipotizzo quindi che la tesi valga $\forall n\in\mathbb N\ (2\leq n<m)$.
+
+    Se $m$ è primo, la tesi è provata banalmente.
+
+    Se $m$ non è primo, allora, per il Lemma sui Divisori dei non Primi 
+    $$\exists a,b\in\mathbb N\smallsetminus\{0,1,m\}\ (m=ab)$$
+    e quindi si ha che $1<a,b<m$.
+    Quindi per ipotesi induttiva: $$(\exists t, u \in \mathbb N)\ (\exists p_1, \dots , p_t, p_{t+1}, \dots, p_{t+u} \in \mathbb N)$$ $$(a = p_1 \cdot\ \dots\ \cdot p_t\ \land\ b = p_{t+1} \cdot \dots \cdot p_{t+u})$$
+    e dunque $$m = a \cdot b = p_1 \cdot\ \dots\ \cdot p_t \cdot p_{t+1} \cdot\ \dots\ \cdot p_{t+u}$$
+    e la tesi induttiva è dimostrata, e dunque essa vale $(\forall n \in \mathbb N)(n \geq 2)$.
+
+    Considerando $m\in\mathbb Z\smallsetminus\mathbb N$. Allora $-m\in\mathbb N$ e vale per esso la tesi
+    $$\exists p_1,\dots, p_r\ (-m = p_1 \cdot\ \dots\ \cdot p_r) \implies m = -(p_1 \cdot\ \dots\ \cdot p_r) = -p_1 \cdot\ \dots\ \cdot -p_r$$
+    Dato che l'opposto di un numero primo è ancora un numero primo, allora la tesi vale in tutto $\mathbb Z$
+}
+
+\subsection{Seconda Tesi del Teorema Fondamentale dell'Aritmetica}
+\bottom{
+    Se $m = q_1 \cdot\ \dots\ \cdot q_n$ allora $r=s$ ed $\exists f: \{1,\ \dots\ , r\} \to \{1,\ \dots\ , r\}$ biettiva tale che $\forall i \in \{1,\ \dots\ , r\}\ (p_i = q_{f(i)})$
+}
+\bottomp{
+    Dimostriamo per Principio di Induzione di Prima Forma.
+
+    \textbf{Caso base:} $r=1$. Sia 
+    $$p_1=m=q_1\cdot\ \dots\ \cdot q_s$$
+    Quindi m è primo, e quindi
+    $$\forall q \in \{q_1,\ \dots\ , q_s\}\ (q|m \implies q \in \{-1, 1, -m, m\}) \implies$$
+    $$\implies (r = s = 1)\ \land\ (q_1 = p_1)$$
+    Ora ipotizziamo che la tesi sia vera per $r-1$. Dimostriamo che è vera per r. Abbiamo che $$p_1 \cdot p_2 \cdot\ \dots\ \cdot p_r = m = q_1 \cdot q_2 \cdot\ \dots\ \cdot q_r$$
+    Allora $$p_1 | q_1 \cdot q_2 \cdot\ \dots\ \cdot q_r$$
+    e per la definizione di primo allora
+    $$p_1 | q_1\ \lor\ p_1 | q_2\ \cdot\ \dots\ \cdot q_r$$
+    Ancora una volta, per la definizione di primo
+    $$p_1 | q_2 \lor p_1 | q_3 \cdot\ \dots\ \cdot q_r$$
+    e così via. Dunque sia ha che 
+    $$p_1 | q_1\ \lor\ p_1 | q_2 \lor\ \dots\ \lor\ p_1 | q_s$$
+    Suppongo senza ledere la generalità che $p_1|q_1$. Essendo $q_1$ primo, allora $q_1=\pm p_1$(in quanto $q_1$ è divisibile solo da $\pm1,\pm q_1$, ed essendo $p_1$ primo a sua volta non può essere $\pm1$).
+    Abbiamo dunque che 
+    $$p_1 \cdot p_2 \cdot\ \dots\ \cdot p_r = (\pm p_1) \cdot q_2 \cdot\ \dots\ \cdot q_s$$
+    E dunque cancellando $p_1$ da entrambi i membri:
+    $$p_2 \cdot\ \dots\ \cdot p_r = \pm q_2 \cdot\ \dots\ \cdot q_s$$
+    Siamo dunque nel caso $r-1$ e quindi vale in esso la tesi induttiva, cioè
+    $$r - 1 = s - 1\ \land\ (\exists \sigma: \{2, ..., r\} \to \{2, ..., r\} \text{ biettiva})$$$$ \forall i \in \{2, ..., r\}\ (p_i = \pm q_{\sigma(i)})$$
+    Basta quindi definire:
+    $$f: i \in \{2, ..., r\} \mapsto 
+    \begin{cases}
+    \sigma(i) &i \in \{2, ..., r\}\\
+    1 &i = 1\\
+    \end{cases}$$
+    Per avere la tesi.
+}

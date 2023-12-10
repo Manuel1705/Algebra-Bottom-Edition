@@ -1,0 +1,38 @@
+\section{Principio di Induzione}
+\bottom{
+    Sia $x\subseteq\mathbb N\smallsetminus\{0\}$ Definiamo:
+    $$\mathbb N_{min(x)}=\{n\in\mathbb N\ |\ min(x)\leq n\}$$
+    Ovvero l'insieme che contiene tutti i numeri naturali $\geq$ del minimo dell'insieme $x$.
+}
+\subsection{Prima Forma del Principio di Induzione}
+\bottom{
+    $$\forall x \in P(\mathbb N) - \{\emptyset\}$$
+    $$\forall n \in \mathbb N$$
+    $$((n \in x \implies n + 1 \in x) \implies (x = \mathbb N_{min(x)}))$$
+}
+\bottomp{
+    Sia $m=min(x)$. Ipotizziamo per assurdo che $x\not=\mathbb N_m$.
+    Questo implica che $$y = \mathbb N_m - x \neq \emptyset$$
+    Poniamo $min(y)=n$, che esiste sicuramente perchè $y\subseteq\mathbb N$.
+    $$m<n$$
+    poiché
+    $$x \cap y = \emptyset \land n \in \mathbb N_m$$
+    Quindi $$m \leq n-1 < n \implies (n - 1) \in x$$
+    Per ipotesi, allora
+    $$(n - 1) + 1 \in x \implies n \in x$$
+    che è assurdo.
+}
+
+\subsection{Seconda Forma del Principio di Induzione}
+\bottom{
+    $$\forall x \in P(\mathbb N) - \{\emptyset\}$$
+    $$\forall n \in \mathbb N$$
+    $$\forall k \in \mathbb N$$
+    $$((min(x) \leq k < n \implies k \in x) \implies n \in x) \implies (x = \mathbb N_{min(x)})$$
+}
+\bottomp{
+    Sia $m=min(x)$ e supponiamo per assurdo che $x\not=\mathbb N_m$. Questo implica che 
+    $$x\subset \mathbb N_m \implies y=\mathbb N_m -x\not=\emptyset$$
+    Allora si ha che $$\forall k\in\mathbb N\ (m\le k<min(y) \implies k\in x)$$
+    e quindi per ipotesi $min(y)\in x$, che è assurdo.
+}

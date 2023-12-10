@@ -1,0 +1,270 @@
+\section{Relazioni binarie}
+\bottom{
+    Una relazione binaria è uno specifico tipo di corrispondenza che
+    mette in relazione elementi di uno stesso insieme.
+    Esistono molte proprietà di cui possono godere le relazioni binarie. Andiamo
+    ora a definire le più fondamentali.
+    Data una relazione binaria $\rho = (a \times a, g)$, diremo che:
+}
+
+
+\subsection{Riflessività}
+\bottom{
+    $$\rho \text{ è riflessiva } \iff \forall x \in a\ (x \rho x)$$
+}
+
+\subsection{Antiriflessività}
+\bottom{
+    $$\rho \text{ è antiriflessiva } \iff \forall x \in a\ (\neg(x \rho x))$$
+}
+
+\subsection{Simmetrica}
+\bottom{
+    $$\rho \text{ è simmetrica } \iff \forall x, y \in a\ (x \rho y \implies y \rho x)$$
+}
+
+\subsection{Asimmetrica}
+\bottom{
+    $$\rho \text{ è asimmetrica } \iff \forall x, y \in a\ (x \rho y \land y \rho x \implies x = y)$$
+}
+
+\subsection{Transitiva}
+\bottom{
+    $$\rho \text{ è transitiva } \iff \forall x, y, z \in a\ (x \rho y \land y \rho z \implies x \rho z)$$
+    Si osserva che ogni relazione definita su un insieme di due o meno elementi è transitiva.
+}
+
+\bottom{
+    Dividiamo poi le relazioni binarie in diverse categorie in base a quali di queste
+    proprietà esse verificano.
+}
+
+
+\subsection{Relazione d'Equivalenza}
+\bottom{
+    Una relazione riflessiva, simmetrica e transitiva si dice relazione di equivalenza.
+}
+
+\subsection{Relazione d'ordine}
+\bottom{
+    Una relazione asimmetrica e transitiva si dice relazione d'ordine.
+}
+
+\subsection{Relazione di Ordine Largo}
+\bottom{
+    Se una relazione d'ordine è riflessiva, si dice relazione di ordine largo.
+}
+
+\subsection{Relazione di Ordine Stretto}
+\bottom{
+    Se una relazione d'ordine è antiriflessiva, si dice relazione di ordine stretto.
+}
+
+\subsection{Ordine Stretto e Asimmetria}
+\bottom{
+    Si osserva che in una relazione d'ordine stretto l'asimmetria è ininfluente in quanto non si può avere $$x \rho y \land y \rho x$$ in tal caso per transitività si avrebbe $$x\rho x$$ che va contro la proprietà di antiriflessività della relazione d'ordine stretto.
+}
+
+\subsection{Relazione Duale}
+\bottom{
+    Data una relazione binaria $\rho$ su un insieme $a$, definiamo la relazione duale:
+    $$\overline{\rho}: \forall x, y \in a\ (x \overline{\rho} y \iff y \rho x)$$
+}
+
+\subsection{Diagonale di un Insieme}
+\bottom{
+    Dato un insieme $s$ definiamo
+    $$diag(s) := \{(x,y) \in s \times s \mid x = y\}$$
+}
+
+\subsection{Caratterizzazioni delle Proprietà delle Relazioni}
+\bottom{
+    Data una relazione $\rho = (s \times s, g_{\rho})$ e duale $\overline{}\rho$ allora:
+    \begin{align*}
+        &\rho \text{ riflessiva } \iff diag(s) \subseteq g_{\rho}\\
+        &\rho \text{ simmetrica } \iff \rho = \overline{\rho}\\
+        &\rho \text{ antiriflessiva } \iff diag(s) \cap g_{\rho} = \emptyset\\
+        &\rho \text{ asimmetrica } \iff g_{\rho} \cap g_{\Bar{\rho}}\subseteq diag(s)
+    \end{align*}
+}
+
+\subsection{Relazione di Equivalenza Universale}
+\bottom{
+    Data una relazione di equivalenza $$\rho = (s \times s, g),\ g = s \times s$$ essa si dice relazione di equivalenza universale (o totale).
+}
+
+\subsection{Congruenza di modulo m}
+\bottom{
+    Sia $m\in \mathbb Z$, allora definiamo:
+    $$\equiv_m := (\mathbb{Z} \times \mathbb{Z}, g)$$
+    $$\forall a, b \in \mathbb{Z}\ ((a, b) \in g \iff \exists k \in \mathbb{Z}\ (a - b = km))$$
+}
+
+\subsection{La congruenza è una relazione di equivalenza}
+\bottomp{
+    Siano $x,y,z\in \mathbb Z$
+    \begin{align*}
+        &\text{\textbf{Riflessività:}}\\
+        & x-x=0=0m \text{ quindi } x\equiv_m x\\
+        &\text{\textbf{Simmetria}}\\
+        & x\equiv_m y \implies \exists k\in \mathbb Z\ (x-y=km)\\
+        &\implies y-x=(-k)m\implies y\equiv_m x\\
+        &\text{\textbf{Transitività}}\\
+        & x\equiv_m y \land y\equiv_m z\\
+        &\implies \exists k_1,k_2 \in \mathbb Z\ (x-y=k_m\land y-z=k_2m\\
+        &\implies (x-y)+(y-z)=x-z=(k_1+k_2)m)
+    \end{align*}
+    Abbiamo dimostrato che la congruenza è riflessiva, simmetrica e transitiva, quindi è una relazione di equivalenza.
+}
+
+\subsection{Congruenze notevoli}
+\bottom{
+    Relazione di uguaglianza
+    $$a\equiv_0b \iff a-b=0\iff a=b$$
+    Relazione universale
+    $$a\equiv_1b \text{ dato che } (a-b)=1\cdot(a-b)$$
+}
+
+\subsection{Nucleo di Equivalenza di una Funzione}
+\bottom{
+    Data una funzione $f: a \to b$, definiamo la relazione nucleo di equivalenza:
+    $$KER_f := (a \times a, g)$$
+    $$\forall x, y \in a\ ((x, y) \in g \iff f(x) = f(y))$$
+    Che notiamo anche come $\sim_f$
+}
+
+\subsection{Classe di Equivalenza}
+\bottom{
+    Sia $s$ un insieme su cui è definita una relazione di equivalenza $\rho$. Sia $x\in s$. Allora definiamo:
+    $$[x]_{\rho} = \{y \in s \mid x \rho y\}$$
+    Che chiamiamo classe di equivalenza di $x$ di modulo $\rho$
+}
+
+\subsection{Rappresentante di una classe di equivalenza}
+\bottom{
+    Data una classe di equivalenza notata nella forma $[x]_\rho$, chiamiamo $x$ il rappresentante della classe di equivalenza.
+}
+
+\subsection{Calsse di Resto}
+\bottom{
+    Le classi di equivalenza di una congruenza
+    si dicono classi di resto e si notano per brevità usando solamente il modulo:
+    $$[x]_m = [x]_{\equiv_m}$$
+}
+
+\subsection{Insieme Quoziente}
+\bottom{
+    Dato un insieme $s$ su cui è definita una relazione $\rho$, allora definiamo:
+    $$s/\rho = \{y \in P(s) \mid \exists x \in s\ (y = [x]_{\rho})\} = \{[x]_{\rho} \mid x \in s\}$$
+    E lo chiamiamo insieme quoziente di $s$ rispetto a $\rho$
+}
+
+\subsection{Prima Proprietà Fondamentale: Nessuna Classe di Equivalenza è Vuota}
+\bottom{
+    Dato un insieme $s$ su cui è definita una relazione di equivalenza $\rho$, allora: $$(\forall y \in s/\rho)(y \neq \emptyset)$$}
+\bottomp{
+    Per la riflessività
+    $$\forall x \in s\ (x \rho x \implies x \in [x]_\rho)$$
+}    
+
+\subsection{Seconda Proprietà Fondamentale: Le Classi di Equivalenza sono Disgiunte}
+\bottom{
+    Dato un insieme $s$ su cui è definita una relazione di equivalenza $\rho$, allora:
+    $$\forall x, y \in s\ ([x]_\rho \neq [y]_\rho \iff [x]_\rho \cap [y]_\rho = \emptyset)$$
+}
+\bottomp{
+    Supponiamo per assurdo l'intersezione fra le due classi sia non vuota. Allora:
+    $$[x]_\rho \cap [y]_\rho \neq \emptyset \implies \exists z\ (z \in [x]_\rho \land z \in [y]_\rho) \implies x \rho z \land z \rho y \implies x \rho y$$
+}
+
+\subsection{Terza Proprietà Fondamentale: l'Unione Unaria dell'Insieme Quoziente è l'Insieme}
+\bottom{
+    Dato un insieme $s$ su cui è definita una relazione di equivalenza $\rho$, allora:
+    $$\bigcup s/\rho = s$$
+}
+\bottomp{
+\begin{align*}
+    &\mathbf{\subseteq)}\\
+    &y \in \bigcup s/\rho \implies \exists[x]_\rho \in s/\rho\ (y \in [x]_\rho) \implies y \in s\\
+    &\mathbf{\supseteq)}\\
+    &y \in s \implies [y]_\rho \in s/\rho \land y \in [y]_\rho \implies y \in \bigcup s/\rho
+    \end{align*}
+    E dunque $\bigcup s/\rho = s$.
+}
+
+\subsection{Proiezione Canonica}
+\bottom{
+    Dato un insieme $a$ su cui è definita una relazione di equivalenza $\sim$, definiamo:
+    $$\pi: x \in a \mapsto [x]_\sim \in a/\sim $$
+}
+
+\subsection{Suriettività della Proiezione Canonica}
+\bottomp{
+    Per le proprietà fondamentali delle classi di equivalenza, per ogni classe di equivalenza appartenente ad un insieme quoziente $a/\sim $ esiste un elemento di $a$ contenuto in esso, in quanto nessuna classe di equivalenza è vuota. Questo implica che la proiezione canonica sia un'applicazione suriettiva.
+}
+
+\subsection{Partizione}
+\bottom{
+    Dato un insieme $a$, un insieme $f$ si dice partizione di $a$ se e solo se:
+    \begin{enumerate}
+        \item $\forall x \in f\ (x \neq \emptyset)$
+        \item $\forall x, y \in f\ (x \neq y \implies x \cap y = \emptyset)$
+        \item $\bigcup f = a$
+        \end{enumerate}
+}
+
+\subsection{Partizioni Banali}
+\bottom{
+    Dato un insieme $a$, esso è dotato delle seguenti partizioni banali:
+    \begin{align*}
+        &\text{Se stesso}
+        &&f=a\\
+        &\text{L'insieme di tutti i singleton}
+        &&f = \{\{x\} \in P(a) \mid x \in a\}
+    \end{align*}
+}
+
+\subsection{Insieme delle Relazioni di Equivalenza}
+\bottom{
+    $EQ(a)$ = insieme delle relazioni di equivalenza su $a$
+}
+
+\subsection{Insieme delle Partizioni}
+\bottom{
+    $PART(a)$ = insieme delle partizioni di $a$
+}
+
+\subsection{Insiemi Quoziente e Partizioni}
+\bottom{
+    Si osserva che, per le proprietà delle classi di equivalenza, ogni insieme quoziente risulta essere una partizione.
+}
+
+\subsection{Teorema Fondamentale su Relazioni di Equivalenza e Partizioni}
+\bottom{
+    Per ogni insieme $a$, esiste una funzione biettiva
+    $$f: \sim \in EQ(a) \mapsto a/\sim \in PART(a)$$
+    Esiste dunque una corrispondenza biunivoca tra relazioni di equivalenza e partizioni: da ogni relazione di equivalenza si può definire una partizione e da ogni partizione di può definire una relazione di equivalenza.
+}
+\bottomp{
+    Dimostriamo che $f$ è iniettiva.
+$$\text{Prendiamo } \sim_1, \sim_2 \in EQ(a) \text{ tale che } f(\sim_1) = f(\sim_2)\text{ ovvero } a/\sim_1 = a/\sim_2 $$
+$$\forall x, y \in a\ (x \sim_1 y \iff [x]_{\sim_1} = [y]_{\sim_1} \iff$$
+$$\exists z, w \in a\ ([x]_{\sim_1} = [z]_{\sim_2}\ \land\ [y]_{\sim_1} = [w]_{\sim_2} \iff w \sim_2 z) \iff x \sim_2 y)$$
+Quindi $\sim_1=\sim_2$ e dunque $f$ è iniettiva.
+
+Dimostriamo che $f$ è suriettiva.
+$$\text{Siano }p \in PART(a)$$
+$$\sim: \forall x, y \in a\ (x \sim y \iff \exists z \in p\ (x \in z \land y \in z))$$
+Per dimostrare la suriettività dimostriamo che che $\sim$ è una relazione di equivalenza, e cioè che gode della proprietà riflessiva, simmetrica, e transitiva.
+$$\forall x \in a\ \exists z \in p\ (x \in z \land x \in z)$$
+ quindi la relazione è riflessiva
+ $$\forall x, y \in a\ \exists z \in p\ ((x \in z \land y \in z) \iff (y \in z \land x \in z))$$
+ per la commutatività di $\land$ e dunque la relazione è simmetrica.
+ $$\text{Presi }x,y,z\in a \text{ tali che } x\sim y\sim z\text{ allora}$$
+ $$\exists w_1, w_2 \in p\ ((x \in w_1 \land y \in w_1) \land (y \in w_2 \land z \in w_2) \implies$$
+ $$\implies w_1 \cap w_2 \neq \emptyset \implies w_1 = w_2)$$
+  in quanto $p$ è una partizione. Pertanto $x$ e $y$ fanno parte dello stesso insieme e sono equivalenti, quindi la relazione è transitiva.
+  Per ogni partizione esiste un'associata relazione di equivalenza quindi $f$ è suriettiva e dunque biettiva.
+
+}
+

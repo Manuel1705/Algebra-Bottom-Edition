@@ -1,0 +1,278 @@
+\section{Grafi}
+\subsection{Grafo Semplice}
+\bottom{
+    Sia \(v \neq 0\) e sia \(\rho\) una relazione binaria simmetrica e antiriflessiva su \(v\). Allora la coppia \((v, \rho)\) si dice grafo semplice.
+}
+
+\subsection{Vertici di un Grafo}
+\bottom{
+    Sia \((v, \rho)\) un grafo semplice. Allora gli elementi di \(v\) si dicono vertici del grafo.
+}
+
+\subsection{Archi (o Lati) di un Grafo}
+\bottom{
+    Sia \((v, \rho)\) un grafo semplice. Allora le coppie \(\{x, y\} \in P_2(v): x \rho y\) si dicono archi o lati del grafo.
+}
+
+\subsection{Grafo Semplice (via Insieme dei Lati)}
+\bottom{
+    Sia \((v, \rho)\) un grafo semplice. Allora esso sarà notabile equivalentemente come \((v, l)\), dove l'insieme \(l\) è definito come:
+
+    $$l := \{ \{x, y\} \in P_2(v) \mid x \rho y \}$$
+}
+
+\subsection{Multigrafo}
+\bottom{
+    Una terna di insiemi non vuoti \((v, l, \sigma)\) si dice multigrafo se la funzione sigma è una funzione del tipo $$\sigma: l \mapsto P_2(v)$$
+}
+
+\subsection{Estremi di un Arco}
+\bottom{
+    Sia \((v, l)\) un vertice. Sia \(a \in l\). Allora, i due vertici \(x, y \in v: \{x, y\} = a\) si dicono estremi dell'arco \(a\).
+}
+
+\subsection{Vertici Adiacenti}
+\bottom{
+    Sia \((v, l)\) un grafo, e siano \(x, y \in v\). I due vertici si dicono adiacenti se $$\exists a \in l\ (\{x,y\} = a)$$ cioè se esiste un arco di cui essi sono vertici, o equivalentemente, se esiste un arco che li connette.
+}
+
+\subsection{Archi Incidenti}
+\bottom{
+    Sia \((v, l)\) un grafo, e siano \(l_1, l_2 \in l\). Allora i due lati si dicono incidenti se \(l_1 \cap l_2 \neq \emptyset\), cioè se hanno vertici in comune.
+}
+
+\subsection{Grado di un Vertice}
+\bottom{
+    Sia \((v, l)\) un grafo e sia \(x \in v\). Allora definiamo:
+
+    $$d(x) = |\{y \in l \mid x \in y\}|$$
+
+    Cioè il numero di archi che contengono \(x\) come vertice.
+}
+
+\subsection{Vertici Pari o Dispari}
+\bottom{
+    Se il grado di un vertice è non-nullo e pari, il vertice si dice pari.
+
+    Se il grado di un vertice è dispari, il vertice si dice dispari.
+}
+
+\subsection{Vertice Isolato}
+\bottom{
+    Se il grado di un vertice è zero, il vertice si dice isolato.
+}
+
+\subsection{Grafo Completo}
+\bottom{
+    Un grafo \((v, l)\) si dice completo se tutti i suoi vertici sono a due a due adiacenti, e cioè se:
+
+    $$l = P_2(v)$$
+}
+
+\subsection{Grafo Complementare}
+\bottom{
+    Dato un grafo \((v, l)\), definiamo il suo complementare il grafo $$(v, P_2(v) - l)$$
+}
+
+\subsection{Sottografo}
+\bottom{
+    Sia \((v, l)\) un grafo, e siano \(v' \subseteq v \land l' \subseteq l\). Allora il grafo \((v', l')\) si dice sottografo di \((v, l)\)
+}
+
+\subsection{(Multi)Grafo Finito}
+\bottom{
+    Se l'insieme \(v\) dei vertici è finito, il (multi)grafo si dice finito.
+    Si nota che un multigrafo è finito anche se ha un numero infiniti di lati. L'elemento importante è la finitezza dei vertici.
+}
+
+\subsection{Isomorfismo tra Grafi}
+\bottom{
+    Siano \((v, l)\) e \((v', l')\) due grafi, e sia \(f: v \to v'\) una funzione biettiva. Allora \(f\) si dice isomorfismo tra grafi se e solo se:
+
+    $$\forall x, y \in v\ (\{x, y\} \in l \iff \{f(x), f(y)\} \in l')$$
+}
+
+\subsection{Grafo Planare}
+\bottom{
+    Un grafo si dice planare se è rappresentabile su un piano senza archi che si intersecano.
+}
+
+\subsection{Teorema di Kuratowski}
+\bottom{
+    Un grafo finito è planare se e soltanto se non ha sottografi isomorfi a \(K_5\) e \(K_{3,3}\)
+
+    \includegraphics*[scale=.2]{img/g1.png}
+}
+
+\subsection{Teorema su Lati e Gradi}
+\bottom{
+    Sia \((v, l)\) un grafo finito. Allora $$2|l| = \sum_{x \in v} d(x)$$
+}
+\bottomp{
+    Sia \(t\) il numero di estremi dei lati del grafo. Allora \(t = 2|l|\), in quanto ogni lato ha due estremi. Allo stesso tempo, ogni vertice \(x\) è estremo di \(d(x)\) lati. Dunque \(\sum_{x \in v} d(x) = t\). 
+
+    Dunque $$2|l| = \sum_{x \in v} d(x)$$
+}
+
+\subsection{Cammino fra due Vertici}
+\bottom{
+    Sia \((v, l)\) un grafo e siano \(v_1, ..., v_n\) vertici del grafo tali che $$\forall i \in \mathbb N\ ((1 \leq i < n) \implies (\{v_i, v_{i+1}\} \in l))$$
+
+    Se l'insieme \(\{ \{v_1, v_2\}, ..., \{v_{n-1}, v_n\}\}\) ha ordine \(n\) (cioè non ci sono archi che si ripetono), allora la ennupla ordinata \((\{v_1, v_2\}, ..., \{v_{n-1}, v_n\})\) si dice cammino fra \(v_1\) e \(v_n\) di lunghezza \(n\).
+}
+
+\subsection{Cammino Nullo}
+\bottom{
+    Dato un grafo \((v, l)\), per ogni \(x \in v\) definiamo il cammino nullo \(c_x\) da \(x\) ad \(x\), di lunghezza \(0\).
+}
+
+\subsection{Componente Connessa}
+\bottom{
+    La relazione definita su un grafo \((v, l)\) nel seguente modo:
+
+    $$\gamma = (v \times v, g), g \subseteq v \times v: (v_1, v_2) \in g \iff \exists \text{ cammino fra } v_1, v_2$$
+
+    E' una relazione di equivalenza e diciamo le sue classi di equivalenza le componenti connesse del grafo.
+}
+
+\subsection{Grafo Connesso}
+\bottom{
+    Un grafo si dice connesso se esso ha una sola componente connessa, con cui esso coincide.
+}
+
+\subsection{Cammino (di un Multigrafo)}
+\bottom{
+    Sia \((v, l, \sigma)\) un multigrafo, e siano \(v_1, ..., v_{n+1}\in v\) suoi vertici e siano \(l_1, ..., l_n\) archi a due a due distinti tali che:
+
+    $$\sigma(l_i) = \{v_i, v_{i+1}\}, \forall i \in \mathbb N: 1 \leq i \leq n$$
+
+    Allora le ennupla ordinata \((l_1, ..., l_n)\) si dice cammino.
+}
+
+\subsection{Cammino Euleriano}
+\bottom{
+    Un cammino \((l_1, ..., l_n)\) di un multigrafo \((v, l, \sigma)\) si dice euleriano se \(l = \{l_1, ..., l_n\}\), cioè se il cammino "passa" per tutti i lati del grafo.
+}
+
+\subsection{Circuito Euleriano}
+\bottom{
+    Un cammino euleriano fra due vertici \(v_1, v_{n+1}\) si dice circuito euleriano se \(v_1 = v_{n+1}\)
+}
+
+\subsection{Teorema di Eulero}
+\bottom{
+    Sia \(g\) un multigrafo finito privo di vertici isolati. Allora \(g\) ha un circuito euleriano se e solo se tutti i suoi vertici sono pari.
+}
+
+\subsection{Foresta}
+\bottom{
+    Un grafo si dice foresta se non ha circuiti.
+}
+
+\subsection{Albero}
+\bottom{Una foresta connessa si dice albero.}
+
+\subsection{Teorema di Caratterizzazione delle Foreste}
+\bottom{
+    Un grafo finito \(g = (v, l)\) si dice foresta \(\iff\) per ogni coppia \((x, y) \in v \times v: x \neq y\) esiste al più un singolo cammino da \(x\) ad \(y\).
+}
+\bottomp{
+    \(\rightarrow)\) Siano \((\{u_1, u_2\}, ..., \{u_{m-1}, u_m\})\) e \((\{v_1, v_2\}, ..., \{v_{n-1}, v_n\})\) due cammini distinti fra \(x\) ed \(y\), cioè $$u_1 = v_1 = x$$ $$u_n = v_n = y$$
+
+    Sia $$i = \{ h \in \mathbb N \mid \exists k \in \mathbb N\ (u_h = v_k \land \{u_h, u_{h+1}\} \neq \{v_k, v_{k+1}\})\}$$
+
+    Sia \(r = min(i)\) e sia \(k_r\) il relativo \(k\). Definiamo dunque:
+    $$j = \{ h \in \mathbb N_r \mid (\exists k \in \mathbb N)(u_{h+1} \neq v_{k+1})\}$$
+
+    \(j \neq \emptyset\) e poniamo \(s = min(j)\), con \(k_s\) il suo relativo \(k\). 
+    Certamente, \(k_r \neq k_s\), e possiamo quindi supporre senza ledere la generalità che \(k_r < k_s\). Allora il circuito è il seguente:
+    $$(\{u_r, u_{r+1}\}, \{u_{r+1}, u_{r+2}\}, ..., \{u_s, u_{s+1}\}, \{v_{k_s+1}, v_{k_s}\}, ...$$
+    $$..., \{v_{k_r+2}, v_{k_r+1}\}, \{v_{k_r+1}, v_{k_r}\})$$
+
+    \(\leftarrow)\) Per assurdo, esista un circuito \((\{v_1, v_2\},..., \{v_{n-1}, v_n\})\) dove \(v_1 = v_n\). Allora, sicuramente, \(n > 1\), e quindi \((\{v_1, v_2\})\) e \((\{v_2, v_3\}, ..., \{v_{n-1}, v_n\}, \{v_1, v_2\})\) sono due cammini distinti da \(v_1\) e \(v_2\), che è assurdo in quanto va contro l'ipotesi che esista al più un singolo cammino fra ogni coppia di punti.
+}
+
+\subsection{Corollario di Caratterizzazione degli Alberi}
+\bottom{
+    Corollario del "Teorema di Caratterizzazione delle Foreste"
+
+    Un grafo finito \(g\) è un albero \(\iff\) per ogni coppia \((x, y)\) di vertici distinti di \(g\) esiste ed è unico il cammino da \(x\) a \(y\).
+}
+
+\subsection{Planarità delle Foreste}
+\bottom{
+    Corollario del "Teorema di Caratterizzazione delle Foreste"
+
+    Ogni foresta finita è un grafo planare.
+}
+\bottomp{
+    Segue dal Teorema di Kuratowski.
+}
+
+\subsection{Foglia di un Albero}
+\bottom{
+    Un vertice di primo grado di un albero si dice foglia.
+}
+
+\subsection{Rappresentazione Radicale di un Albero}
+\bottom{
+    Si sceglie un vertice dell'albero, detto radice, e si rappresenta poi il grafico in maniera gerarchica a partire dalla radice.
+
+    \includegraphics*[scale=.2]{img/g2.png}
+}
+
+\subsection{Un Albero Finito ha almeno Una Foglia}
+\bottom{
+    Ogni albero finito \(g\) con almeno due vertici ha una foglia.
+}
+\bottomp{
+    Assumiamo per assurdo che non esistano foglie. Consideriamo l'insieme dei vertici di \(g\), \(v = \{v_1, ..., v_n\}\) con \(|v| = n\). Sia \(l = \{v_1, v_2\}\), ma \(d(v_2) \geq 2\) per ipotesi, e quindi troviamo un \(v_3: v_3 \notin \{v_1, v_2\}\) e sia \(l_2 = \{v_2, v_3\}\). Ancora una volta, \(d(v_3) \geq 2\) per ipotesi, quindi deve esistere un \(v_4\) e così via. 
+    Troviamo quindi una successione \(l_1, ..., l_n\) di lati distinti fra \(n+1\) vertici distinti, ma per ipotesi \(|v| = n\), e quindi assurdo.  
+}
+
+\subsection{Numero di Lati di un Albero}
+\bottom{
+    Un albero \(g = (v, l)\) di \(n\) vertici ha \(n - 1\) lati.
+}
+\bottomp{
+    Per Induzione di Prima Forma. Nel caso base, \(n = 1\), la tesi è ovvia.
+    Poniamo quindi \(n > 1\) e ipotizziamo la tesi valida per \(n - 1\).
+    Allora, per il "Un Albero Finito ha Almeno una Foglia", deve esistere una foglia \(x\). Consideriamo il sottografo \(s\) di vertici \(v - x\), che ha un vertice ed un lato in meno, in quanto per definizione una foglia ha un solo lato.
+    Quindi \(s\) ha \(n-1\) vertici e \(|l|-1\) lati. Vale per esso l'ipotesi induttiva e quindi:
+
+    $$|l| - 1 = (n - 1) - 1 = n - 2$$
+
+    Da cui segue:
+
+    $$|l| = n - 1$$
+
+    Che è la tesi.
+}
+
+\subsection{Un Albero Finito ha Almeno Due Foglie}
+\bottom{
+    Abbiamo già dimostrato che un albero finito ad almeno due vertici ha almeno UNA foglia. Adesso affermiamo che:
+    Un albero finito con almeno due vertici ha almeno due foglie.
+}
+\bottomp{
+    Sia \(g = (v, l)\) un albero finito e sia \(|v| = n\). Allora, per il Teorema sul Numero di Lati di un Albero, \(|l| = n - 1\) e per il Teorema su Lati e Gradi, $$2|l| = \sum_{x \in v} d(x) \implies 2(n-1) = \sum_{x \in v} d(x)$$
+
+    Ipotizziamo per assurdo che esistano \(<2\) foglie. Allora, abbiamo almeno \(n-1\) vertici che non sono foglie, cioè hanno grado maggiore di uno. Pertanto si deve avere che:
+    $$2(n-1) = \sum_{x \in v} d(x) \geq 2(n-1) + 1$$
+    Il che è assurdo.
+}
+
+\subsection{Caratterizzazione di Foreste di Multigrafi}
+\bottom{
+    Se \(g = (v, l, \sigma)\) è un multigrafo finito con esattamente \(k\) componenti connesse, allora \(|l| \geq |v| - k\) e vale che \(|l| = |v| - k\) se e solo se \(g\) è una foresta.
+}
+
+\subsection{Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}
+\bottom{
+    Dato \(g = (v, l, \sigma)\) multigrafo, equivalgono i seguenti:
+    \begin{enumerate}
+        \item \(g\) è un albero
+        \item \(g\) è un grafo connesso e \(|v| = |l|+1\)
+        \item \(g\) è una foresta e \(|v| = |l| + 1\)
+    \end{enumerate}
+}

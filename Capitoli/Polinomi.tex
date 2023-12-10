@@ -1,0 +1,522 @@
+\section{Polinomi}
+\subsection{  Definizione di Successione di Elementi}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello unitario commutativo. Allora una funzione del tipo \(n \in \mathbb N \mapsto x \in a\) si dice successione di elementi di \(a\).
+}
+
+\subsection{ Notazione di Successione di Elementi}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello commutativo unitario. Sia \(f: n \in \mathbb N \mapsto x \in a\) una successione di elementi di \(a\). Allora:
+
+    $$(a_n)_{n \in \mathbb N} := f$$
+    $$a_n = f(n)$$
+}
+
+\subsection{ Polinomio}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello commutativo unitario e sia \((a_n)_{n \in \mathbb N}\) una successione di elementi di \(a\). Allora:
+
+    $$(a_n)_{n \in \mathbb N} \text{ poliniomio a coefficienti in } a \iff \exists k \in \mathbb N\ (\forall n \geq k\ (a_n = 0))$$ 
+}
+
+\subsection{ Coefficienti di un Polinomio}
+\bottom{
+    I termini di successione \(a_n\) di un polinomio \((a_n)_{n \in \mathbb N}\) si dicono coefficienti del polinomio.
+}
+
+\subsection{ Notazione di Insieme dei Polinomi}
+\bottom{
+    Sia \((A, +, \cdot)\) un anello commutativo unitario. Allora l'insieme dei polinomi a coefficienti in \(A\) si scrive \(A[x]\)
+}
+
+\subsection{ Polinomio Zero o Nullo}
+\bottom{
+    Sia \((a, +, \cdot)\) un anello commutativo unitario. Allora definiamo il polinimio nullo o polinomio zero:
+
+    $$0 := (0_a)_{n \in \mathbb N}$$
+
+    Dove $$(0_a)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N}$$
+    $$\forall n \in \mathbb N\ (a_n = 0_a)$$
+}
+
+\subsection{ Coefficiente Direttore di un Polinomio}
+\bottom{
+    Se \(f \in A[x] - \{0\}\), \(a_{gr(f)}\) si dice coefficiente direttore del polinomio e si indica \(cd(f)\)
+}
+
+\subsection{ Termine Noto di un Polinomio}
+\bottom{
+    Dato un polinomio \(f \in A[x]\), allora \(a_0\) si dice termine noto di \(f\).
+}
+
+\subsection{ Grado e Coefficiente Direttore del Polinomio Zero}
+\bottom{
+    Poniamo:
+
+    $$cd(0) = 0$$
+    $$gr(0) = -\infty$$
+
+    Cioè il grado di \(0\) è l'ordinamento di \(\mathbb (N \cup \{-\infty\}, \leq)\)
+}
+
+\subsection{ Polinomio Monico}
+\bottom{
+    \(f \in A[x]\) si dice polinomio monico se \(cd(f) = a_{gr(f)} = 1_a\)
+}
+
+\subsection{ Somma e Prodotto di Polinomi}
+\bottom{
+    Siano \((a_n)_{n \in \mathbb N}, (b_n)_{n \in \mathbb N} \in A[x]\) due polinomi. Allora definiamo:
+
+    $$(a_n + b_n)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N} + (b_n)_{n \in \mathbb N}$$
+    $$(\sum_{i+j=n}a_ib_j)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N} \cdot (b_n)_{n \in \mathbb N}$$
+}
+
+\subsection{ Anello dei Polinomi}
+\bottom{
+    Avendo definito somma e prodotto per i polinomi, possiamo affermare che \((A[x], +, \cdot)\) è un anello commutativo unitario.
+    \begin{itemize}
+        \item Il neutro rispetto a \(\cdot\) è \((1, 0, 0, 0, ...)\)
+        \item Il neutro rispetto a \(+\) è \((0, 0, 0, 0, ...)\)
+    \end{itemize}
+}
+
+\subsection{ Polinomio Costante}
+\bottom{
+    Sia \((A, +, \cdot)\) un anello commutativo unitario e sia \(a \in A\). Allora il polinomio del tipo \((a, 0, 0, 0, 0, ...)\) si dice polinomio costante.
+}
+
+\subsection{ Notazione di Polinomio Costante}
+\bottom{
+    Facendo abuso di notazione, \(\forall a \in A\), definiamo \(a := (a, 0, 0, 0, 0, ...)\)
+    Cioè indichiamo il polinomio costante con il suo unico coefficiente non nullo.
+}
+
+\subsection{ Monomorfismo dei Polinomi Costanti}
+\bottom{
+    Sia \((A, +, \cdot)\) un anello commutativo unitario. Si osserva allora che:
+
+    $$\mu: a \in A \mapsto (a, 0, 0, 0, ...) \in A[x]$$
+
+    è un monomorfismo di anelli fra \((A, +, \cdot)\) e \((A[x], +, \cdot)\).
+
+    In particolare, $$a \stackrel {\text isomorfo}{ \simeq }Im(\mu)$$
+}
+
+\subsection{ Polinomio incognita}
+\bottom{
+    Definiamo il polinomio \(x := (0, 1_A, 0, 0, 0, 0, ...)\)
+    Cioè il polinomio \(x \in A[x]\) tale che il suo unico coefficiente non nullo è l'unità dell'anello \((A, +, \cdot)\) nella seconda posizione.
+}
+
+\subsection{ Potenze del Polinomio incognita}
+\bottom{
+    Si può provare per induzione che:
+    \begin{align*}
+        x &= (0, 1, 0, 0, 0 ...)\\
+        x^2 &= (0, 0, 1, 0, 0, ...)\\
+        x^3 &= (0, 0, 0, 1, 0, ...)\\
+        &\dots\\
+        x^n &= (0, \dots, 0 \text{ (n volte)}, 1, 0, ...)
+    \end{align*}
+}
+
+\subsection{ Monomio}
+\bottom{
+    Dato una anello \((A, +, \cdot)\), sia \(a \in A\), e sia \(x = (0, 1_A, 0, ...)\). Allora abbiamo che:
+    $$ax^n = (a, 0, 0, 0,...) \cdot (0, \cdots, 0 \text{ (n volte)}, 1_a, 0, 0...)=$$
+    $$ = (0, ..., 0 \text{ (n volte)}, a, 0, 0, ...)$$
+    Il monomio $ax^n$ dunque non è nient'altro che il polinomio a coefficienti tutti nulli, eccetto quello in posizione n+1-esima, che ha valore a. (n+1 perchè la prima posizione è $x^0$).
+}
+
+\subsection{ Polinomio come Somma di Monomi}
+\bottom{
+    Sia \(f\) un polinomio tale che \(m \in \mathbb N \land gr(f) = m\) della forma $$f = (a_0, a_1, a_2, a_3, ..., a_m, 0, , ...)$$
+
+    Allora è facile verificare che esso si può esprimere nella forma:
+    $$f = a_0 + a_1x + a_2x^2 + a_3x^3 + ... + a_mx^m$$
+}
+
+\subsection{ Proprietà della Somma e Prodotto di Polinomi}
+\bottom{
+    Dalla distributività in \((A[x], +, \cdot)\) seguono le seguenti proprietà di somma e prodotto.
+    Siano \(f, g \in A[x], m = gr(f), n = gr(g), M = max\{n, m\}\), allora:
+
+    $$f + g = \sum_{i = 0}^M (a_i + b_i)x^i$$
+    $$f \cdot g = \sum_{i=0}^{n+m}(\sum_{j=0}^i a_j b_{i - j})x^i$$
+}
+
+\subsection{ Proprietà del Grado della Somma di Polinomi}
+\bottom{
+    Siano \(f, g \in A[x] - \{0\}\). Allora:
+
+    $$[gr(f) = gr(g)] \land [cd(f) = -cd(g)] \implies gr(f + g) < [gr(f) = gr(g)]$$
+    $$[gr(f) \neq gr(g)] \lor [cd(f) \neq cd(g)] \implies gr(f + g) = max\{gr(f), gr(g)\}$$
+}
+
+\subsection{ Proprietà del Grado di Prodotto di Polinomi}
+\bottom{
+    Siano \(f, g \in A[x] - \{0\}\). Allora:
+
+    $$cd(f) \cdot cd(g) = 0 \implies gr(f \cdot g) < gr(f) + gr(g)$$
+    $$cd(f) \cdot cd(g)\neq 0 \implies gr(f \cdot g) = gr(f) + gr(g) \land cd(f \cdot g)=$$
+    $$ = cd(f) \cdot cd(g) \text{ [FORMULA DI ADDIZIONE DEI GRADI]}$$
+
+    Se $$f = 0, gr(f \cdot g) = gr(0) = -\infty = -\infty + gr(g)$$ e $$cd(f \cdot g) = 0 = cd(f) \cdot cd(g)$$ si osserva che la Formula di Addizione dei Gradi vale anche con il polinomio zero.
+}
+
+\subsection{ Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}
+\bottom{
+    Sia \(f \in A[x] - \{0\}\). Se \(cd(f)\) è cancellabile, allora anche \(f\) lo è. In particolare, per \(f\) vale la Formula di Addizione dei Gradi.}{\(cd(f)\) cancellabile vuol dire che esso non è divisore dello zero. Per la Formula di Addizione dei Gradi segue che:
+    $$\forall g \in A[x]$$
+    $$g \neq 0 \implies gr(f \cdot g) = gr(f) + gr(g) \neq -\infty \implies f \cdot g \neq 0 \implies f$$ non è divisore dello zero, cioè \(f\) è cancellabile.
+}
+
+\subsection{ Condizione Sufficiente e Necessaria per Dominio di Integrità dei Polinomi}
+\bottom{
+    \(A[x]\) è dominio di integrità \(\iff A\) è dominio di integrità.
+}
+
+\subsection{ Condizione di Non Invertibilità di un Polinomio}
+\bottom{
+    Sia \(f \in A[x]\). Se \(f\) è cancellabile e \(gr(f) > 0\), allora \(f\) non è invertibile.
+}
+\bottomp{
+    Per assurdo, sia \(f\) invertibile e sia \(g = f^{-1}\). Allora per la Formula di Addizione dei Gradi,  $$gr(f) + gr(g) = gr(fg) = gr(1) = 0 \implies gr(f) = 0$$
+    che è assurdo.
+}
+
+\subsection{ Invertibilità del Polinomio Incognita}
+\bottom{
+    Il polinomio \(x\) non è mai invertibile
+}
+\bottomp{
+    Dato che \(cd(x) = 1\) per definizione, e l'unità dell'anello è sempre cancellabile ("Invertibillità Implica Cancellabilità"). In particolare, \(A[x]\) non è mai un campo.
+}
+
+\subsection{ Teorema della Divisione Lunga tra Polinomi}
+\bottom{
+    Sia \((A, +, \cdot)\) un anello commutativo unitario e siano \(f, g \in A[x]\). Se $$cd(g) \in U(A) \implies (\exists! (q, r) \in A[x] \times A[x])(f = gq + r \land gr(r) < gr(g))$$
+}
+\bottomp{
+    \(\text{Esistenza della Coppia})\) 
+
+    Poniamo \(m = gr(g), n = gr(f)\).
+    Se \(n < m\), la tesi è ovvia: \((q, r) = (0, f)\).
+    Se \(n \geq m\) (\(m \neq 0\) per ipotesi su \(cd(g)\)), pongo \(a = cd(f), b = cd(g)\)
+    Dimostriamo per Induzione di $2^a$ Forma su n.
+    Sia $$k = ab^{-1}x^{n-m}g$$ Tra $$ab^{-1}x^{n-m} \text{ e } g$$ vale la Formula di Addizione dei Gradi, quindi $$gr(k) = gr(ab^{-1}x^{n-m}) + gr(g) = n - m + m = n$$ e $$cd(k) = a$$ e dico $$h = f - k$$
+
+    Dunque \(gr(h) < n\). Allora, per induzione $$\exists(q_1, r_1)\ (f - k = gq_1 + r_1)$$ con \(gr(r_1) < gr(g)\).
+    Allora:
+    $$f = gq_1 + r_1 + k = gq_1 + r_1 + ab^{-1}x^{n-m}g = g(q_1 + ab^{-1}x^{n-m}) + r_1$$
+
+    \(\text{Unicita' della Coppia})\)
+
+    Siano \((q_1, r_1), (q_2, r_2)\) due coppie come da ipotesi. Quindi \(g(q_1 - q_2) = r_2 - r_1\).
+    \(gr(r_2 - r_1) < gr(g) = m\). Vale la Formula di Addizione dei Gradi e quindi $$gr(r_2 - r_1) = gr(g \cdot (q_1 - q_2)) = gr(g) + gr(q_1 - q_2) = m + gr(q_1 - q_2) < m$$
+    Ma questo è possibile solo se \(gr(q_1 - q_2) = -\infty\), cioè \(q_1 - q_2 = 0\). Allora $$q_1 = q_2 \land r_1 = r_2$$
+}
+
+\subsection{ Condizione per l'Anello dei Polinomi Fattoriale}
+\bottom{
+    \(A\) anello fattoriale \(\implies A[x]\) anello fattoriale.
+}
+
+\subsection{ Notazione Funzionale di Polinomio}
+\bottom{
+    Sia \(f \in A[x], f= a_0 + a_1x + ... + a_nx^n\, c \in A\), con \(a_n \neq 0\).
+
+    Sia \(c \in A\). Allora definisco:
+
+    $$f(c) := a_0 + a_1c + ... + a_nc^n \in A$$
+}
+
+\subsection{ Omomorfismo di Sostituzione dei Polinomi}
+\bottom{
+    Sia \(c \in A\), anello commutativo unitario. Allora:
+
+    $$f \in A[x] \mapsto f(c) \in A$$ è un omomorfismo di anelli.
+}
+
+\subsection{ Applicazione Polinomiale}
+\bottom{
+    Sia \(f \in A[x]\). Definiamo l'applicazione polinomiale di \(f\) la funzione:
+
+    $$\overline f: c \in A \mapsto f(c) \in A$$
+}
+
+\subsection{ Applicazione Polinomiale Costante}
+\bottom{
+    Si osserva che se \(f = a_0\), cioè è un polinomio costante, allora $$\forall c \in A\ (\overline f(c) = a_0)$$ e quindi anche l'applicazione polinomiale è costante.
+}
+
+\subsection{ Radice di un Polinomio}
+\bottom{
+    Se \(f \in A[x], c \in A, f(c) = 0_a\), allora \(c\) si dice radice (o soluzione) del polinomio.
+}
+
+\subsection{ Applicazioni Polinomiali di Somme e Prodotti}
+\bottom{
+    Siano \(f, g \in A[x]\). Allora si verifica facilmente che:
+
+    $$\overline{f+g}(c) = \overline f(c) + \overline g(c)$$
+    $$\overline{f \cdot g}(c) = \overline f(c) \cdot \overline g(c)$$
+
+    Da questo deriva che, se \(c\) è radice di \(f\), allora è anche radice di \(fg\) e \(gf\)
+}
+
+\subsection{ Teorema del Resto}
+\bottom{
+    Sia \(A\) un anello commutativo unitario, \(f \in A[x], c \in A\). Allora \(f(c)\) è il resto della divisione lunga tra \(f\) e \((x - c)\).
+}
+\bottomp{
+    \(cd(x - c) = 1\), che è invertibile, pertanto la divisione lunga è effettuabile fra i due. Abbiamo dunque che:
+
+    $$f = (x - c)q + r \land gr(r) < gr(x - c)$$ ma \(gr(x -c) = 1 \implies gr(r) = 0\), cioè che \(r\) sia un polinomio costante del tipo \(r = a_0\). Allora, applicando l'Omomorfismo di Sostituzione:
+    $$f(c) = (c - c)q(c) + r(c) = 0 \cdot q(c) + a_0 = a_0$$
+}
+
+\subsection{ Teorema di Ruffini}
+\bottom{
+    Sia \(A\) un anello commutativo unitario, \(f \in A[x], c \in A\). Allora:
+
+    $$c \text{ radice di f } \iff (x - c)|f$$
+}
+\bottomp{
+    \(c\) radice \(\implies f(c) = 0_A \implies\) per il Teorema del Resto, il resto della divisione lunga è \(0_A \implies (x-c)|f\)
+}
+
+\subsection{ Teorema di Ruffini Generalizzato}
+\bottom{
+    Sia \(A\) un dominio di integrità. Sia \(f \in A[x], c_1, ... , c_n \in A\) a due a due distinti. Allora:
+
+    $$c_1, ..., c_n \text{ radici di } f \iff \prod_{i=1}^n (x - c_i) | f$$
+}
+\bottomp{
+    \(\rightarrow)\) Dimostriamo per induzione su \(n\), numero delle radici.
+    Se \(n = 1\), la tesi è valida per Ruffini.
+    Supponiamo dunque che \(n > 1\) e che la tesi sia valida per \(n - 1\). 
+
+    \(f(c_n) = 0\) per ipotesi. Allora per Ruffini $$(x - c_n)|f \implies f = (x - c_n)g$$
+    Se prendo $$i : 1 \leq i < n \implies f(c_i)=(c_i - c_n)g(c_i)$$ per l'Omomorfismo di Sostituzione.
+    Dato che ci troviamo in un dominio di integrità, sapendo che $$f(c_i) = 0$$ e $$c_i - c_n \neq 0$$ dunque per la Legge di Annullamento del Prodotto $$g(c_i) = 0$$
+    Ma, quindi, tutti i $$c_i : 1 \leq i < n$$ sono radici di \(g\), quindi vale per \(g\) la tesi induttiva e $$g = h \cdot \prod_{i=1}^{n-1}(x - c_i)$$
+    Allora:
+    $$f = (x - c_n)g = (x - c_n) \cdot \prod_{i=1}^{n-1} (x-c_i) \cdot h = \prod_{i=1}^{n} (x-c_i) \cdot h$$
+    Che implica che:
+    $$\prod_{i=1}^n (x-c_i)|f$$
+    che è la tesi.
+
+    \(\leftarrow)\) Se $$ \prod_{i=1}^{n} (x-c_i)|f \implies (\exists h \in A[x])(f = h \cdot \prod_{i=1}^n (x-c))$$
+    Allora $$\forall i : 1 \leq i < n:$$
+    $$f(c_i) = h \cdot [(c_i - c_1) \cdot (c_i - c_2) \cdot ... \cdot (c_i - c_i)\cdot ... \cdot (c_i - c_n)] = 0$$
+    Che è la tesi. 
+}
+
+\subsection{ Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità}
+\bottom{
+    \(A \text{ dominio di integrita' }, f \in A[x] - \{0\}, c_1, ... c_n \text{ radici di } f\) allora:
+
+    \(n \leq gr(f)\)
+
+    Cioè il numero delle radici è minore o uguale del grado del polinomio.
+}
+\bottomp{
+    Sia $$g = \prod_{i=1}^n(x-c_i)$$ Per ruffini generalizzato, $$\exists h \in A[x]\ (f = hg)$$ Ma \(A\) è dominio di integrità e \(g \neq 0\), quindi vale la Formula di Addizione dei Gradi.
+
+    $$gr(f) = gr(g) + gr(h) \geq gr(g) = n$$
+    perché \(g\) è il prodotto di \(n\) polinomi di grado 1.
+}
+
+\subsection{ Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}
+\bottom{
+    Il "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità" ha come ipotesi che \(A\) sia dominio di integrità. Forniamo un controesempio nel caso in cui \(A\) non è dominio di integrità e mostriamo che il teorema non è valido.
+
+    Consideriamo il polinomio:
+
+    $$f = [2]_4x \in \mathbb Z_4[x]$$
+
+    Dato che \([2] \cdot [2] = [4] = [0] \implies Z_4[x]\) non è dominio di integrità.
+    Il polinomio ha grado uno, ma almeno due radici, infatti:
+
+    $$f([0]_4) = [2]_4 \cdot [0]_4 = [0]_4$$
+    $$f([2]_4) = [2]_4 \cdot [2]_4 = [4]_4 = [0]_4$$
+
+    Pertanto il teorema non vale quando l'anello dei polinomi non è dominio di integrità.
+}
+
+\subsection{ Principio di Identità dei Polinomi}
+\bottom{
+    Sia \(A\) un dominio di integrità infinito. Allora:
+    $$\forall f, g \in A[x]\ (f = g \iff \overline f = \overline g)$$
+}
+\bottomp{
+    \(\rightarrow)\) Se \(f = g\), allora ovviamente \(\overline f = \overline g\).
+    \(\leftarrow)\) Definisco \(h = f - g\), e dato che \(\overline f = \overline g\), si ha allora che $$\forall c \in A\ (h(c) = \overline h(c) = \overline{f - g}(c) = \overline f(c) - \overline g(c) = 0)$$
+
+    Poiché \(A\) è infinito, \(h\) ha infinite radici distinte, e per il Teorema sul Numero di Radici, allora \(h = 0\) perché altrimenti avrebbe grado maggiore dell'infinito, il che è assurdo.
+    Infine:
+    \(h = 0 \implies f = g\)
+}
+
+\subsection{ Controesempio del "Principio di Identità dei Polinomi"}
+\bottomp{
+    Consideriamo il polinomio
+
+    $$f \in x^3 - x \in \mathbb Z_3[x]$$
+
+    Che appartiene ad un anello finito. Allora abbiamo che:
+
+    $$\overline f([0]_3) = [0]_3^3 - [0]_3 = [0]_3$$
+    $$\overline f([1]_3) = [1]_3^3 - [1]_3 = [0]_3$$
+    $$\overline f([2]_3) = [2]_3^3 - [2]_3 = [8]_3 - [2]_3 = [2]_3 - [2]_3 = [0]_3$$
+
+    Quindi \(\overline f = \overline 0\), ma \(f \neq 0\).
+}
+
+\subsection{ Rappresentante Monico di un Polinomio}
+\bottom{
+    Sia \(A\) un campo e \(f \in A[x] - \{0\}\). Allora $$ASSOC(f) = \{ uf \mid u \in A - \{0\}\}$$ poiché in un campo tutti gli elementi sono invertibili, eccetto lo zero.
+
+    Allora, per ogni \(f\) non nullo in \(A[x]\) campo, esiste ed è unico un polinomio monico associato ad \(f\), e tale polinomio si dice rappresentante monico della classe di \(f\).
+}
+
+\subsection{ Fattorizzazione di Polinomi in un Campo}
+\bottom{
+    Sia \(A\) un campo e sia \(f \in A[x]\). Allora esiste \(c \in A\) e \(g_1, ..., g_n \in A[x]\) tali che $$f = c \cdot g_1 \cdot ... \cdot g_n$$ $$g_1, ..., g_n$$sono monici ed irriducibili e la decomposizione è unica a meno dell'ordine dei fattori.
+}
+\bottomp{
+    \(A\) è fattoriale perché è un campo, allora \(A[x]\) è fattoriale. Quindi l'unicità della decomposizione deriva dell'unicità della decomposizione negli anelli fattoriali, più l'unicità del polinomio monico associato. Rimane da dimostrare l'esistenza della decomposizione per Induzione di $1^a$ Forma su \(gr(f)\).
+
+    Se \(gr(f) = 0\), allora \(f\) è costante e vale la tesi.
+    Suppongo \(gr(f) > 1\) e ipotizzo la tesi sia valida per \(gr(f) - 1\).
+    \(A[x]\) è fattoriale, allora prendo una decomposizione irriducibile di \(f\), ovvero \(f = h_1 \cdot ... \cdot h_n\) polinomi irriducibili e pongo:
+    $$g_i = cd(h_i)^{-1} \cdot h_i$$ $$c = \prod_{i=1}^n cd(h_i)$$
+    Cioè mettiamo in evidenza i coefficienti direttore rendendo i \(g_i\) monici e si ha che \(f = c \cdot g_1 \cdot ... \cdot g_n\) che è la tesi.
+}
+
+\subsection{ Criterio di Irriducibilità di Polinomi su un Campo}
+\bottom{
+    Sia \(A\) un campo, e sia \(f \in A[x] - \{0\}\) e poniamo \(n = gr(f)\).
+
+    Allora, \(f\) è irriducibile se e soltanto se (equivalentemente):
+    \begin{enumerate}
+        \item \((\forall g, h \in A[x])(f = gh \implies gr(g) = n \oplus g(h) = n)\)
+        \item \((\forall g, h \in A[x])(f = gh \implies gr(g) = 0 \oplus g(h) = 0)\)
+    \end{enumerate}
+}
+\bottomp{
+    \(\leftarrow)\) Gli invertibili di \(A[x]\) sono gli invertibili di \(A\), cioè i polinomi costanti. Se $$n = gr(f) > 0$$ allora non è costante e quindi $$f \notin U(A[x])$$
+    Se $$f = gh$$ per la (1) posso supporre che $$gr(g) = n$$ e per la Formula di Addizione dei Gradi $$gr(h) =0 \implies h \in U(A[x]) \implies f$$ ha solo divisori banali.
+
+    \(\rightarrow)\) \(f\) è irriducibile, quindi $$f \notin U(A[x]) = U(A)$$ e $$DIV(f) = BDIV(f)$$ \(A\) è campo, allora $$U(A) = A - \{0\}$$ quindi $$gr(f) > 0$$ \(f\) ha solo divisori banali ed, essendo ogni valore di \(A\) invertibile, allora ogni valore è anche cancellabile, e quindi \(f\) ha coefficiente direttore cancellabile ed è cancellabile a sua volta, e quindi $$BDIV = \{uf \mid u \in A - \{0\}\} \cup (A - \{0\})$$
+    Allora $$f = gh$$ necessariamente $$gr(g) = 0 \lor gr(h) = 0$$
+    \\
+    perché uno dei due è invertibile (e dunque costante) e per la Formula di Addizione dei gradi l'altro deve avere grado \(n\), da cui la tesi.
+}
+
+\subsection{ Criterio di Esistenza di Radici di un Polinomio in un Campo}
+\bottom{
+    Sia \(A\) un campo e \(f \in A[x]\). Allora \(f\) ha radici in \(A\) \(\iff\) ha almeno un divisore di primo grado in \(A[x]\).}{\(\rightarrow)\) Per Ruffini.
+    \(\leftarrow)\) Tutti i polinomi di grado 1 hanno radici in un campo.
+
+    $$kx + h \implies c = -hk^{-1}$$ è radice.
+
+    Quindi, se $$f = g(kx + h) \implies -hk^{-1}$$ è radice di \(f\).
+}
+
+\subsection{ Condizione di Irriducibillità di un Polinomio in un Dominio}
+\bottom{
+    Sia \(A\) un dominio di integrità e sia \(f \in A[x]\). Se \(gr(f) > 1\) e \(f\) ha radici, allora \(f\) non è irriducibile.
+}
+\bottomp{
+    Segue da Ruffini e dalla Formula di Addizione dei Gradi.
+}
+
+\subsection{ Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}
+\bottom{
+    Un polinomio di grado 2 o 3 su un campo \(A\) è irriducibile se e soltanto se non ha radici in \(A\).
+    $$\text{irrducibile} \iff \text{no radici}$$
+}
+\bottomp{
+    Segue da Ruffini e dalla Formula di Addizione dei Gradi. 
+}
+
+\subsection{ Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}
+\bottom{
+    Se un polinomio di grado $>3$ su un campo \(A\) è irriducibile, allora non ha radici in \(A\).
+$$\text{irrducibile} \implies \text{no radici}$$
+}
+\bottomp{
+    Segue da Ruffini e dalla Formula di Addizione dei Gradi.
+}
+
+\subsection{ Teorema Fondamentale dell'Algebra}
+\bottom{
+    Ogni polinomio non costante di \(\mathbb C[x]\) ha radici.
+    Corollario: in \(\mathbb C\) gli unici irriducibili sono polinomi di grado 1.
+}
+
+\subsection{ Criterio di Irriducibilità in \(\mathbb R\text{[}x\text{]}\)}
+\bottom{
+    Ogni polinomio irriducibile di \(\mathbb R[x]\) ha grado minore di 3.
+}
+
+\subsection{ Corollario del Criterio di Irriducibilità in \(\mathbb R\)}
+\bottom{
+    I polinomi irriducibili in \(\mathbb R[x]\) sono esattamente quelli di di grado 1 o quelli di grado 2 senza radici.
+}
+
+\subsection{ Teorema di Bolzano}
+\bottom{
+    Ogni polinomio su \(\mathbb R[x]\) di grado dispari ha una radice in \(\mathbb R\).
+}
+
+\subsection{ Regola del Discriminante}
+\bottom{
+    I polinomi di grado due su \(\mathbb R\) hanno radici se e solo se il discriminante \(\Delta \geq 0\)
+
+    $$ax^2 + bx + c$$
+    $$\Delta = b^2 - 4ac$$
+
+    Se \(\Delta \geq 0\) allora le radici sono $$x_{1,2} = \frac{-b \pm \sqrt \Delta}{2a}$$
+}
+
+\subsection{ Ogni Polinomio in $\mathbb Q\text{[}x\text{]}$ ha un Polinomio associato in $\mathbb Z\text{[}x\text{]}$}
+\bottom{
+    Esempio:
+    Moltiplicando e dividendo per l'MCM otteniamo che:
+    
+    $$3x^4 + \frac 1 {90} x + \frac 3 4 = \frac 1 {180} (540x^4 + 2x + 135)$$
+    
+     $$540x^4 + 2x + 135 \in \mathbb Z[x]$$
+}
+
+\subsection{ Criterio di Irriducibilità di Eisenstein}
+\bottom{
+    Sia $$f = a_0 + a_1x + ... + a_nx^n \in \mathbb Z[x]$$ con \(a_n \neq 0\).
+    Allora, se esiste un numero primo \(p\) tale che $$p|a_0, p|a_1, ... p|a_{n-1}$$ ma $$p \nmid a_n$$ e $$p^2 \nmid a_0$$ allora \(f\) è irriducibile in \(\mathbb Q[x]\).
+}
+
+\subsection{ Conseguenze di Eisenstein}
+\bottom{
+    Per Eisenstein, polinomi del tipo \(x^n \pm p\) sono tutti irriducibili in \(\mathbb Q[x]\).
+    Dunque, in \(\mathbb Q[x]\) ci sono polinomi irriducibili di ogni grado, a differenza di \(\mathbb R[x]\), dove esistono polinomi irriducibili solo di grado minore di 3.
+}
+
+\subsection{ Radici Razionali di un Polinomio in \(\mathbb Z\text{[}x\text{]}\)}
+\bottom{
+    Sia \(f \in \mathbb Z[x]\), con \(cd(f) = a_n\) e \(f(0) = a_0\).
+    Sia \(c \in \mathbb Q\) e \(f(c) = 0\), cioè sia \(c\) una radice razionale del polinomio.
+
+    Allora \(c = \frac u v\) dove \(v|a_n\) e \(u|a_0\). Inoltre \(a_n\) e \(a_0\) sono coprimi.
+}
+
+\subsection{ Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text{[}x\text{]}\)}
+\bottom{
+    Se \(f \in \mathbb Z[x]\) è un polinomio monico, allora tutte le sue radici razionali sono in realtà intere.
+}
+\bottomp{
+    Sia \(c \in \mathbb Q\) radice razionale di \(f\). Allora per il Teorema sulle Radici Razionali \(c = \frac u v\) dove \(u|a_0\) e \(v|a_n\). Ma dato che per ipotesi \(f\) è monico, allora \(a_n = 1\) e \(v|1\), quindi \(v = \pm 1\). Allora, la radice \(c = \pm u \in \mathbb Z\) che è la tesi.
+}

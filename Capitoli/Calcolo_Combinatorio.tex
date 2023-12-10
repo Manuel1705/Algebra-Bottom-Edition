@@ -1,0 +1,288 @@
+\section{Calcolo Combinatorio}
+\subsection{Equipotenza}
+\bottom{
+    Due insiemi \(x, y\) si dicono equipotenti se esiste una funzione \(f: x \to y\) biettiva.
+}
+
+\subsection{Insieme Infinito}
+\bottom{
+    Un insieme \(x\) si dice infinito se esiste una bisezione \(f: x \to t \subset x\)
+    ovvero se esiste una biezione tra se stesso ed una sua parte propria.
+}
+
+\subsection{Insieme Finito}
+\bottom{
+    Si dimostra che \(\forall n \in \mathbb N\ (\{1, ..., n\} \text{ non infinito})\).
+    Un insieme \(x\) equipotente ad un insieme \(\{1, ..., n\} \subset \mathbb N\) si dice finito.
+}
+
+\subsection{Cardinalità di un Insieme Finito}
+\bottom{
+    Sia \(x\) finito. Allora \(\exists n \in \mathbb N\ (x \text{ equipotente a } \{1, 2, ..., n\} \subset \mathbb N)\). Diciamo che \(n\) è l'ordine o cardinalità di \(x\) e lo notiamo \(|x|=n\).
+}
+
+\subsection{Cardinalità dell'Insieme delle Parti di un Insieme Finito}
+\bottom{
+    \(s\) insieme finito \(\implies |P(s)| = 2^{|s|}\)
+}
+\bottomp{
+    Dimostriamo per Induzione di Prima Forma su \(n\) cardinalità dell'insieme \(s\).
+    Caso base: $$n = |s| = 0 \implies s = \emptyset \implies P(s) = \{\emptyset\} \implies |P(s)| = 1 = 2^0 $$
+    Dunque la tesi è valida nel caso base. Ipotizziamo che sia valida per \(n \in \mathbb N\) e dimostriamo che vale per \(n + 1\).
+
+    $$|s| = n + 1 \implies s \neq \emptyset \land \exists f: s \to \{1, 2, ..., n, n + 1\} \text{ biettiva}$$
+    Consideriamo un qualunque \(x \in s\) e poniamo \(t = s - \{x\}\). Si ha che $$1 \leq f(x) = m \leq n+1$$ Si osserva che la funzione ristretta e ridotta $$f_{|t}: t \to Im_{f_{|t}} = \{1, 2, ..., m - 1, m + 1, ..., n, n +1\} \text{ è biettiva}$$ Si può definire una biezione fra \(Im_{f_{|t}}\) e \(\{1, ..., n\}\) e quindi \(|t| = n\).
+
+    Per ipotesi induttiva, dunque \(|P(t)| = 2^n\).
+
+    Ogni sottoinsieme di \(s\) può contenere o non contenere \(x\). I sottoinsiemi che non contengono \(x\) sono esattamente i sottoinsiemi di \(s - \{x\}\), che è un insieme con un elemento in meno ad \(s\), cioè \(|s -x| = n\). Per ipotesi induttiva quindi ne esistono \(2^n\). 
+    Ogni sottoinsieme di \(s\) che contiene \(x\) può essere espresso come \(p \cup \{x\}, p \in s-\{x\}\). Dato che esistono \(2^n\) insiemi \(p\), allora esisteranno \(2^n\) insiemi che contengono \(x\).
+    Dunque:
+    $$|P(s)| = 2^n \cdot 2^n = 2^n+1$$
+
+    Che è la tesi induttiva. Pertanto essa vale \(\forall n \in \mathbb N\).
+}
+
+\subsection{Fattoriale}
+\bottom{
+    Defiamo $$0! = 1$$
+    Poi, ricorsivamente, definiamo:
+    $$n! = n\cdot (n - 1)! $$
+}
+
+\subsection{Numero di Applicazioni fra Due Insiemi Finiti}
+\bottom{
+    Siano \(a, b\) due insiemi. Allora esistono \(|b|^{|a|}\) applicazioni \(f: a \to b\).
+}
+\bottomp{
+    Poniamo \(|a| = m, |b| = n\). Usiamo la Prima Forma del Principio di Induzione su \(m\).
+
+    Consideriamo \(m = 0\) come caso base, cioè \(a = \emptyset\).
+    Dato che \(\emptyset \times b = \emptyset\) e il vuoto ha un solo sottonsieme \(\emptyset \subseteq \emptyset \times b\) che può fare da grafico per un'applicazione, esiste una sola possibile applicazione \((\emptyset \times b, \emptyset)\) fra i due insiemi. Dato che \(n^0 = 1\), la tesi è valida nel caso base.
+
+    Ipotizzando dunque che la tesi sia valida per \(m > 0\), dimostriamo che vale per \(m+1\).
+    Sia \(x \in a\) e \(t = a - \{x\}\). Per ipotesi induttiva, esistono \(n^m\) applicazioni da \(t \to b\).
+    Ognuna di queste funzioni potrebbe essere prolungata, associando \(x\) ad uno qualsiasi degli \(n\) elementi di \(b\). Pertanto per ogni funzione esistono \(m\) possibili prolungamenti, e quindi il numero totale di applicazioni è \(n^m \cdot n = n^{m+1}\) che è la tesi.
+}
+
+\subsection{Condizione di Esistenza di Applicazioni Iniettive fra due Insiemi Finiti}
+\bottom{
+    $$MAP_{IN}(a, b) \neq \emptyset \iff |a| \leq |b|$$
+    Esistono applicazioni iniettive fra due insiemi \(a\) e \(b\) se e solo se la cardinalità di \(a\) è minore o uguale di quella di \(b\).
+}
+\bottomp{
+    Poniamo \(m = |a|, n = |b|\).
+
+    \(\Rightarrow\)) Esiste una biezione \(I_m \to a\), almeno una funzione \(f \in MAP_{IN}(a, b)\), e una biezione \(b \to I_n\). Pertanto, la loro composizione è una funzione iniettiva da \(I_m \to I_n\). Pertanto, \(m \leq n\) in quanto per ognuno degli \(m\)-esimi elementi deve esistere almeno un elemento distinto in \(I_n\). 
+
+    \(\Leftarrow)\)Se \(m \leq n\), allora \(\{1, ..., m\} \subseteq \{1, ..., n\}\) ed esiste quindi la funzione immersione fra i due, che è una funzione iniettiva. Esiste dunque una biezione da \(a \to \{1, ..., m\}\), una funzione iniettiva (l'immersione) da \(\{1, ..., m\} \to \{1, ...,n\}\) ed una biezione da \(\{1, ..., n\} \to b\) e dunque esiste una funzione iniettiva \(a \to b\).
+}
+
+\subsection{Numero di Applicazioni Iniettive fra due Insiemi Finiti}
+\bottom{
+    $$MAP_{IN}(a, b) \neq \emptyset \implies |MAP_{IN}(a,b)| = \frac{|b|!}{(|b|-|a|)!}$$
+    Cioè, se esistono applicazioni iniettive fra due insiemi finiti, quello è il loro numero.
+}
+\bottomp{
+    Poniamo \(|a| = m, |b| = n\), \(m \leq n\) altrimenti non esisterebbero applicazioni iniettive. Dimostriamo per Induzione di Prima Forma su \(m\).
+
+    Caso base: \(m = 0\). Quindi \(a = \emptyset\). Esiste una sola funzione fra il vuoto e \(b\), ed essa è iniettiva in quanto verifica vacuamente l'implicazione nella definizione di iniettività. Dato che \(\frac{n!}{(n - 0)!} = 1\) la tesi è valida.
+
+    Ipotizziamo dunque che la tesi sia valida anche per \(\forall (m - 1) > 0\), e dimostriamo che è valida in \(m\).
+    Siano \(x \in a, t = a - \{x\}\). Dunque \(|t| = m - 1\) ed esistono \(\frac{n!}{(n - (m-1))!}\) applicazioni iniettive \(t \to b\) per ipotesi induttiva. Ognuna di queste può essere prolungata ad \(a\) associando \(x\) ad uno qualsiasi degli \(n - (m - 1)\) elementi rimasti in \(b\) (dato che dobbiamo scegliere, per lasciare la funzione iniettiva, un'immagine distinta).
+
+    Da ciò segue che esistono \(\frac{n!}{(n - (m-1))!} \cdot (n - (m - 1))\) funzioni iniettive, e sviluppando:
+
+    $$\frac{n!}{(n - (m-1))!} \cdot (n - (m - 1)) = \frac{n!}{\cancel{(n - m +1)!}} \cdot \cancel{(n - m + 1)} = \frac{n!}{(n - m)!}$$
+}
+
+\subsection{Condizione di Esistenza di Applicazioni Suriettive fra due insiemi Finiti}
+\bottom{
+    $$MAP_{SUR}(a, b) \neq \emptyset \iff a = b = \emptyset \lor 0 < |b| \leq |a|$$
+    Esistono applicazioni suriettive fra due insiemi \(a\) e \(b\) se e solo se sono entrambi vuoti o se sono entrambi non vuoti e la cardinalità di \(a\) è maggiore o uguale di quella di \(b\).
+}
+\bottomp{
+    Sia \(|a| = m, |b| = n\). 
+
+    \(\Rightarrow)\) Sia \(f: a \to b\) suriettiva. Allora esiste una biezione fra \(a \to \{1, ..., m\}\) , una funzione suriettiva \(a \to b\), ed una biezione \(b \to \{1, ..., n\}\). Pertanto esiste una funzione suriettiva \(\{1, ..., m\} \to \{1, ..., n\}\). Allora per ogni elemento del secondo insieme esiste un elemento distinto (dalla definizione di applicazione) del primo insieme, pertanto \(n \leq m\).
+
+    \(\Leftarrow)\) Se sono entrambi non vuoti e \(n \leq m \implies I_n\), allora è banale costruire una funzione suriettiva dato che per ogni possibile elemento di \(b\) si può scegliere un elemento distinto di \(a\).
+
+    Dimostrazione nel caso particolare in cui sono vuoti:
+    Se \(b = \emptyset\), allora \(a\) dev'essere anch'esso il vuoto altrimenti non si può avere funzione ben formata fra i due, dato che per ogni elemento di \(a\) dev'esistere un elemento di \(b\) sua immagine. Se \(a = \emptyset\) e \(b\) è non vuoto, allora la funzione non può essere suriettiva. Se \(a = b = \emptyset\) allora la suriettività $$\forall y\ (y \in b \implies \exists x \in a\ (y = f(x))$$ è provata vacuamente dato che \(y \in b\) è sempre falso.
+}
+
+\subsection{Condizione di Esistenza di Applicazioni Biettive fra due Insiemi Finiti}
+\bottom{
+    Dalla condizione di esistenza delle funzioni iniettive e da quella per le funzioni suriettive deriva che, dati insiemi finiti \(a, b\):
+    $$MAP_{BI}(a, b) \neq \emptyset \iff |a| = |b|$$
+}
+
+\subsection{Cardinalità dell'Insieme Simmetrico di un Insieme Finito}
+\bottom{
+    $$|SYM(a)| = |a|!$$}{L'insieme simmetrico è l'insieme delle applicazioni biettive \(a \to a\). Quindi, dominio e codominio hanno stessa cardinalità e dunque ogni funzione iniettiva è biettiva. Pertanto, possiamo usare la formula per il calcolo del numero delle funzioni iniettive per calcolare le biettive:
+
+    $$|SYM(a)| = \frac{|a|!}{(|a| - |a|)!} = \frac{|a|!}{0!} = \frac{|a|!}{1} = |a|!$$
+}
+
+\subsection{Relazione fra Iniettività e Suriettività di Applicazioni fra Insiemi Finiti di Uguale Cardinalità}
+\bottom{
+    Siano \(a, b\) insiemi e \(f: a \to b\) una funzione. Allora:
+
+    \(|a| = |b| \implies (f \text{ iniettiva} \iff f \text{ suriettiva} \iff f \text{ biettiva})\)}{Poniamo \(|a| = |b| = m\).
+    Se \(f: a \to b\) è una funzione iniettiva, la sua immagine ha \(|m|\) elementi. Ma $$Imf \subseteq b \land |Imf| = |b| = m$$ dunque \(Imf = b\) e la funzione è anche suriettiva.
+    Se \(f: a \to b\) è una funzione suriettiva, allora esiste sezione \(g: b \to a\) tale che \(f \circ g = Id_b\). Ma dato che \(Id_b\) è biettiva, e dunque iniettiva, allora \(g\) è iniettiva. Allora, per come mostrato sopra, essa è anche suriettiva, e dunque è biettiva, e quindi \(f\) è la sua inversa ed è biettiva a sua volta.
+}
+
+\subsection{Cancellabilità implica Invertibilità in un Monoide Commutativo Finito}
+\bottom{
+    Sia \((s, \cdot)\) un monoide commutativo finito e sia \(x \in s\). Allora \(x\) è invertibile se e solo se è cancellabile.
+}
+\bottomp{
+    In generale, l'invertibilità implica la cancellabilità, indipendentemente che l'insieme sia finito o no.
+    Se \(x\) è cancellabile, allora \(\sigma_x\) e \(\delta_x\) sono iniettive, ma essendo \(s\) finito, allora esse sono anche biettive (per il teorema precedente), e quindi:
+    $$\exists y \in s\ (\sigma_x(y) = xy = 1_s)$$ e quindi \(y\) è inverso a destra.
+    $$\exists z \in s\ (\delta_x(z) = zx = 1_s)$$ e quindi \(z\) è inverso a sinistra.
+    Allora \(y = z\) e \(x\) è invertibile.
+}
+
+\subsection{Anelli Unitari Integri Finiti sono Corpi}
+\bottom{
+    Corollario di "Invertibilità e Cancellabilità in un Monoide Commutativo Finito".
+
+    Tutti gli anelli unitari integri finiti sono corpi.
+}
+\bottomp{
+    Un anello unitario integro è un corpo se e solo se ogni elemento è invertibile rispetto al prodotto. Essendo integro, non esistono divisori dello zero. Pertanto ogni elemento distinto dallo zero è cancellabile. Essendo l'anello per ipotesi finito, allora, per il teorema di cui questo è corollario, ogni elemento distinto dallo zero è inverbile, e dunque l'anello è un corpo.
+}
+
+\subsection{Domini di Integrità Finiti sono Campi}
+\bottom{
+    Corollario di "Invertibilità e Cancellabilità in un Monoide Commutativo Finito"
+}
+\bottomp{
+    Un dominio di integrità finito è un anello unitario integro finito, pertanto, per "Anelli Unitari Integri Finiti sono Corpi", esso è un corpo. Ma un dominio di integrità è commutativo, ed un corpo commutativo è proprio un campo.
+}
+
+\subsection{Funzione Caratteristica}
+\bottom{
+    Sia \(s\) un insieme e \(t \subseteq s\). Allora l'applicazione:
+
+    \(\chi_{t, s}: x \in s \mapsto \begin{cases}0 \text{ se } x \notin t\\ 1 \text{ se } x \in t\end{cases}\)
+
+    Si dice applicazione caratteristica di \(t\) in \(s\).
+}
+
+\subsection{Ogni sottoinsieme è dotato di funzione caratteristica}
+\bottom{
+    \(\varphi: t \in P(s) \mapsto \chi_{t, s} \in \{0, 1\}^s\) è biettiva.
+    \(\varphi: t \in P(s) \mapsto \chi_{t, s} \in \{0, 1\}^s\) è biettiva. Cioè, esiste una corrispondenza biunivoca fra le parti di un insieme e le funzioni \(\{0, 1\}^s\). Cioè, ogni parte ha una funzione caratteristica ed ogni funzione a due immagini è funzione caratteristica di un qualche sottoinsieme di \(s\).
+}
+\bottomp{
+    Suriettività) Sia \(f \in \{0, 1\}^s\). Poniamo $$t = \overleftarrow{f}(\{1\}) = \{x \in s \mid f(x) = 1\}$$
+    Se \(x \in t \implies \chi_{t, s} = 1 = f(x)\) per costruzione di \(t\).
+    Se \(x \notin t \implies \chi_{t, s} = 0 = f(x)\) per costruzione di \(t\).
+    Quindi \(f = \chi_{t,s}\) e \(\varphi\) è suriettiva.
+
+    Iniettività) Sia $$t \subseteq s \land v \subseteq s \land t \neq v$$ Senza ledere la generalità prendo \(x \in t - v\). Allora \(\chi_{t,s}(x) = 1\) e \(\chi_{v,s} = 0\) quindi le funzioni sono distinte e \(\varphi\) è iniettiva.
+}
+
+\subsection{Coefficiente Binomiale}
+\bottom{
+    \(\forall n, k \in \mathbb N\) definiamo:
+
+    $${n \choose k} = |P_k(I_n)|$$
+
+    Se \(n < k\), allora \({n \choose k} = 0\)
+}
+
+\subsection{Sommatoria di Coefficienti Binomiali}
+\bottom
+{
+    $$\forall n \in \mathbb N\ (\sum_{k = 0}^{n} {n \choose k} = 2^n$$
+}    
+\bottomp{
+    Si osserva che $$P(I_n) = P_0(I_n) \cup P_1(I_n) \cup ... \cup P_n(I_n)$$
+
+    Che sono tutti insiemi disgiunti, pertanto si ha che:
+
+    $$|P(I_n)| = |P_0(I_n)| \cup |P_1(I_n)| \cup ... \cup |P_n(I_n)| = \sum_{k = 0}^{n} {n \choose k} = 2^n $$
+}
+
+\subsection{Equivalenza di Coefficienti Binomiali}
+\bottom{
+    $$\forall n, k \in \mathbb N\ (k \leq n \implies {n \choose k} = {n \choose n - k})$$
+}
+\bottomp{
+    Sia $$f: x \in P(I_n) \mapsto I_n - x \in P(I_n)$$ \(f\) è biettiva perché la funzione differenza di insiemi è biettiva. Inoltre, ovviamente, se $$|I_n| = n, |x| = k \implies |I_n - x| = n - k$$ e dunque:
+    $$\overrightarrow f(P_k(I_n)) = P_{n - k}(I_n)$$
+
+    Quindi la funzione:
+    $$f_{|P_k(I_n)}: x \in P_k(I_n) \mapsto I_n - x \in P_{n - k}(I_n) = Imf_{|P_k(I_n)}$$
+    E' ancora una biezione. I due insiemi sono equipotenti e dunque:
+
+    $${n \choose k} = |P_k(I_n)| = |P_{n - k}(I_n)| = {n \choose n - k}$$
+
+    Che è la tesi.
+}
+
+\subsection{Formula Ricorsiva per i Coefficienti Binomiali}
+\bottom{
+    $$\forall n, k \in \mathbb N\ (k \leq n \implies {n+1 \choose k+1} = {n \choose k} + {n \choose k+1})$$
+}
+\bottomp{
+    Sia \(I_{n+1}\). Allora definisco:
+    $$
+    a = \{x \in P_{k+1}(I_{n+1}) \mid 1 \in x\}
+    $$
+    $$
+    b = \{y \in P_{k+1}(I_{n+1}) \mid 1 \notin y\}
+    $$
+
+    Se rimuovessimo \(1\) da ogni \(x \in a\), questo diminuirebbe la loro cardinalità di uno, rendendola \(k\). Non contenendo \(1\), sarebbero poi anche sottoinsiemi di cardinalità \(k\) dell'insieme \(I_{n+1} - \{1\}\), e sarebbero quindi \({n \choose k}\) in numero.
+
+    Similarmente, gli insiemi di \(b\), non contenendo \(1\), sono gli insiemi di cardinalità \(k+1\) dell'insieme \(I_{n+1} - \{1\}\) e quindi sono \({n \choose k + 1}\) in numero.
+
+    \(\{a, b\}\) è una partizione di \(P_{k+1}(I_{n+1})\), e quindi, per il Principio di Inclusione-Esclusione:
+    $${n+1 \choose k+1} = |P_{k+1}(I_{n+1})| = |a| + |b| = {n \choose k}+ {n \choose k+1}$$
+}
+
+\subsection{Triangolo di Tartaglia}
+\bottom{
+    Triangolo dei Coefficienti Binomiali, che permette di calcolare graficamente il valore di un qualsiasi coefficiente binomiale grazie alla Formula Ricorsiva dei Coefficienti Binomiali.
+    \\\\
+    \includegraphics*[scale=.25]{img/tartaglia.png}
+}
+
+\subsection{Formula Matematica per il Calcolo dei Coefficienti Binomiali}
+\bottom{
+    $$\forall n, k \in \mathbb N\ (k \leq n \implies {n \choose k} = \frac{n!}{(n-k)!k!})$$
+}
+\bottomp{
+    Dimostriamo per induzione di seconda forma. Prima di tutto, dobbiamo organizzare i coefficienti binomiali in "linea", in modo che ad ogni coefficiente binomiale possa essere associato un intero. Utilizziamo quindi un ordine lessicografico e diciamo che:
+
+    $$\forall x, y, z, w \in \{0, ..., n\}\ ((x, y) < (z, w) \iff (x < z) \land (y < w))$$
+
+    Si osserva dunque che le coppie associate ai coefficienti binomiali sono così ordinate:
+
+    \((0, 0) < (1, 0) < (1, 1) < (2, 0) < (2,1) < (2, 2) < (3, 0) < (3, 1) < (3, 2) < (3, 3) < (4, 0) < \dots\)
+
+    Ora che le coppie sono così messe in ordine, possiamo dire quale sia la zeresima, prima, seconda, n-esima coppia, etc.
+
+    Usiamo come caso base l'indice \(m = 0\), cioè la zeresima coppia, \({0 \choose 0}\). Esiste un solo insieme di cardinalità zero sottoinsieme del vuoto, il vuoto stesso, quindi $$1 = \frac{0!}{(0 - 0)!0!}$$ e la tesi vale nel caso base.
+
+    Estendiamo la tesi ad ogni \(0 \leq i < m\) per ipotesi induttiva, e dimostriamo che essa vale in \(m\).
+    Ipotizziamo che la coppia di indice \(m\) sia \({n \choose k}\). Per la Formula Ricorsiva per i Coefficienti Binomiali, allora:
+
+    $${n \choose k} = {n - 1 \choose k - 1} + {n-1 \choose k}$$
+
+    Ma per l'ordine lessicografico, questi sono minori di \({n \choose k}\), quindi vale per essi la tesi induttiva, e quindi:
+
+    $${n - 1 \choose k - 1} + {n-1 \choose k} = \frac{(n-1)!}{(n-1-(k-1))!(k-1)!} + \frac{(n-1)!}{(n-1-k)!k!}=$$
+    $$ =
+    \frac{(n-1)!}{(n-k)!(k-1)!} + \frac{(n-1)!}{(n-k-1)!k!} =
+    $$
+    $$=\frac{(n-1)!k}{(n-k)!k!} + \frac{(n-1)!(n-k)}{(n-k)!k!}=  \frac{(n-1)!(k + n - k)}{(n-k)!k!}=$$
+    $$ = \frac{(n-1)!n}{(n-k)!k!} = \frac{n!}{(n-k)!k!}
+    $$
+}
