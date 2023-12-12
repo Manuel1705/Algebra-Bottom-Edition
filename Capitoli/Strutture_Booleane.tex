@@ -3,6 +3,7 @@
 \bottom{
     Un reticolo si dice booleano se è distributivo e complementato
 }
+
 \subsection{Algebra di Boole}
 \bottom{
     Una struttura della forma $(s,\land_\rho,\lor_\rho,')$ si dice Algebra di Boole se gode delle seguenti proprietà:
@@ -11,7 +12,7 @@
         \item Esse sono anche associative
         \item Valgono le leggi di assorbimento
         \item Vale la distributività
-        \item $\land_\rho,\lor_\rho$ hanno elementi neutri, che notiamo 0,1 rispettivamente.
+        \item $\land_\rho,\lor_\rho$ hanno elementi neutri, che notiamo rispettivamente 0 e 1
         \item $'$ è un operazione unaria interna (l'operazione complementazione) tale che:
         $$\forall x \in s\ (x \vee_\rho x' = 1) \land (x \wedge_\rho x' = 0)$$
     \end{enumerate}
@@ -21,17 +22,18 @@
 \bottom{
     Un anello unitario $(a,+,\cdot)$ si dice booleano $\iff$
     $$\forall x \in a\ (x^2 = x\cdot x=x)$$
+    Ovvero ogni elemento è idempotente.
 }
 
 \subsection{In un Anello Booleano ogni elemento è il Proprio Opposto}
 \bottom{
-    $$(a, +, \cdot) \text{ booleano} \implies \forall x \in a\ (x = -x)$$
+    $$(a, +, \cdot) \text{ anello booleano} \implies \forall x \in a\ (x = -x)$$
 }
 \bottomp{
     \begin{align*}
         x + x &= (x + x)^2 &\text{ per proprietà degli anelli booleani}\\
         &= x^2 + 2x^2 + x^2 &\text{ per distributività dell'anello}\\
-        &= x + 2x^2 + x
+        &= x + 2x + x
     \end{align*}
     Quindi $$x + x = x + 2x + x \implies 2x = 0 \implies x + x = 0 \implies x = -x$$
 }
@@ -68,13 +70,12 @@
     $$ x = xy = x(yz) = (xy)z = xz \implies x \rho z$$
     la relazione è dunque transitiva.
 }
-\bottomp{
+\bottom{
     Dimostrazione $\land$ e $\lor$
 
     Verifichiamo per ogni coppia che INF e SUP sono così definite:
-    $$\forall x, y \in a\ (x \vee_\rho y = x+ y + xy)$$
     $$\forall x, y \in a\ (x \wedge_\rho y = xy)$$
-    Siano $x,y\in a$.
+    $$\forall x, y \in a\ (x \vee_\rho y = x+ y + xy)$$
 }
 \bottomp{
     Dimostriamo che $x\lor_\rho y$ è maggiorante.
@@ -126,7 +127,7 @@
     Dimostriamo che $(s,+,\cdot)$ è un anello booleano
 }
 \bottomp{
-    Dimostrare che è un anello booleano vuol dire dimostrare che è un anello unitario dove$\forall x \in s\ (x^2 = x)$.
+    Dimostrare che è un anello booleano vuol dire dimostrare che è un anello unitario dove $\forall x \in s\ (x^2 = x)$.
 
     Associatività:
     $$x(yz) = x \wedge (y \wedge y) = (x \wedge y) \wedge y = (xy)z$$
@@ -148,15 +149,17 @@
 
 \subsection{Equivalenza di Strutture Booleane}
 \bottom{
-    Si dimostra quindi che 
-    Algebre di Boole \(\simeq\) Reticoli di Boole \(\simeq\) Anelli Booleani
-    In quanto esiste corrispondenza biunivoca fra algebre e reticoli di boole e fra reticoli e anelli booleani.
+    Si dimostra quindi che
+    \begin{center}
+        Algebre di Boole \(\simeq\) Reticoli di Boole \(\simeq\) Anelli Booleani
+    \end{center}
+    In quanto esiste una corrispondenza biunivoca fra le tre strutture.
 }
 
 \subsection{L'insieme delle Parti è un Anello Booleano}
 \bottomp{
-    Dato che $(P(s),\subseteq)$ è un reticolo booleano, allora $(P(s), \cap, \cup, ')$ è un'algebra di boole, dove$$\forall x \in P(s)\ (x' = s - x)$$ per la corrispondenza biunivoca fra reticoli ed algebre di boole. Allora
-    $$(\forall x, y \in P(s))$$
+    Dato che $(P(s),\subseteq)$ è un reticolo booleano, allora $(P(s), \cap, \cup, ')$ è un'algebra di boole, dove$$\forall x \in P(s)\ (x' = s - x)$$ per la corrispondenza biunivoca fra reticoli booleani ed algebre di boole. Allora
+    $$\forall x, y \in P(s)$$
     $$x \cdot y = x \cap y$$
     $$x + y = (x \cap (s - y)) \cup (y \cap (s -x)) = (x - y) \cup (y - x) = x \triangle y$$
     E dunque $(P(s), \triangle, \cap)$ è un anello booleano.
@@ -165,7 +168,8 @@
 \subsection{Teorema di Stone}
 \bottom{
     Sia $a\not=\emptyset$ e $(a,+,\cdot)$ un anello booleano. Allora
-    $$\exists s \neq \emptyset\ (a, +, \cdot) \stackrel{\text{isomorfo}}{\simeq} (P(s), \triangle, \cap).$$
+    $$\exists s \neq \emptyset$$
+    $$(a, +, \cdot) \stackrel{\text{isomorfo}}{\simeq} (P(s), \triangle, \cap)$$
     Se $a$ è finito, posso scegliere anche $s$ finito.
 }
 
