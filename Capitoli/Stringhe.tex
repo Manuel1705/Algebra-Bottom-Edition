@@ -2,15 +2,16 @@
 \subsection{Insieme delle Stringhe}
 \bottom{
     Scriviamo: \(\mathbb Z_2 = \mathbb Z / \equiv_2 = \{[0]_2, [1]_2\}\).
-    Allora, dato \(n \in \mathbb N\), definiamo \(a = \mathbb Z_2 \times ... \times \mathbb Z_2 \text{ (} n \text{ volte)}\) l'insieme delle stringhe di 0 ed 1 di lunghezza \(n\).
+    Allora, dato \(n \in \mathbb N\), definiamo \(a = \mathbb Z_2 \times\ \dots\ \times \mathbb Z_2 \text{ (} n \text{ volte)}\) l'insieme delle stringhe di 0 ed 1 di lunghezza \(n\).
 }
 
 \subsection{Somma e Prodotto Puntuali di Stringhe}
 \bottom{
-    Sia \(a = \mathbb Z_2 \times ... \times \mathbb Z_2\), \(n \in \mathbb N\) volte. Allora, presi \(x, y \in a\) tali che \(x = (x_1, ..., x_n), y = (y_1, ..., y_n), x_i, y_i \in \{0, 1\} \forall i \in I_n\), allora definiamo la somma puntuale:
-    $$x + y = ([x_1 + y_1], [x_2 + y_2], ..., [x_n + y_n])$$
-    Analogamente, definiamo il prodotto puntuale:
-    $$x \cdot y = ([x_1 \cdot y_1], ..., [x_n \cdot y_n])$$
+    Sia \(a = \mathbb Z_2 \times\ \dots\ \times \mathbb Z_2\), \(n \in \mathbb N\) volte. Allora, presi \(x, y \in a\) tali che \(x = (x_1,\ \dots\ , x_n), y = (y_1,\ \dots\ , y_n)\text{ con } x_i, y_i \in \{0, 1\}\ \forall i \in I_n\)\\
+    allora definiamo la somma puntuale:
+    $$x + y = ([x_1 + y_1], [x_2 + y_2],\ \dots\ , [x_n + y_n])$$
+    analogamente, definiamo il prodotto puntuale:
+    $$x \cdot y = ([x_1 \cdot y_1],\ \dots\ , [x_n \cdot y_n])$$
 }
 
 \subsection{Stringhe e Funzioni Caratteristiche}
@@ -20,5 +21,5 @@
 
 \subsection{L'Anello delle Parti e l'Anello delle Stringhe sono Isomorfi}
 \bottom{
-    Sia \(n \in \mathbb N - \{0\}\) e \(s = \{1, 2, ..., n\}\). Allora la funzione $$\varphi: x \in P(s) \mapsto \chi_{t, s} \in \mathbb Z_2 \times ... \mathbb Z_2$$ (\(n\) volte) è un'isomorfismo fra $$(P(s), \triangle, \cap)$$ e $$(\mathbb Z_2 \times ... \times \mathbb Z_2 \text{ (n volte)}, +, \cdot)$$ (dove \(+, \cdot\) sono la somma e prodotto puntuali).
+    Sia \(n \in \mathbb N - \{0\}\) e \(s = \{1, 2,\ \dots\ , n\}\). Allora la funzione $$\varphi: x \in P(s) \mapsto \chi_{t, s} \in \mathbb Z_2 \times\ \dots\ \mathbb Z_2\ (n \text{ volte})$$ è un'isomorfismo fra $$(P(s), \triangle, \cap)$$ e $$(\mathbb Z_2 \times\ \dots\ \times \mathbb Z_2 \text{ (n volte)}, +, \cdot)$$ (dove \(+, \cdot\) sono la somma e prodotto puntuali).
 }
