@@ -239,184 +239,184 @@
 \contentsline {subsection}{\numberline {11.12}Cardinalità dell'Insieme Simmetrico di un Insieme Finito}{95}{subsection.11.12}%
 \contentsline {subsection}{\numberline {11.13}Relazione fra Iniettività e Suriettività di Applicazioni fra Insiemi Finiti di Uguale Cardinalità}{96}{subsection.11.13}%
 \contentsline {subsection}{\numberline {11.14}Cancellabilità implica Invertibilità in un Monoide Commutativo Finito}{96}{subsection.11.14}%
-\contentsline {subsection}{\numberline {11.15}Anelli Unitari Integri Finiti sono Corpi}{96}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.15}Anelli Unitari Integri Finiti sono Corpi}{97}{subsection.11.15}%
 \contentsline {subsection}{\numberline {11.16}Domini di Integrità Finiti sono Campi}{97}{subsection.11.16}%
 \contentsline {subsection}{\numberline {11.17}Funzione Caratteristica}{97}{subsection.11.17}%
-\contentsline {subsection}{\numberline {11.18}Ogni sottoinsieme è dotato di funzione caratteristica}{97}{subsection.11.18}%
+\contentsline {subsection}{\numberline {11.18}Ogni sottoinsieme è dotato di funzione caratteristica}{98}{subsection.11.18}%
 \contentsline {subsection}{\numberline {11.19}Coefficiente Binomiale}{98}{subsection.11.19}%
-\contentsline {subsection}{\numberline {11.20}Sommatoria di Coefficienti Binomiali}{98}{subsection.11.20}%
+\contentsline {subsection}{\numberline {11.20}Sommatoria di Coefficienti Binomiali}{99}{subsection.11.20}%
 \contentsline {subsection}{\numberline {11.21}Equivalenza di Coefficienti Binomiali}{99}{subsection.11.21}%
-\contentsline {subsection}{\numberline {11.22}Formula Ricorsiva per i Coefficienti Binomiali}{99}{subsection.11.22}%
-\contentsline {subsection}{\numberline {11.23}Triangolo di Tartaglia}{100}{subsection.11.23}%
-\contentsline {subsection}{\numberline {11.24}Formula Matematica per il Calcolo dei Coefficienti Binomiali}{100}{subsection.11.24}%
-\contentsline {section}{\numberline {12}Strutture Booleane}{102}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Reticolo Booleano}{102}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Algebra di Boole}{102}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Anello Booleano}{102}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}In un Anello Booleano ogni elemento è il Proprio Opposto}{102}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Anelli Booleani sono Commutativi}{103}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}Per ogni Anello Booleano esiste un corrispondente Reticolo Booleano}{103}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}Per ogni Reticolo Booleano esiste un corrispondente Anello Booleano}{105}{subsection.12.7}%
-\contentsline {subsection}{\numberline {12.8}Equivalenza di Strutture Booleane}{106}{subsection.12.8}%
-\contentsline {subsection}{\numberline {12.9}L'insieme delle Parti è un Anello Booleano}{107}{subsection.12.9}%
-\contentsline {subsection}{\numberline {12.10}Teorema di Stone}{107}{subsection.12.10}%
-\contentsline {subsection}{\numberline {12.11}Corollari del Teorema di Stone}{107}{subsection.12.11}%
-\contentsline {section}{\numberline {13}Stringhe}{108}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Insieme delle Stringhe}{108}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Somma e Prodotto Puntuali di Stringhe}{108}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Stringhe e Funzioni Caratteristiche}{108}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}L'Anello delle Parti e l'Anello delle Stringhe sono Isomorfi}{108}{subsection.13.4}%
-\contentsline {section}{\numberline {14}Divisibilità}{109}{section.14}%
-\contentsline {subsection}{\numberline {14.1} Divisori e Multipli}{109}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2} Elementi Associati}{109}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3} Insieme degli Associati}{109}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4} Associati di un Elemento Cancellabile}{109}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5} Associati hanno stessi Divisori e Multipli}{110}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6} Massimi Comuni Divisori e Minimi Comuni Multipli}{111}{subsection.14.6}%
-\contentsline {subsection}{\numberline {14.7} Divisori Banali}{111}{subsection.14.7}%
-\contentsline {subsection}{\numberline {14.8} Elemento Irriducibile (in un Dominio di Integrità)}{111}{subsection.14.8}%
-\contentsline {subsection}{\numberline {14.9} Primo}{111}{subsection.14.9}%
-\contentsline {subsection}{\numberline {14.10} Coprimo}{112}{subsection.14.10}%
-\contentsline {subsection}{\numberline {14.11} Monoide Cancellativo}{112}{subsection.14.11}%
-\contentsline {subsection}{\numberline {14.12} Monoide Fattoriale}{112}{subsection.14.12}%
-\contentsline {subsection}{\numberline {14.13} Anello Fattoriale}{112}{subsection.14.13}%
-\contentsline {subsection}{\numberline {14.14} Caratterizzazione di MCD e mcm per Associati}{113}{subsection.14.14}%
-\contentsline {subsection}{\numberline {14.15} Fattorizzazione in Primi in un Monoide Fattoriale}{113}{subsection.14.15}%
-\contentsline {subsection}{\numberline {14.16} Numero di Divisori in \(\mathbb N\)}{114}{subsection.14.16}%
-\contentsline {subsection}{\numberline {14.17} Numero di Divisori in \(\mathbb Z\)}{114}{subsection.14.17}%
-\contentsline {subsection}{\numberline {14.18} MCD e mcm dalle Fattorizzazioni}{115}{subsection.14.18}%
-\contentsline {subsection}{\numberline {14.19} Associati da MCD e mcm}{115}{subsection.14.19}%
-\contentsline {subsection}{\numberline {14.20} Proprietà di Divisione Lineare dei Divisori Comuni}{116}{subsection.14.20}%
-\contentsline {subsection}{\numberline {14.21} Valore Assoluto}{116}{subsection.14.21}%
-\contentsline {subsection}{\numberline {14.22} Teorema della Divisione Euclidea (o con Resto)}{116}{subsection.14.22}%
-\contentsline {subsection}{\numberline {14.23} Algoritmo delle Divisioni Successive}{118}{subsection.14.23}%
-\contentsline {subsection}{\numberline {14.24} Teorema di Bézout}{118}{subsection.14.24}%
-\contentsline {subsection}{\numberline {14.25} Lemma di Euclide}{119}{subsection.14.25}%
-\contentsline {subsection}{\numberline {14.26} In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}{119}{subsection.14.26}%
-\contentsline {subsection}{\numberline {14.27} Caratterizzazione Lineare di Classe di Resto}{120}{subsection.14.27}%
-\contentsline {subsection}{\numberline {14.28} Operazione Parziale: Modulo}{121}{subsection.14.28}%
-\contentsline {subsection}{\numberline {14.29} Caratterizzazione di \(\mathbb Z_m\)}{121}{subsection.14.29}%
-\contentsline {subsection}{\numberline {14.30} Relazione di Equivalenza Compatibile}{122}{subsection.14.30}%
-\contentsline {subsection}{\numberline {14.31} Congruenza}{123}{subsection.14.31}%
-\contentsline {subsection}{\numberline {14.32} Epimorfismo fra Strutture e Strutture Quoziente}{123}{subsection.14.32}%
-\contentsline {subsection}{\numberline {14.33} Congruenza equivale a Compatibilità}{123}{subsection.14.33}%
-\contentsline {subsection}{\numberline {14.34} Anello Quoziente di \(\mathbb Z\)}{124}{subsection.14.34}%
-\contentsline {subsection}{\numberline {14.35} Asserti Equivalenti su Anelli Quoziente di \(\mathbb Z\)}{124}{subsection.14.35}%
-\contentsline {subsection}{\numberline {14.36} Equazione Diofantea}{125}{subsection.14.36}%
-\contentsline {subsection}{\numberline {14.37} Notazione Sintetica di Equazione Diofantea}{126}{subsection.14.37}%
-\contentsline {subsection}{\numberline {14.38} Soluzione dell'Equazione Diofantea}{126}{subsection.14.38}%
-\contentsline {subsection}{\numberline {14.39} Asserti Equivalenti al Teorema di Bézout}{126}{subsection.14.39}%
-\contentsline {subsection}{\numberline {14.40} Caratterizzazione dell'Insieme delle Soluzioni di Equazioni Diofantee}{127}{subsection.14.40}%
-\contentsline {subsection}{\numberline {14.41} Equazione Congruenziale}{128}{subsection.14.41}%
-\contentsline {subsection}{\numberline {14.42} Soluzione dell'Equazione Congruenziale}{128}{subsection.14.42}%
-\contentsline {subsection}{\numberline {14.43} Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}{129}{subsection.14.43}%
-\contentsline {subsection}{\numberline {14.44} Primo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{129}{subsection.14.44}%
-\contentsline {subsection}{\numberline {14.45} Secondo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{129}{subsection.14.45}%
-\contentsline {subsection}{\numberline {14.46} Risoluzione di Eq. Congruenziali: Termini Congruenti}{130}{subsection.14.46}%
-\contentsline {subsection}{\numberline {14.47} Equazione Congruenziale come Equazione Diofantea}{130}{subsection.14.47}%
-\contentsline {subsection}{\numberline {14.48} Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}{131}{subsection.14.48}%
-\contentsline {subsection}{\numberline {14.49} Risoluzione di Eq. Congruenziali: Coprimi del Modulo}{131}{subsection.14.49}%
-\contentsline {subsection}{\numberline {14.50} Algoritmo per la Soluzione di Equazioni Congruenziali}{132}{subsection.14.50}%
-\contentsline {subsection}{\numberline {14.51} Elemento Periodico di un Gruppo}{132}{subsection.14.51}%
-\contentsline {subsection}{\numberline {14.52} Periodo di un Elemento Periodico}{132}{subsection.14.52}%
-\contentsline {subsection}{\numberline {14.53} Relazione fra Periodo e Cardinalità del Sottogruppo Generato}{132}{subsection.14.53}%
-\contentsline {subsection}{\numberline {14.54} Teorema su Esponenti di Elementi Periodici e Congruenza}{133}{subsection.14.54}%
-\contentsline {section}{\numberline {15}Polinomi}{134}{section.15}%
-\contentsline {subsection}{\numberline {15.1} Definizione di Successione di Elementi}{134}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2} Notazione di Successione di Elementi}{134}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3} Polinomio}{134}{subsection.15.3}%
-\contentsline {subsection}{\numberline {15.4} Coefficienti di un Polinomio}{134}{subsection.15.4}%
-\contentsline {subsection}{\numberline {15.5} Notazione di Insieme dei Polinomi}{134}{subsection.15.5}%
-\contentsline {subsection}{\numberline {15.6} Polinomio Zero o Nullo}{135}{subsection.15.6}%
-\contentsline {subsection}{\numberline {15.7} Coefficiente Direttore di un Polinomio}{135}{subsection.15.7}%
-\contentsline {subsection}{\numberline {15.8} Termine Noto di un Polinomio}{135}{subsection.15.8}%
-\contentsline {subsection}{\numberline {15.9} Grado e Coefficiente Direttore del Polinomio Zero}{135}{subsection.15.9}%
-\contentsline {subsection}{\numberline {15.10} Polinomio Monico}{135}{subsection.15.10}%
-\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{136}{subsection.15.11}%
-\contentsline {subsection}{\numberline {15.12} Anello dei Polinomi}{136}{subsection.15.12}%
-\contentsline {subsection}{\numberline {15.13} Polinomio Costante}{136}{subsection.15.13}%
-\contentsline {subsection}{\numberline {15.14} Notazione di Polinomio Costante}{136}{subsection.15.14}%
-\contentsline {subsection}{\numberline {15.15} Monomorfismo dei Polinomi Costanti}{136}{subsection.15.15}%
-\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{137}{subsection.15.16}%
-\contentsline {subsection}{\numberline {15.17} Potenze del Polinomio incognita}{137}{subsection.15.17}%
-\contentsline {subsection}{\numberline {15.18} Monomio}{137}{subsection.15.18}%
-\contentsline {subsection}{\numberline {15.19} Polinomio come Somma di Monomi}{137}{subsection.15.19}%
-\contentsline {subsection}{\numberline {15.20} Proprietà della Somma e Prodotto di Polinomi}{138}{subsection.15.20}%
-\contentsline {subsection}{\numberline {15.21} Proprietà del Grado della Somma di Polinomi}{138}{subsection.15.21}%
-\contentsline {subsection}{\numberline {15.22} Proprietà del Grado di Prodotto di Polinomi}{138}{subsection.15.22}%
-\contentsline {subsection}{\numberline {15.23} Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}{139}{subsection.15.23}%
-\contentsline {subsection}{\numberline {15.24} Condizione Sufficiente e Necessaria per Dominio di Integrità dei Polinomi}{139}{subsection.15.24}%
-\contentsline {subsection}{\numberline {15.25} Condizione di Non Invertibilità di un Polinomio}{139}{subsection.15.25}%
-\contentsline {subsection}{\numberline {15.26} Invertibilità del Polinomio Incognita}{139}{subsection.15.26}%
-\contentsline {subsection}{\numberline {15.27} Teorema della Divisione Lunga tra Polinomi}{140}{subsection.15.27}%
-\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{141}{subsection.15.28}%
-\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{141}{subsection.15.29}%
-\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{141}{subsection.15.30}%
-\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{141}{subsection.15.31}%
-\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{141}{subsection.15.32}%
-\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{141}{subsection.15.33}%
-\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{142}{subsection.15.34}%
-\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{142}{subsection.15.35}%
-\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{142}{subsection.15.36}%
-\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{143}{subsection.15.37}%
-\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità}{145}{subsection.15.38}%
-\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{145}{subsection.15.39}%
-\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{146}{subsection.15.40}%
-\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{146}{subsection.15.41}%
-\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{146}{subsection.15.42}%
-\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{147}{subsection.15.43}%
-\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{147}{subsection.15.44}%
-\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{149}{subsection.15.45}%
-\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{149}{subsection.15.46}%
-\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{149}{subsection.15.47}%
-\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{149}{subsection.15.48}%
-\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{150}{subsection.15.49}%
-\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{150}{subsection.15.50}%
-\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{150}{subsection.15.51}%
-\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{150}{subsection.15.52}%
-\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{150}{subsection.15.53}%
-\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{151}{subsection.15.54}%
-\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{151}{subsection.15.55}%
-\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{151}{subsection.15.56}%
-\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{151}{subsection.15.57}%
-\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{152}{subsection.15.58}%
-\contentsline {section}{\numberline {16}Grafi}{153}{section.16}%
-\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{153}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{153}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{153}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{153}{subsection.16.4}%
-\contentsline {subsection}{\numberline {16.5}Multigrafo}{153}{subsection.16.5}%
-\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{153}{subsection.16.6}%
-\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{154}{subsection.16.7}%
-\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{154}{subsection.16.8}%
-\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{154}{subsection.16.9}%
-\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{154}{subsection.16.10}%
-\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{154}{subsection.16.11}%
-\contentsline {subsection}{\numberline {16.12}Grafo Completo}{154}{subsection.16.12}%
-\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{155}{subsection.16.13}%
-\contentsline {subsection}{\numberline {16.14}Sottografo}{155}{subsection.16.14}%
-\contentsline {subsection}{\numberline {16.15}(Multi)Grafo Finito}{155}{subsection.16.15}%
-\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{155}{subsection.16.16}%
-\contentsline {subsection}{\numberline {16.17}Grafo Planare}{155}{subsection.16.17}%
-\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{156}{subsection.16.18}%
-\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{156}{subsection.16.19}%
-\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{156}{subsection.16.20}%
-\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{157}{subsection.16.21}%
-\contentsline {subsection}{\numberline {16.22}Componente Connessa}{157}{subsection.16.22}%
-\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{157}{subsection.16.23}%
-\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{157}{subsection.16.24}%
-\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{157}{subsection.16.25}%
-\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{158}{subsection.16.26}%
-\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{158}{subsection.16.27}%
-\contentsline {subsection}{\numberline {16.28}Foresta}{158}{subsection.16.28}%
-\contentsline {subsection}{\numberline {16.29}Albero}{158}{subsection.16.29}%
-\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{158}{subsection.16.30}%
-\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{159}{subsection.16.31}%
-\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{159}{subsection.16.32}%
-\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{160}{subsection.16.33}%
-\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{160}{subsection.16.34}%
-\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{160}{subsection.16.35}%
-\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{160}{subsection.16.36}%
-\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{161}{subsection.16.37}%
-\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{161}{subsection.16.38}%
-\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{162}{subsection.16.39}%
+\contentsline {subsection}{\numberline {11.22}Formula Ricorsiva per i Coefficienti Binomiali}{100}{subsection.11.22}%
+\contentsline {subsection}{\numberline {11.23}Triangolo di Tartaglia}{101}{subsection.11.23}%
+\contentsline {subsection}{\numberline {11.24}Formula Matematica per il Calcolo dei Coefficienti Binomiali}{101}{subsection.11.24}%
+\contentsline {section}{\numberline {12}Strutture Booleane}{103}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Reticolo Booleano}{103}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Algebra di Boole}{103}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Anello Booleano}{103}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}In un Anello Booleano ogni elemento è il Proprio Opposto}{103}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Anelli Booleani sono Commutativi}{104}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Per ogni Anello Booleano esiste un corrispondente Reticolo Booleano}{104}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Per ogni Reticolo Booleano esiste un corrispondente Anello Booleano}{106}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Equivalenza di Strutture Booleane}{107}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}L'insieme delle Parti è un Anello Booleano}{108}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Teorema di Stone}{108}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}Corollari del Teorema di Stone}{108}{subsection.12.11}%
+\contentsline {section}{\numberline {13}Stringhe}{109}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Insieme delle Stringhe}{109}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Somma e Prodotto Puntuali di Stringhe}{109}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Stringhe e Funzioni Caratteristiche}{109}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}L'Anello delle Parti e l'Anello delle Stringhe sono Isomorfi}{109}{subsection.13.4}%
+\contentsline {section}{\numberline {14}Divisibilità}{110}{section.14}%
+\contentsline {subsection}{\numberline {14.1} Divisori e Multipli}{110}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2} Elementi Associati}{110}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3} Insieme degli Associati}{110}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4} Associati di un Elemento Cancellabile}{110}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5} Associati hanno stessi Divisori e Multipli}{111}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6} Massimi Comuni Divisori e Minimi Comuni Multipli}{112}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7} Divisori Banali}{112}{subsection.14.7}%
+\contentsline {subsection}{\numberline {14.8} Elemento Irriducibile (in un Dominio di Integrità)}{112}{subsection.14.8}%
+\contentsline {subsection}{\numberline {14.9} Primo}{112}{subsection.14.9}%
+\contentsline {subsection}{\numberline {14.10} Coprimo}{113}{subsection.14.10}%
+\contentsline {subsection}{\numberline {14.11} Monoide Cancellativo}{113}{subsection.14.11}%
+\contentsline {subsection}{\numberline {14.12} Monoide Fattoriale}{113}{subsection.14.12}%
+\contentsline {subsection}{\numberline {14.13} Anello Fattoriale}{113}{subsection.14.13}%
+\contentsline {subsection}{\numberline {14.14} Caratterizzazione di MCD e mcm per Associati}{114}{subsection.14.14}%
+\contentsline {subsection}{\numberline {14.15} Fattorizzazione in Primi in un Monoide Fattoriale}{114}{subsection.14.15}%
+\contentsline {subsection}{\numberline {14.16} Numero di Divisori in \(\mathbb N\)}{115}{subsection.14.16}%
+\contentsline {subsection}{\numberline {14.17} Numero di Divisori in \(\mathbb Z\)}{115}{subsection.14.17}%
+\contentsline {subsection}{\numberline {14.18} MCD e mcm dalle Fattorizzazioni}{116}{subsection.14.18}%
+\contentsline {subsection}{\numberline {14.19} Associati da MCD e mcm}{116}{subsection.14.19}%
+\contentsline {subsection}{\numberline {14.20} Proprietà di Divisione Lineare dei Divisori Comuni}{117}{subsection.14.20}%
+\contentsline {subsection}{\numberline {14.21} Valore Assoluto}{117}{subsection.14.21}%
+\contentsline {subsection}{\numberline {14.22} Teorema della Divisione Euclidea (o con Resto)}{117}{subsection.14.22}%
+\contentsline {subsection}{\numberline {14.23} Algoritmo delle Divisioni Successive}{119}{subsection.14.23}%
+\contentsline {subsection}{\numberline {14.24} Teorema di Bézout}{119}{subsection.14.24}%
+\contentsline {subsection}{\numberline {14.25} Lemma di Euclide}{120}{subsection.14.25}%
+\contentsline {subsection}{\numberline {14.26} In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}{120}{subsection.14.26}%
+\contentsline {subsection}{\numberline {14.27} Caratterizzazione Lineare di Classe di Resto}{121}{subsection.14.27}%
+\contentsline {subsection}{\numberline {14.28} Operazione Parziale: Modulo}{122}{subsection.14.28}%
+\contentsline {subsection}{\numberline {14.29} Caratterizzazione di \(\mathbb Z_m\)}{122}{subsection.14.29}%
+\contentsline {subsection}{\numberline {14.30} Relazione di Equivalenza Compatibile}{123}{subsection.14.30}%
+\contentsline {subsection}{\numberline {14.31} Congruenza}{124}{subsection.14.31}%
+\contentsline {subsection}{\numberline {14.32} Epimorfismo fra Strutture e Strutture Quoziente}{124}{subsection.14.32}%
+\contentsline {subsection}{\numberline {14.33} Congruenza equivale a Compatibilità}{124}{subsection.14.33}%
+\contentsline {subsection}{\numberline {14.34} Anello Quoziente di \(\mathbb Z\)}{125}{subsection.14.34}%
+\contentsline {subsection}{\numberline {14.35} Asserti Equivalenti su Anelli Quoziente di \(\mathbb Z\)}{125}{subsection.14.35}%
+\contentsline {subsection}{\numberline {14.36} Equazione Diofantea}{126}{subsection.14.36}%
+\contentsline {subsection}{\numberline {14.37} Notazione Sintetica di Equazione Diofantea}{127}{subsection.14.37}%
+\contentsline {subsection}{\numberline {14.38} Soluzione dell'Equazione Diofantea}{127}{subsection.14.38}%
+\contentsline {subsection}{\numberline {14.39} Asserti Equivalenti al Teorema di Bézout}{127}{subsection.14.39}%
+\contentsline {subsection}{\numberline {14.40} Caratterizzazione dell'Insieme delle Soluzioni di Equazioni Diofantee}{128}{subsection.14.40}%
+\contentsline {subsection}{\numberline {14.41} Equazione Congruenziale}{129}{subsection.14.41}%
+\contentsline {subsection}{\numberline {14.42} Soluzione dell'Equazione Congruenziale}{129}{subsection.14.42}%
+\contentsline {subsection}{\numberline {14.43} Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}{130}{subsection.14.43}%
+\contentsline {subsection}{\numberline {14.44} Primo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{130}{subsection.14.44}%
+\contentsline {subsection}{\numberline {14.45} Secondo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{130}{subsection.14.45}%
+\contentsline {subsection}{\numberline {14.46} Risoluzione di Eq. Congruenziali: Termini Congruenti}{131}{subsection.14.46}%
+\contentsline {subsection}{\numberline {14.47} Equazione Congruenziale come Equazione Diofantea}{131}{subsection.14.47}%
+\contentsline {subsection}{\numberline {14.48} Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}{132}{subsection.14.48}%
+\contentsline {subsection}{\numberline {14.49} Risoluzione di Eq. Congruenziali: Coprimi del Modulo}{132}{subsection.14.49}%
+\contentsline {subsection}{\numberline {14.50} Algoritmo per la Soluzione di Equazioni Congruenziali}{133}{subsection.14.50}%
+\contentsline {subsection}{\numberline {14.51} Elemento Periodico di un Gruppo}{133}{subsection.14.51}%
+\contentsline {subsection}{\numberline {14.52} Periodo di un Elemento Periodico}{133}{subsection.14.52}%
+\contentsline {subsection}{\numberline {14.53} Relazione fra Periodo e Cardinalità del Sottogruppo Generato}{133}{subsection.14.53}%
+\contentsline {subsection}{\numberline {14.54} Teorema su Esponenti di Elementi Periodici e Congruenza}{134}{subsection.14.54}%
+\contentsline {section}{\numberline {15}Polinomi}{135}{section.15}%
+\contentsline {subsection}{\numberline {15.1} Definizione di Successione di Elementi}{135}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2} Notazione di Successione di Elementi}{135}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3} Polinomio}{135}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4} Coefficienti di un Polinomio}{135}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5} Notazione di Insieme dei Polinomi}{135}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6} Polinomio Zero o Nullo}{136}{subsection.15.6}%
+\contentsline {subsection}{\numberline {15.7} Coefficiente Direttore di un Polinomio}{136}{subsection.15.7}%
+\contentsline {subsection}{\numberline {15.8} Termine Noto di un Polinomio}{136}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.9} Grado e Coefficiente Direttore del Polinomio Zero}{136}{subsection.15.9}%
+\contentsline {subsection}{\numberline {15.10} Polinomio Monico}{136}{subsection.15.10}%
+\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{137}{subsection.15.11}%
+\contentsline {subsection}{\numberline {15.12} Anello dei Polinomi}{137}{subsection.15.12}%
+\contentsline {subsection}{\numberline {15.13} Polinomio Costante}{137}{subsection.15.13}%
+\contentsline {subsection}{\numberline {15.14} Notazione di Polinomio Costante}{137}{subsection.15.14}%
+\contentsline {subsection}{\numberline {15.15} Monomorfismo dei Polinomi Costanti}{137}{subsection.15.15}%
+\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{138}{subsection.15.16}%
+\contentsline {subsection}{\numberline {15.17} Potenze del Polinomio incognita}{138}{subsection.15.17}%
+\contentsline {subsection}{\numberline {15.18} Monomio}{138}{subsection.15.18}%
+\contentsline {subsection}{\numberline {15.19} Polinomio come Somma di Monomi}{138}{subsection.15.19}%
+\contentsline {subsection}{\numberline {15.20} Proprietà della Somma e Prodotto di Polinomi}{139}{subsection.15.20}%
+\contentsline {subsection}{\numberline {15.21} Proprietà del Grado della Somma di Polinomi}{139}{subsection.15.21}%
+\contentsline {subsection}{\numberline {15.22} Proprietà del Grado di Prodotto di Polinomi}{139}{subsection.15.22}%
+\contentsline {subsection}{\numberline {15.23} Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}{140}{subsection.15.23}%
+\contentsline {subsection}{\numberline {15.24} Condizione Sufficiente e Necessaria per Dominio di Integrità dei Polinomi}{140}{subsection.15.24}%
+\contentsline {subsection}{\numberline {15.25} Condizione di Non Invertibilità di un Polinomio}{140}{subsection.15.25}%
+\contentsline {subsection}{\numberline {15.26} Invertibilità del Polinomio Incognita}{140}{subsection.15.26}%
+\contentsline {subsection}{\numberline {15.27} Teorema della Divisione Lunga tra Polinomi}{141}{subsection.15.27}%
+\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{142}{subsection.15.28}%
+\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{142}{subsection.15.29}%
+\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{142}{subsection.15.30}%
+\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{142}{subsection.15.31}%
+\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{142}{subsection.15.32}%
+\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{142}{subsection.15.33}%
+\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{143}{subsection.15.34}%
+\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{143}{subsection.15.35}%
+\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{143}{subsection.15.36}%
+\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{144}{subsection.15.37}%
+\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità}{146}{subsection.15.38}%
+\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{146}{subsection.15.39}%
+\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{147}{subsection.15.40}%
+\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{147}{subsection.15.41}%
+\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{147}{subsection.15.42}%
+\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{148}{subsection.15.43}%
+\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{148}{subsection.15.44}%
+\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{150}{subsection.15.45}%
+\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{150}{subsection.15.46}%
+\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{150}{subsection.15.47}%
+\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{150}{subsection.15.48}%
+\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{151}{subsection.15.49}%
+\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{151}{subsection.15.50}%
+\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{151}{subsection.15.51}%
+\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{151}{subsection.15.52}%
+\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{151}{subsection.15.53}%
+\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{152}{subsection.15.54}%
+\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{152}{subsection.15.55}%
+\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{152}{subsection.15.56}%
+\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{152}{subsection.15.57}%
+\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{153}{subsection.15.58}%
+\contentsline {section}{\numberline {16}Grafi}{154}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{154}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{154}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{154}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{154}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Multigrafo}{154}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{154}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{155}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{155}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{155}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{155}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{155}{subsection.16.11}%
+\contentsline {subsection}{\numberline {16.12}Grafo Completo}{155}{subsection.16.12}%
+\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{156}{subsection.16.13}%
+\contentsline {subsection}{\numberline {16.14}Sottografo}{156}{subsection.16.14}%
+\contentsline {subsection}{\numberline {16.15}(Multi)Grafo Finito}{156}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{156}{subsection.16.16}%
+\contentsline {subsection}{\numberline {16.17}Grafo Planare}{156}{subsection.16.17}%
+\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{157}{subsection.16.18}%
+\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{157}{subsection.16.19}%
+\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{157}{subsection.16.20}%
+\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{158}{subsection.16.21}%
+\contentsline {subsection}{\numberline {16.22}Componente Connessa}{158}{subsection.16.22}%
+\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{158}{subsection.16.23}%
+\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{158}{subsection.16.24}%
+\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{158}{subsection.16.25}%
+\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{159}{subsection.16.26}%
+\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{159}{subsection.16.27}%
+\contentsline {subsection}{\numberline {16.28}Foresta}{159}{subsection.16.28}%
+\contentsline {subsection}{\numberline {16.29}Albero}{159}{subsection.16.29}%
+\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{159}{subsection.16.30}%
+\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{160}{subsection.16.31}%
+\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{160}{subsection.16.32}%
+\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{161}{subsection.16.33}%
+\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{161}{subsection.16.34}%
+\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{161}{subsection.16.35}%
+\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{161}{subsection.16.36}%
+\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{162}{subsection.16.37}%
+\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{162}{subsection.16.38}%
+\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{163}{subsection.16.39}%
