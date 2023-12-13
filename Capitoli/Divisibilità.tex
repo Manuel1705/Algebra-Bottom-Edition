@@ -1,8 +1,8 @@
 \section{Divisibilità}
 \subsection{ Divisori e Multipli}
 \bottom{
-    Sia \((s, \cdot)\) un semigruppo commutativo. Allora, \(\forall x, y \in s\), diremo che:
-
+    Sia \((s, \cdot)\) un semigruppo commutativo. Allora
+    $$\forall x, y \in s$$
     $$\substack{x | y \\
     x \text{ divide } y\\
     y \text{ e' multiplo di } x
@@ -16,12 +16,7 @@
     Sia \((s, \cdot)\) un semigruppo commutativo. Allora diremo che due elementi \(x, y\) sono associati se si dividono a vicenda.
 
     $$x, y \text{ associati } :\iff x \in DIV_s(y) \land y \in DIV_s(x)$$
-}
-
-\subsection{ Insieme degli Associati}
-\bottom{
-    Sia \((s, \cdot)\) un semigruppo commutativo. Allora, \(\forall x \in s\), definiamo l'insieme degli associati di \(x\):
-
+    Definiamo l'insieme degli associati di \(x\) come:
     $$ASSOC_s(x) = \{y \in s \mid x|y \land y|x\}$$
 }
 
@@ -31,14 +26,14 @@
 
     $$ASSOC_s(x) = \{ xu \in s \mid u \in U(s)\}$$
 
-    Cioè tutti gli associati di un elemento cancellabile sono il prodotto di \(x\) per un elemento invertibile di \(s\).
+    Cioè tutti gli associati di un elemento cancellabile $x$ sono il prodotto di \(x\) per un elemento invertibile di \(s\).
 }
 \bottomp{
     \(\supseteq)\) Sia \(u \in U(s)\). Allora
     \begin{align*}
         &&&x|xu\\
         &\text{ma}\\
-        &&&(xu)u^{-1} = x\\
+        &&&xuu^{-1} = x\\
         &\text{quindi}\\
         &&&xu|x\\
         &\text{Pertanto}\\
@@ -46,8 +41,11 @@
     \end{align*}
 
     \(\subseteq)\) Sia \(y \in ASSOC_s(x)\).
-    Allora $$\exists w,z\in s\text{ tali che }y = xw \text{ e } x = yz$$ Allora, usando la cancellabilità di \(x\):
-    $$x = xwz \implies wz = 1 \implies w, z \text{ invertibili } \implies$$
+    Allora $$\exists w,z\in s$$
+    $$y = xw$$
+    $$x = yz$$ 
+    Allora, usando la cancellabilità di \(x\):
+    $$x = yz = xwz \implies wz = 1 \implies w, z \text{ invertibili } \implies$$
     $$\implies w \in U(s) \implies y \in \{xu \mid u \in U(s)\}$$
 
     Da cui la tesi.
@@ -65,15 +63,15 @@
 
     Lo stesso vale per \(x\), quindi \(y \in ASSOC(x)\).
 
-    \(2 \Leftrightarrow)\) Segue immediatamente dalla definizione di insieme dei divisori e dei multiplil.
+    \(2 \Leftrightarrow)\) Segue immediatamente dalla definizione di insieme dei divisori e dei multipli.
 }
 
 \subsection{ Massimi Comuni Divisori e Minimi Comuni Multipli}
 \bottom{
     Sia \((s, \cdot)\) un monoide commutativo e sia \(t \subseteq s\). Allora definiamo:
-    $$MCD_s(t) = \{d \in \bigcap_{x \in t} DIV_s(X) \mid (\forall z \in \bigcap_{x \in t} DIV_s(x))(z | d)\}$$
-    $$mcm_s(t) = \{d \in \bigcap_{x \in t} MULT_s(X) \mid (\forall z \in \bigcap_{x \in t} MULT_s(x))(d | z)\}$$
-    Bisogna fare attenzione che nonostante si utilizzino i termini "massimo" e "minimo" questi non vanno intesi come terminologia delle relazioni d'ordine, in quanto la divisione non è necessariamente una relazione d'ordine. Il massimo e i minimi di un insieme sono sempre unici, mentre l'MCD e gli mcm, come si può vedere dalla definizione, sono un insieme e pertanto ne possono esistere molteplici.
+    $$MCD_s(t) = \{d \in \bigcap_{x \in t} DIV_s(X) \mid \forall z \in \bigcap_{x \in t} DIV_s(x)\ (z | d)\}$$
+    $$mcm_s(t) = \{d \in \bigcap_{x \in t} MULT_s(X) \mid \forall z \in \bigcap_{x \in t} MULT_s(x)\ (d | z)\}$$
+    Bisogna fare attenzione che nonostante si utilizzino i termini "massimo" e "minimo" questi non vanno intesi come terminologia delle relazioni d'ordine, in quanto la divisione non è necessariamente una relazione d'ordine. Il massimo e i minimi di un insieme sono sempre unici, mentre MCD ed mcm, come si può vedere dalla definizione, sono insiemi e pertanto ne possono esistere molteplici.
 }
 
 \subsection{ Divisori Banali}
@@ -97,7 +95,7 @@
     $$p \in s \text{ primo } :\iff \forall a, b \in s\ (p|ab \implies p|a \lor p|b)$$
 }
 
-\subsection{ Coprimo}
+\subsection{ Coprimi}
 \bottom{
     Sia \((s, \cdot, 1_s)\) un monoide commutativo. Allora:
     $$x,y \in s \text{ coprimi } :\iff 1_s \in MCD(\{x, y\})$$
@@ -119,7 +117,7 @@
         \item Ogni \(x \in m - U(m)\) è prodotto di irriducibili, ed ogni fattorizzazione è unica a meno dell'ordine dei fattori e del prodotto per invertibili.
     \end{enumerate}
 
-    NO DIM: si dimostra che queste tre condizioni sono fra di loro equivalenti.
+    Si dimostra che queste tre condizioni sono fra loro equivalenti.
 }
 
 \subsection{ Anello Fattoriale}
@@ -317,7 +315,7 @@
 \subsection{ In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}
 \bottom{
     In \(\mathbb Z\), i primi sono tutti e soli gli irriducibili.
-    Cioè, \(p \in \mathbb Z\) primo \(\iff\) \(p\) irriducibile.
+    $$p \in \mathbb Z \text{ primo} \iff p \text{ irriducibile}$$
 }
 \bottomp{
     \(\Rightarrow)\) Sia \(p \in \mathbb Z\) primo e siano \(a, b \in \mathbb Z\) tali che \(p = ab\).\\
@@ -368,10 +366,6 @@
     }
 }
 
-
-
-
-
 \subsection{ Caratterizzazione di \(\mathbb Z_m\)}
 \bottom{
     Sia \(m \in \mathbb N - \{0\}\). Allora \(\mathbb Z_m = \{[0]_m, [1]_m, \dots, [m-1]_m\}\) e in particolare si ha che \(|\mathbb Z_m| = m\)
@@ -409,7 +403,7 @@
     Se \(\sim\) è una congruenza in \((s, *_1, \dots, *_n)\), allora sono ben poste le operazioni $$\forall i: 0 \leq i \leq n:$$
     $$(*_i)_\sim: ([x]_\sim, [y]_\sim) \in s/\mathord\sim \times s/\mathord\sim \mapsto [x *_i y]_\sim \in s/\mathord\sim$$
 
-    E la proiezione canonica \(\pi: x \in s \mapsto [x]_s \in s/\mathord\sim\) è epimorfismo tra le strutture \((s, *_1, \dots, *_n)\) e \((s/\mathord\sim, (*_1)_\sim, \dots, (*_n)_\sim)\)
+    E la proiezione canonica \(\pi: x \in s \mapsto [x]_\sim \in s/\mathord\sim\) è epimorfismo tra le strutture \((s, *_1, \dots, *_n)\) e \((s/\mathord\sim, (*_1)_\sim, \dots, (*_n)_\sim)\)
 }
 
 \subsection{ Congruenza equivale a Compatibilità}
@@ -430,7 +424,8 @@
     per compatibilità a sinistra
     $$b*c \sim b*d$$
     abbiamo $$a*c \sim b*c \sim b*d$$
-    quindi $$a*c \sim b*d$$
+    quindi per transitività
+    $$a*c \sim b*d$$
 }
 
 \subsection{ Anello Quoziente di \(\mathbb Z\)}
@@ -451,7 +446,7 @@
 \bottomp{
     \(1 \rightarrow 2)\) Ovvio perché ogni campo è dominio di integrità.
 
-    \(2 \rightarrow 3)\) Siano \(a, b \in \mathbb Z: m = ab\). Allora $$[m]_m = [0]_m = [ab]_m = [a]_m \cdot [b]_m$$ Trovandoci in un dominio di integrità, vale la Legge di Annullamento del Prodotto e $$[a]_m \cdot [b]_m = [0]_m \iff [a]_m = [0]_m \lor [b]_m = [0]_m$$
+    \(2 \rightarrow 3)\) Siano \(a, b \in \mathbb Z: m = ab\). Allora $$[m]_m = [0]_m = [ab]_m = [a]_m \cdot [b]_m$$ Trovandoci in un dominio di integrità, vale la Legge di Annullamento del Prodotto $$[a]_m \cdot [b]_m = [0]_m \iff [a]_m = [0]_m \lor [b]_m = [0]_m$$
     Suppongo senza ledere la generalità che \([a]_m = [0]_m\), cioè $$a \equiv_m 0 \iff (\exists k \in \mathbb Z)(a = km)$$ Allora $$m = ab = kmb \implies kb = 1 \implies b = \pm 1 \land a = \pm m$$ Allora \(m\) è irriducibile in \(\mathbb Z\), ed è quindi anche primo.
 
     \(3 \rightarrow 1)\) Sia \([a]_m \neq [0]_m\). Posso scegliere \(0 < a < |m|\). \(m\) è irriducibile, cioè i suoi divisori sono \(\{\pm 1, \pm m\}\) quindi \(MCD(a, m) = \{\pm 1\}\) e per il Teorema di Bézout $$\exists u, v \in \mathbb Z\ (1 = au + mv)$$
@@ -465,12 +460,12 @@
 
     $$e[a, b, c]: (x, y) \in \mathbb Z \times \mathbb Z \mapsto ax + by - c \in \mathbb Z$$
 
-    si dice equazione diofantea di 1° grado, a due incognite, con termini a, b, e c.
+    Si dice equazione diofantea di 1° grado, a due incognite, con termini a, b e c.
 }
 
 \subsection{ Notazione Sintetica di Equazione Diofantea}
 \bottom{
-    Un'equazione diofantea della forma \(e[a,b,c](x,y)\) si può esprimere sinteticamente \(ax + by = c\)
+    Un'equazione diofantea della forma \(e[a,b,c](x,y)\) si può esprimere sinteticamente come \(ax + by = c\)
 }
 
 \subsection{ Soluzione dell'Equazione Diofantea}
@@ -484,13 +479,14 @@
     \begin{enumerate}
         \item Il Teorema di Bézout
         \item \(a, b\) coprimi \(\iff (\exists u, v \in \mathbb Z)(1 = au + bv)\)
-        \item \(<a, b> = d\mathbb Z\)
+        \item \(<a, b> = d\mathbb Z^*\)
         \item L'equazione diofantea \(ax + by = c\) ha soluzioni \(\iff d|c\)
     \end{enumerate}
+    $^* d\mathbb Z=\{dn\mid n\in \mathbb Z\}$ è l'insieme di tutti i numeri interi che possono essere ottenuti moltiplicando $d$ per un numero intero.\\
 }
 \bottomp{
     \(1 \rightarrow 2)\) \(\rightarrow)\) Per Bézout, se \(a, b\) sono coprimi, allora esistono $$u, v: 1 = au + bv$$
-    \(\leftarrow)\) Se \(\exists u,v: 1 = au + bv \implies d|1\), ma \(d \in MCD(a,b)\), quindi \(1 \in MCD(a, b)\) e dunque essi sono coprimi.
+    \(\leftarrow)\) Se \(\exists u,v: 1 = au + bv \implies d|1\) perchè i divisori comuni dividono ogni combinazione lineare degli elementi (Proprietà di Divisione Lineare dei Divisori Comuni). Ma allora \(d = \pm 1\), e quindi \(a, b\) sono coprimi.
 
     \(2 \rightarrow 3)\) \(a, b \in d\mathbb Z\) e \(d\mathbb Z\) sottogruppo, quindi \(<a,b> \subseteq d\mathbb Z\). Scrivo $$a = a_1d \land b = b_1d$$ Poiché \(d \in MCD(a, b)\), \(a_1, b_1\) sono coprimi. Allora, per (2), trovo $$u, v \in \mathbb Z: 1 = a_1u + b_1v \implies d = a_1du + b_1dv = au + bv \in <a, b>$$
     Per asimmetria dunque \(d\mathbb Z = <a, b>\).
@@ -542,6 +538,20 @@
     Chiaramente, dalla definizione di classi di resto, si ottiene che ogni valore congruente ad \(n\), cioè appartenente a \([n]_m\), è a sua volta soluzione.
 }
 
+\subsection{ Equazione Congruenziale come Equazione Diofantea}
+\bottom{
+    Un'equazione congruenziale \(ax \equiv_m b\) si può esprimere nella forma:
+    $$ax + my = b$$
+    
+    Cioè come equazione diofantea.
+}
+\bottomp{
+    $$ax \equiv_m b \implies m|(ax - b) \implies \exists k \in z\ (mk = ax - b)$$
+    E quindi:
+    $$ax - mk = b$$
+    Ponendo \(y = -k\) abbiamo la tesi.
+}
+
 \subsection{ Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}
 \bottom{
     Siano \(a, b \in \mathbb Z, m \in \mathbb Z - \{0\}, d \in MCD(a, m)\). Allora \(ax \equiv_m b\) ha soluzioni \(\iff d|b\).
@@ -587,19 +597,7 @@
     $$ax \equiv_m b \iff [a]_m[x]_m = [b]_m \iff a'x \equiv_m b'x$$
 }
 
-\subsection{ Equazione Congruenziale come Equazione Diofantea}
-\bottom{
-    Un'equazione congruenziale \(ax \equiv_m b\) si può esprimere nella forma:
-    $$ax + my = b$$
-    
-    Cioè come equazione diofantea.
-}
-\bottomp{
-    $$ax \equiv_m b \implies m|(ax - b) \implies \exists k \in z\ (mk = ax - b)$$
-    E quindi:
-    $$ax - mk = b$$
-    Ponendo \(y = -k\) abbiamo la tesi.
-}
+
 
 \subsection{ Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}
 \bottom{
@@ -640,19 +638,19 @@ Osserviamo che, nel risolvere \(ax \equiv_m b\), allora \(\forall k \in \mathbb 
 
 \subsection{ Elemento Periodico di un Gruppo}
 \bottom{
-    Sia \((g, \cdot)\) un gruppo, \(x \in g\). \(x\) si dice periodico se:
+    Sia \((g, \cdot)\) un gruppo, \(x \in g\) si dice periodico se:
 
     $$\exists n \in \mathbb N - \{0\}\ (x^n = 1_g)$$
 }
 
 \subsection{ Periodo di un Elemento Periodico}
 \bottom{
-    Siano \((g, \cdot)\) un gruppo ed $ x \in g$ un suo elemento periodico. $$\text{Il minimo } n \in \mathbb N - \{0\}: x^n = 1_g$$ si dice periodo di \(x\) e si indica \(|x|\).
+    Siano \((g, \cdot)\) un gruppo ed $ x \in g$ un suo elemento periodico. $$\text{Il minimo } n \in \mathbb N - \{0\}: x^n = 1_g$$ si dice periodo di \(x\) e si indica come \(|x|\).
 }
 
 \subsection{ Relazione fra Periodo e Cardinalità del Sottogruppo Generato}
 \bottom{
-    Siano \((g, \cdot), x \in g\) un gruppo ed un suo elemento periodico. Allora:
+    Siano $(g, \cdot)$ un gruppo ed $x \in g$ un elemento periodico. Allora:
 
     \(|x| = n \iff |<x>| = n\)
 
@@ -661,7 +659,7 @@ Osserviamo che, nel risolvere \(ax \equiv_m b\), allora \(\forall k \in \mathbb 
 
 \subsection{ Teorema su Esponenti di Elementi Periodici e Congruenza}
 \bottom{
-    Siano \((g, \cdot), x \in g\) un gruppo ed un suo elemento periodico, tale che \(|x| = m \in \mathbb N - \{0\}\). Allora:
+    Siano $(g, \cdot)$ un gruppo ed $x \in g$ un elemento periodico, tale che \(|x| = m \in \mathbb N - \{0\}\). Allora:
     $$\forall a, b \in \mathbb Z\ (x^a = x^b \iff a \equiv_m b)$$
 }
 \bottomp{
