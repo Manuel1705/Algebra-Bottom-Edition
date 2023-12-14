@@ -35,8 +35,7 @@
 
     $$0 := (0_a)_{n \in \mathbb N}$$
 
-    Dove $$(0_a)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N}$$
-    $$\forall n \in \mathbb N\ (a_n = 0_a)$$
+    Dove $$(0_a)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N}\ \forall n \in \mathbb N\ (a_n = 0_a)$$
 }
 
 \subsection{ Coefficiente Direttore di un Polinomio}
@@ -51,25 +50,21 @@
 
 \subsection{ Grado e Coefficiente Direttore del Polinomio Zero}
 \bottom{
-    Poniamo:
-
-    $$cd(0) = 0$$
     $$gr(0) = -\infty$$
-
-    Cioè il grado di \(0\) è l'ordinamento di \(\mathbb (N \cup \{-\infty\}, \leq)\)
+    $$cd(0) = 0$$
 }
 
 \subsection{ Polinomio Monico}
 \bottom{
-    \(f \in A[x]\) si dice polinomio monico se \(cd(f) = a_{gr(f)} = 1_a\)
+    \(f \in A[x]\) si dice polinomio monico se \(cd(f) = 1_a\)
 }
 
 \subsection{ Somma e Prodotto di Polinomi}
 \bottom{
     Siano \((a_n)_{n \in \mathbb N}, (b_n)_{n \in \mathbb N} \in A[x]\) due polinomi. Allora definiamo:
 
-    $$(a_n + b_n)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N} + (b_n)_{n \in \mathbb N}$$
-    $$(\sum_{i+j=n}a_ib_j)_{n \in \mathbb N} = (a_n)_{n \in \mathbb N} \cdot (b_n)_{n \in \mathbb N}$$
+    $$(a_n)_{n \in \mathbb N} + (b_n)_{n \in \mathbb N} = (a_n + b_n)_{n \in \mathbb N}$$
+    $$(a_n)_{n \in \mathbb N} \cdot (b_n)_{n \in \mathbb N} = (\sum_{i=0}^n a_ib_{n-i})_{n \in \mathbb N} $$
 }
 
 \subsection{ Anello dei Polinomi}
@@ -119,28 +114,29 @@
         &\dots\\
         x^n &= (0, \dots, 0 \text{ (n volte)}, 1, 0, ...)
     \end{align*}
+    Ovvero che il polinomio incognita elevato alla n-esima potenza è il polinomio con tutti i coefficienti nulli, eccetto quello in posizione n+1-esima, che è l'unità dell'anello.
 }
 
 \subsection{ Monomio}
 \bottom{
-    Dato una anello \((A, +, \cdot)\), sia \(a \in A\), e sia \(x = (0, 1_A, 0, ...)\). Allora abbiamo che:
+    Dato un anello \((A, +, \cdot)\), sia \(a \in A\), e sia \(x = (0, 1_A, 0, ...)\). Allora abbiamo che:
     $$ax^n = (a, 0, 0, 0,...) \cdot (0, \cdots, 0 \text{ (n volte)}, 1_a, 0, 0...)=$$
     $$ = (0, ..., 0 \text{ (n volte)}, a, 0, 0, ...)$$
-    Il monomio $ax^n$ dunque non è nient'altro che il polinomio a coefficienti tutti nulli, eccetto quello in posizione n+1-esima, che ha valore a. (n+1 perchè la prima posizione è $x^0$).
+    Il monomio $ax^n$ dunque non è nient'altro che il polinomio a coefficienti tutti nulli, eccetto quello in posizione n+1-esima, che ha valore a.
 }
 
 \subsection{ Polinomio come Somma di Monomi}
 \bottom{
-    Sia \(f\) un polinomio tale che \(m \in \mathbb N \land gr(f) = m\) della forma $$f = (a_0, a_1, a_2, a_3, ..., a_m, 0, , ...)$$
+    Sia \(f\) un polinomio tale che \(n \in \mathbb N \land gr(f) = n\) della forma $$f = (a_0, a_1, a_2, a_3, ..., a_n, 0, , ...)$$
 
     Allora è facile verificare che esso si può esprimere nella forma:
-    $$f = a_0 + a_1x + a_2x^2 + a_3x^3 + ... + a_mx^m$$
+    $$f = a_0 + a_1x + a_2x^2 + a_3x^3 + ... + a_nx^n$$
 }
 
 \subsection{ Proprietà della Somma e Prodotto di Polinomi}
 \bottom{
     Dalla distributività in \((A[x], +, \cdot)\) seguono le seguenti proprietà di somma e prodotto.
-    Siano \(f, g \in A[x], m = gr(f), n = gr(g), M = max\{n, m\}\), allora:
+    Siano \(f, g \in A[x], n = gr(f), m = gr(g), M = max\{n, m\}\), allora:
 
     $$f + g = \sum_{i = 0}^M (a_i + b_i)x^i$$
     $$f \cdot g = \sum_{i=0}^{n+m}(\sum_{j=0}^i a_j b_{i - j})x^i$$
@@ -167,7 +163,10 @@
 
 \subsection{ Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}
 \bottom{
-    Sia \(f \in A[x] - \{0\}\). Se \(cd(f)\) è cancellabile, allora anche \(f\) lo è. In particolare, per \(f\) vale la Formula di Addizione dei Gradi.}{\(cd(f)\) cancellabile vuol dire che esso non è divisore dello zero. Per la Formula di Addizione dei Gradi segue che:
+    Sia \(f \in A[x] - \{0\}\). Se \(cd(f)\) è cancellabile, allora anche \(f\) lo è. In particolare, per \(f\) vale la Formula di Addizione dei Gradi.
+}
+\bottomp{
+    \(cd(f)\) cancellabile vuol dire che esso non è divisore dello zero. Per la Formula di Addizione dei Gradi segue che:
     $$\forall g \in A[x]$$
     $$g \neq 0 \implies gr(f \cdot g) = gr(f) + gr(g) \neq -\infty \implies f \cdot g \neq 0 \implies f$$ non è divisore dello zero, cioè \(f\) è cancellabile.
 }
@@ -191,18 +190,33 @@
     Il polinomio \(x\) non è mai invertibile
 }
 \bottomp{
-    Dato che \(cd(x) = 1\) per definizione, e l'unità dell'anello è sempre cancellabile ("Invertibillità Implica Cancellabilità"). In particolare, \(A[x]\) non è mai un campo.
+    Supponiamo, per assurdo, che esista un polinomio $g(x)$ tale che $x \cdot g(x) = 1$.
+
+    Scriviamo $x$ e $g(x)$ come:
+
+    \[ x = a_0 + a_1x + a_2x^2 + \ldots + a_nx^n \]
+
+    \[ g(x) = b_0 + b_1x + b_2x^2 + \ldots + b_mx^m \]
+
+    Dato che $cd(x) = 1$, il termine dominante di $x$ è $a_1 = 1$.
+
+    Ora, consideriamo il prodotto $x \cdot g(x)$. Il termine di grado massimo in $x \cdot g(x)$ sarà il prodotto dei termini di grado massimo in $x$ e $g(x)$, che è $a_1 \cdot b_mx^{m+1} = b_mx^{m+1}$.
+
+    Tuttavia, il termine di grado massimo in $1$ è semplicemente $1$. Poiché $x \cdot g(x)$ non può avere il termine di grado massimo uguale a $1$ (poiché è $b_mx^{m+1}$), abbiamo una contraddizione.
+
+    Concludiamo che non può esistere un polinomio $g(x)$ tale che $x \cdot g(x) = 1$, e quindi il polinomio $x$ non è invertibile in $A[x]$.
+
 }
 
 \subsection{ Teorema della Divisione Lunga tra Polinomi}
 \bottom{
-    Sia \((A, +, \cdot)\) un anello commutativo unitario e siano \(f, g \in A[x]\). Se $$cd(g) \in U(A) \implies (\exists! (q, r) \in A[x] \times A[x])(f = gq + r \land gr(r) < gr(g))$$
+    Sia \((A, +, \cdot)\) un anello commutativo unitario e siano \(f, g \in A[x]\). Se $$cd(g) \in \mathcal U(A) \implies (\exists! (q, r) \in A[x] \times A[x])(f = gq + r \land gr(r) < gr(g))$$
 }
 \bottomp{
     \(\text{Esistenza della Coppia})\) 
 
-    Poniamo \(m = gr(g), n = gr(f)\).
-    Se \(n < m\), la tesi è ovvia: \((q, r) = (0, f)\).
+    Poniamo \(n = gr(f), m = gr(g)\).\\
+    Se \(n < m\), la tesi è ovvia: \((q, r) = (0, f)\).\\
     Se \(n \geq m\) (\(m \neq 0\) per ipotesi su \(cd(g)\)), pongo \(a = cd(f), b = cd(g)\)
     Dimostriamo per Induzione di $2^a$ Forma su n.
     Sia $$k = ab^{-1}x^{n-m}g$$ Tra $$ab^{-1}x^{n-m} \text{ e } g$$ vale la Formula di Addizione dei Gradi, quindi $$gr(k) = gr(ab^{-1}x^{n-m}) + gr(g) = n - m + m = n$$ e $$cd(k) = a$$ e dico $$h = f - k$$
@@ -213,8 +227,9 @@
 
     \(\text{Unicita' della Coppia})\)
 
-    Siano \((q_1, r_1), (q_2, r_2)\) due coppie come da ipotesi. Quindi \(g(q_1 - q_2) = r_2 - r_1\).
-    \(gr(r_2 - r_1) < gr(g) = m\). Vale la Formula di Addizione dei Gradi e quindi $$gr(r_2 - r_1) = gr(g \cdot (q_1 - q_2)) = gr(g) + gr(q_1 - q_2) = m + gr(q_1 - q_2) < m$$
+    Siano \((q_1, r_1), (q_2, r_2)\) due coppie come da ipotesi. Quindi $$g(q_1 - q_2) = r_2 - r_1$$
+    $$gr(r_2 - r_1) < gr(g) = m$$
+    Vale la Formula di Addizione dei Gradi e quindi $$gr(r_2 - r_1) = gr(g \cdot (q_1 - q_2)) = gr(g) + gr(q_1 - q_2) = m + gr(q_1 - q_2) < m$$
     Ma questo è possibile solo se \(gr(q_1 - q_2) = -\infty\), cioè \(q_1 - q_2 = 0\). Allora $$q_1 = q_2 \land r_1 = r_2$$
 }
 
@@ -314,13 +329,13 @@
     Che è la tesi. 
 }
 
-\subsection{ Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità}
+\subsection{ Teorema sul Numero di Radici di un Polinomio in un Dominio di Integrità}
 \bottom{
-    \(A \text{ dominio di integrita' }, f \in A[x] - \{0\}, c_1, ... c_n \text{ radici di } f\) allora:
+    \(A \text{ dominio di integrità }, f \in A[x] - \{0\}, c_1, ... c_n \text{ radici di } f\) allora:
 
     \(n \leq gr(f)\)
 
-    Cioè il numero delle radici è minore o uguale del grado del polinomio.
+    Cioè il numero delle radici è minore o uguale al grado del polinomio.
 }
 \bottomp{
     Sia $$g = \prod_{i=1}^n(x-c_i)$$ Per ruffini generalizzato, $$\exists h \in A[x]\ (f = hg)$$ Ma \(A\) è dominio di integrità e \(g \neq 0\), quindi vale la Formula di Addizione dei Gradi.
@@ -352,12 +367,12 @@
     $$\forall f, g \in A[x]\ (f = g \iff \overline f = \overline g)$$
 }
 \bottomp{
-    \(\rightarrow)\) Se \(f = g\), allora ovviamente \(\overline f = \overline g\).
+    \(\rightarrow)\) Se \(f = g\), allora ovviamente \(\overline f = \overline g\).\\
     \(\leftarrow)\) Definisco \(h = f - g\), e dato che \(\overline f = \overline g\), si ha allora che $$\forall c \in A\ (h(c) = \overline h(c) = \overline{f - g}(c) = \overline f(c) - \overline g(c) = 0)$$
 
     Poiché \(A\) è infinito, \(h\) ha infinite radici distinte, e per il Teorema sul Numero di Radici, allora \(h = 0\) perché altrimenti avrebbe grado maggiore dell'infinito, il che è assurdo.
     Infine:
-    \(h = 0 \implies f = g\)
+    \(h = 0 \implies f-g=0\implies f = g\)
 }
 
 \subsection{ Controesempio del "Principio di Identità dei Polinomi"}
@@ -408,7 +423,7 @@
 }
 \bottomp{
     \(\leftarrow)\) Gli invertibili di \(A[x]\) sono gli invertibili di \(A\), cioè i polinomi costanti. Se $$n = gr(f) > 0$$ allora non è costante e quindi $$f \notin U(A[x])$$
-    Se $$f = gh$$ per la (1) posso supporre che $$gr(g) = n$$ e per la Formula di Addizione dei Gradi $$gr(h) =0 \implies h \in U(A[x]) \implies f$$ ha solo divisori banali.
+    Se $$f = gh$$ per la (1) posso supporre che $$gr(g) = n$$ e per la Formula di Addizione dei Gradi $$gr(h) =0 \implies h \in U(A[x]) \implies f\text{ ha solo divisori banali}$$
 
     \(\rightarrow)\) \(f\) è irriducibile, quindi $$f \notin U(A[x]) = U(A)$$ e $$DIV(f) = BDIV(f)$$ \(A\) è campo, allora $$U(A) = A - \{0\}$$ quindi $$gr(f) > 0$$ \(f\) ha solo divisori banali ed, essendo ogni valore di \(A\) invertibile, allora ogni valore è anche cancellabile, e quindi \(f\) ha coefficiente direttore cancellabile ed è cancellabile a sua volta, e quindi $$BDIV = \{uf \mid u \in A - \{0\}\} \cup (A - \{0\})$$
     Allora $$f = gh$$ necessariamente $$gr(g) = 0 \lor gr(h) = 0$$
@@ -418,7 +433,10 @@
 
 \subsection{ Criterio di Esistenza di Radici di un Polinomio in un Campo}
 \bottom{
-    Sia \(A\) un campo e \(f \in A[x]\). Allora \(f\) ha radici in \(A\) \(\iff\) ha almeno un divisore di primo grado in \(A[x]\).}{\(\rightarrow)\) Per Ruffini.
+    Sia \(A\) un campo e \(f \in A[x]\). Allora \(f\) ha radici in \(A\) \(\iff\) ha almeno un divisore di primo grado in \(A[x]\).
+}
+\bottomp{
+    \(\rightarrow)\) Per Ruffini.\\
     \(\leftarrow)\) Tutti i polinomi di grado 1 hanno radici in un campo.
 
     $$kx + h \implies c = -hk^{-1}$$ è radice.

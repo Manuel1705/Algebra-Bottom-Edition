@@ -331,12 +331,12 @@
 \contentsline {subsection}{\numberline {15.8} Termine Noto di un Polinomio}{136}{subsection.15.8}%
 \contentsline {subsection}{\numberline {15.9} Grado e Coefficiente Direttore del Polinomio Zero}{136}{subsection.15.9}%
 \contentsline {subsection}{\numberline {15.10} Polinomio Monico}{136}{subsection.15.10}%
-\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{137}{subsection.15.11}%
+\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{136}{subsection.15.11}%
 \contentsline {subsection}{\numberline {15.12} Anello dei Polinomi}{137}{subsection.15.12}%
 \contentsline {subsection}{\numberline {15.13} Polinomio Costante}{137}{subsection.15.13}%
 \contentsline {subsection}{\numberline {15.14} Notazione di Polinomio Costante}{137}{subsection.15.14}%
 \contentsline {subsection}{\numberline {15.15} Monomorfismo dei Polinomi Costanti}{137}{subsection.15.15}%
-\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{138}{subsection.15.16}%
+\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{137}{subsection.15.16}%
 \contentsline {subsection}{\numberline {15.17} Potenze del Polinomio incognita}{138}{subsection.15.17}%
 \contentsline {subsection}{\numberline {15.18} Monomio}{138}{subsection.15.18}%
 \contentsline {subsection}{\numberline {15.19} Polinomio come Somma di Monomi}{138}{subsection.15.19}%
@@ -348,74 +348,74 @@
 \contentsline {subsection}{\numberline {15.25} Condizione di Non Invertibilità di un Polinomio}{140}{subsection.15.25}%
 \contentsline {subsection}{\numberline {15.26} Invertibilità del Polinomio Incognita}{140}{subsection.15.26}%
 \contentsline {subsection}{\numberline {15.27} Teorema della Divisione Lunga tra Polinomi}{141}{subsection.15.27}%
-\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{142}{subsection.15.28}%
-\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{142}{subsection.15.29}%
-\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{142}{subsection.15.30}%
-\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{142}{subsection.15.31}%
-\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{142}{subsection.15.32}%
-\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{142}{subsection.15.33}%
-\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{143}{subsection.15.34}%
-\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{143}{subsection.15.35}%
-\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{143}{subsection.15.36}%
-\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{144}{subsection.15.37}%
-\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità}{146}{subsection.15.38}%
-\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{146}{subsection.15.39}%
-\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{147}{subsection.15.40}%
-\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{147}{subsection.15.41}%
-\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{147}{subsection.15.42}%
-\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{148}{subsection.15.43}%
-\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{148}{subsection.15.44}%
-\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{150}{subsection.15.45}%
-\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{150}{subsection.15.46}%
-\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{150}{subsection.15.47}%
-\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{150}{subsection.15.48}%
-\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{151}{subsection.15.49}%
-\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{151}{subsection.15.50}%
-\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{151}{subsection.15.51}%
-\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{151}{subsection.15.52}%
-\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{151}{subsection.15.53}%
-\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{152}{subsection.15.54}%
-\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{152}{subsection.15.55}%
-\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{152}{subsection.15.56}%
-\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{152}{subsection.15.57}%
-\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{153}{subsection.15.58}%
-\contentsline {section}{\numberline {16}Grafi}{154}{section.16}%
-\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{154}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{154}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{154}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{154}{subsection.16.4}%
-\contentsline {subsection}{\numberline {16.5}Multigrafo}{154}{subsection.16.5}%
-\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{154}{subsection.16.6}%
-\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{155}{subsection.16.7}%
-\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{155}{subsection.16.8}%
-\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{155}{subsection.16.9}%
-\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{155}{subsection.16.10}%
-\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{155}{subsection.16.11}%
-\contentsline {subsection}{\numberline {16.12}Grafo Completo}{155}{subsection.16.12}%
-\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{156}{subsection.16.13}%
-\contentsline {subsection}{\numberline {16.14}Sottografo}{156}{subsection.16.14}%
-\contentsline {subsection}{\numberline {16.15}(Multi)Grafo Finito}{156}{subsection.16.15}%
-\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{156}{subsection.16.16}%
-\contentsline {subsection}{\numberline {16.17}Grafo Planare}{156}{subsection.16.17}%
-\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{157}{subsection.16.18}%
-\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{157}{subsection.16.19}%
-\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{157}{subsection.16.20}%
-\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{158}{subsection.16.21}%
-\contentsline {subsection}{\numberline {16.22}Componente Connessa}{158}{subsection.16.22}%
-\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{158}{subsection.16.23}%
-\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{158}{subsection.16.24}%
-\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{158}{subsection.16.25}%
-\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{159}{subsection.16.26}%
-\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{159}{subsection.16.27}%
-\contentsline {subsection}{\numberline {16.28}Foresta}{159}{subsection.16.28}%
-\contentsline {subsection}{\numberline {16.29}Albero}{159}{subsection.16.29}%
-\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{159}{subsection.16.30}%
-\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{160}{subsection.16.31}%
-\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{160}{subsection.16.32}%
-\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{161}{subsection.16.33}%
-\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{161}{subsection.16.34}%
-\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{161}{subsection.16.35}%
-\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{161}{subsection.16.36}%
-\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{162}{subsection.16.37}%
-\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{162}{subsection.16.38}%
-\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{163}{subsection.16.39}%
+\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{143}{subsection.15.28}%
+\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{143}{subsection.15.29}%
+\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{143}{subsection.15.30}%
+\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{143}{subsection.15.31}%
+\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{143}{subsection.15.32}%
+\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{143}{subsection.15.33}%
+\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{144}{subsection.15.34}%
+\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{144}{subsection.15.35}%
+\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{144}{subsection.15.36}%
+\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{145}{subsection.15.37}%
+\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di un Polinomio in un Dominio di Integrità}{147}{subsection.15.38}%
+\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{147}{subsection.15.39}%
+\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{148}{subsection.15.40}%
+\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{148}{subsection.15.41}%
+\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{148}{subsection.15.42}%
+\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{149}{subsection.15.43}%
+\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{149}{subsection.15.44}%
+\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{151}{subsection.15.45}%
+\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{151}{subsection.15.46}%
+\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{151}{subsection.15.47}%
+\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{152}{subsection.15.48}%
+\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{152}{subsection.15.49}%
+\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{152}{subsection.15.50}%
+\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{152}{subsection.15.51}%
+\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{152}{subsection.15.52}%
+\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{153}{subsection.15.53}%
+\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{153}{subsection.15.54}%
+\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{153}{subsection.15.55}%
+\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{154}{subsection.15.56}%
+\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{154}{subsection.15.57}%
+\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{154}{subsection.15.58}%
+\contentsline {section}{\numberline {16}Grafi}{155}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{155}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{155}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{155}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{155}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Multigrafo}{155}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{155}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{156}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{156}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{156}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{156}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{156}{subsection.16.11}%
+\contentsline {subsection}{\numberline {16.12}Grafo Completo}{156}{subsection.16.12}%
+\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{157}{subsection.16.13}%
+\contentsline {subsection}{\numberline {16.14}Sottografo}{157}{subsection.16.14}%
+\contentsline {subsection}{\numberline {16.15}(Multi)Grafo Finito}{157}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{157}{subsection.16.16}%
+\contentsline {subsection}{\numberline {16.17}Grafo Planare}{157}{subsection.16.17}%
+\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{158}{subsection.16.18}%
+\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{158}{subsection.16.19}%
+\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{158}{subsection.16.20}%
+\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{159}{subsection.16.21}%
+\contentsline {subsection}{\numberline {16.22}Componente Connessa}{159}{subsection.16.22}%
+\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{159}{subsection.16.23}%
+\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{159}{subsection.16.24}%
+\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{159}{subsection.16.25}%
+\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{160}{subsection.16.26}%
+\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{160}{subsection.16.27}%
+\contentsline {subsection}{\numberline {16.28}Foresta}{160}{subsection.16.28}%
+\contentsline {subsection}{\numberline {16.29}Albero}{160}{subsection.16.29}%
+\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{160}{subsection.16.30}%
+\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{161}{subsection.16.31}%
+\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{161}{subsection.16.32}%
+\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{162}{subsection.16.33}%
+\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{162}{subsection.16.34}%
+\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{162}{subsection.16.35}%
+\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{162}{subsection.16.36}%
+\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{163}{subsection.16.37}%
+\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{163}{subsection.16.38}%
+\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{164}{subsection.16.39}%
