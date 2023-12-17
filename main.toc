@@ -394,7 +394,7 @@
 \contentsline {subsection}{\numberline {16.12}Grafo Completo}{156}{subsection.16.12}%
 \contentsline {subsection}{\numberline {16.13}Grafo Complementare}{157}{subsection.16.13}%
 \contentsline {subsection}{\numberline {16.14}Sottografo}{157}{subsection.16.14}%
-\contentsline {subsection}{\numberline {16.15}(Multi)Grafo Finito}{157}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.15}Multigrafo Finito}{157}{subsection.16.15}%
 \contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{157}{subsection.16.16}%
 \contentsline {subsection}{\numberline {16.17}Grafo Planare}{157}{subsection.16.17}%
 \contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{158}{subsection.16.18}%

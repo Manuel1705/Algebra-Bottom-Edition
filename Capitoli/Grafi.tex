@@ -76,13 +76,13 @@
 
 \subsection{Sottografo}
 \bottom{
-    Sia \((v, l)\) un grafo, e siano \(v' \subseteq v \land l' \subseteq l\). Allora il grafo \((v', l')\) si dice sottografo di \((v, l)\)
+    Sia \((v, l)\) un grafo, e siano \(v' \subseteq v \land l' \subseteq l\). Allora il grafo \((v', l')\) si dice sottografo di \((v, l)\).
 }
 
-\subsection{(Multi)Grafo Finito}
+\subsection{Multigrafo Finito}
 \bottom{
-    Se l'insieme \(v\) dei vertici è finito, il (multi)grafo si dice finito.
-    Si nota che un multigrafo è finito anche se ha un numero infiniti di lati. L'elemento importante è la finitezza dei vertici.
+    Se l'insieme \(v\) dei vertici è finito, il multigrafo si dice finito.\\
+    Si nota che un multigrafo è finito anche se ha un numero infinito di lati. L'elemento importante è la finitezza dei vertici.
 }
 
 \subsection{Isomorfismo tra Grafi}
@@ -143,10 +143,9 @@
 \subsection{Cammino (di un Multigrafo)}
 \bottom{
     Sia \((v, l, \sigma)\) un multigrafo, e siano \(v_1, ..., v_{n+1}\in v\) suoi vertici e siano \(l_1, ..., l_n\) archi a due a due distinti tali che:
-
-    $$\sigma(l_i) = \{v_i, v_{i+1}\}, \forall i \in \mathbb N: 1 \leq i \leq n$$
-
-    Allora le ennupla ordinata \((l_1, ..., l_n)\) si dice cammino.
+    $$\forall i \in \mathbb N: 1 \leq i \leq n$$
+    $$\sigma(l_i) = \{v_i, v_{i+1}\}$$
+    Allora l'ennupla ordinata \((l_1, ..., l_n)\) si dice cammino.
 }
 
 \subsection{Cammino Euleriano}
@@ -177,7 +176,7 @@
     Un grafo finito \(g = (v, l)\) si dice foresta \(\iff\) per ogni coppia \((x, y) \in v \times v: x \neq y\) esiste al più un singolo cammino da \(x\) ad \(y\).
 }
 \bottomp{
-    \(\rightarrow)\) Siano \((\{u_1, u_2\}, ..., \{u_{m-1}, u_m\})\) e \((\{v_1, v_2\}, ..., \{v_{n-1}, v_n\})\) due cammini distinti fra \(x\) ed \(y\), cioè $$u_1 = v_1 = x$$ $$u_n = v_n = y$$
+    \(\rightarrow)\) Siano \((\{u_1, u_2\}, ..., \{u_{n-1}, u_n\})\) e \((\{v_1, v_2\}, ..., \{v_{n-1}, v_n\})\) due cammini distinti fra \(x\) ed \(y\), cioè $$u_1 = v_1 = x$$ $$u_n = v_n = y$$
 
     Sia $$i = \{ h \in \mathbb N \mid \exists k \in \mathbb N\ (u_h = v_k \land \{u_h, u_{h+1}\} \neq \{v_k, v_{k+1}\})\}$$
 
@@ -251,13 +250,13 @@
 
 \subsection{Un Albero Finito ha Almeno Due Foglie}
 \bottom{
-    Abbiamo già dimostrato che un albero finito ad almeno due vertici ha almeno UNA foglia. Adesso affermiamo che:
+    Abbiamo già dimostrato che un albero finito con almeno due vertici ha almeno una foglia. Adesso affermiamo che:
     Un albero finito con almeno due vertici ha almeno due foglie.
 }
 \bottomp{
     Sia \(g = (v, l)\) un albero finito e sia \(|v| = n\). Allora, per il Teorema sul Numero di Lati di un Albero, \(|l| = n - 1\) e per il Teorema su Lati e Gradi, $$2|l| = \sum_{x \in v} d(x) \implies 2(n-1) = \sum_{x \in v} d(x)$$
 
-    Ipotizziamo per assurdo che esistano \(<2\) foglie. Allora, abbiamo almeno \(n-1\) vertici che non sono foglie, cioè hanno grado maggiore di uno. Pertanto si deve avere che:
+    Ipotizziamo per assurdo che esistano meno di 2 foglie. Allora, abbiamo almeno \(n-1\) vertici che non sono foglie, cioè hanno grado maggiore di 1. Pertanto si deve avere che:
     $$2(n-1) = \sum_{x \in v} d(x) \geq 2(n-1) + 1$$
     Il che è assurdo.
 }

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.16)  14 DEC 2023 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.16)  17 DEC 2023 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/manuel/Desktop/Algebra/Algebra Bottom Edition/main.tex"
-(/home/manuel/Desktop/Algebra/Algebra Bottom Edition/main.tex
+**"/home/manuel/Università/Algebra/Algebra Bottom Edition/main.tex"
+(/home/manuel/Università/Algebra/Algebra Bottom Edition/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1220,12 +1220,12 @@ File: img/g1.png Graphic file (type png)
 Package pdftex.def Info: img/g1.png  used on input line 105.
 (pdftex.def)             Requested size: 227.04422pt x 111.21352pt.
  [157] [158 <./img/g1.png>] [159]
-Underfull \hbox (badness 2401) in paragraph at lines 193--193
+Underfull \hbox (badness 2401) in paragraph at lines 192--192
 []$\OMS/lmsy/m/n/10  \OT1/lmr/m/n/10 )$ Per as-surdo, es-ista un cir-cuito $(\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 v[]; v[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; :::; \OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 v[]; v[]\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$ dove
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 193--193
+Underfull \hbox (badness 1308) in paragraph at lines 192--192
 \OML/lmm/m/it/10 v[] \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 v[]$\OT1/lmr/m/n/10 . Al-lora, si-cu-ra-mente, $\OML/lmm/m/it/10 n > \OT1/lmr/m/n/10 1$, e quindi $(\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 v[]; v[]\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$ e
  []
 
@@ -1233,27 +1233,27 @@ Underfull \hbox (badness 1308) in paragraph at lines 193--193
 <img/g2.png, id=2953, 1135.24126pt x 769.87625pt>
 File: img/g2.png Graphic file (type png)
 <use img/g2.png>
-Package pdftex.def Info: img/g2.png  used on input line 222.
+Package pdftex.def Info: img/g2.png  used on input line 221.
 (pdftex.def)             Requested size: 227.04422pt x 153.97252pt.
  [162 <./img/g2.png>]
-Overfull \hbox (12.21634pt too wide) in paragraph at lines 270--270
+Overfull \hbox (12.21634pt too wide) in paragraph at lines 269--269
 []\OT1/lmr/bx/n/12 Corollario del Teo-rema di Carat-ter-iz-zazione di Foreste
  []
 
 ) [163] [164] (./main.aux (./Capitoli/Assiomi.aux) (./Capitoli/Operazioni_tra_Insiemi.aux) (./Capitoli/Strutture_Algebriche.aux) (./Capitoli/Relazioni_Binarie.aux) (./Capitoli/Teorema_Fondamentale_di_Omomorfismi_per_Insiemi.aux) (./Capitoli/Teorema_Fondamentale_dell'Aritmetica.aux) (./Capitoli/Insiemi_Ordinati.aux) (./Capitoli/Reticoli.aux) (./Capitoli/Principio_di_Induzione.aux) (./Capitoli/Calcolo_Combinatorio.aux) (./Capitoli/Strutture_Booleane.aux) (./Capitoli/Stringhe.aux) (./Capitoli/Divisibilità.aux) (./Capitoli/Polinomi.aux) (./Capitoli/Grafi.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A2AE3D27E560B7101315F9FB0CF64DDD;100611.
+(rerunfilecheck)             Checksum: C786360112589D44232DA8248AA08050;100595.
  ) 
 Here is how much of TeX's memory you used:
  29933 strings out of 478287
- 606209 string characters out of 5849288
+ 606221 string characters out of 5849288
  964244 words of memory out of 5000000
  46883 multiletter control sequences out of 15000+600000
  528865 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,16n,104p,919b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,16n,104p,923b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (164 pages, 1038845 bytes).
+Output written on main.pdf (164 pages, 1038774 bytes).
 PDF statistics:
  3209 PDF objects out of 3580 (max. 8388607)
  2928 compressed objects within 30 object streams
