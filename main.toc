@@ -4,15 +4,15 @@
 \contentsline {subsection}{\numberline {1.3}Assioma di Separazione}{12}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Assioma di Esistenza dell'insieme delle Parti}{12}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Assioma della Coppia}{12}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Assioma di Unione}{13}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.6}Assioma di Unione}{12}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Assioma della Scelta}{13}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8}Assioma dell'infinito}{13}{subsection.1.8}%
 \contentsline {section}{\numberline {2}Teoremi derivanti dagli assiomi}{13}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Unicità dell'insieme vuoto}{13}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Ogni insieme contiene l'insieme vuoto}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Ogni insieme contiene l'insieme vuoto}{13}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Unicità dell'insieme delle parti}{14}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Paradosso di Russel}{14}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}L'insieme di tutti gli insiemi non esiste}{15}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.5}L'insieme di tutti gli insiemi non esiste}{14}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Parti del Vuoto}{15}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Operazioni tra Insiemi}{16}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Leggi di De Morgan}{16}{subsection.3.1}%
@@ -32,390 +32,390 @@
 \contentsline {subsection}{\numberline {3.15}Definizione di Applicazione/Funzione}{20}{subsection.3.15}%
 \contentsline {subsection}{\numberline {3.16}Dominio e Codominio di un'Applicazione}{20}{subsection.3.16}%
 \contentsline {subsection}{\numberline {3.17}Immagine di un'Applicazione}{20}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Funzione Ben Posta}{21}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.18}Funzione Ben Posta}{20}{subsection.3.18}%
 \contentsline {subsection}{\numberline {3.19}Definizione di Prodotto Relazionale (o tra Corrispondenze)}{21}{subsection.3.19}%
 \contentsline {subsection}{\numberline {3.20}Associatività del Prodotto Relazionale}{21}{subsection.3.20}%
 \contentsline {subsection}{\numberline {3.21}Composizione di Applicazioni}{22}{subsection.3.21}%
 \contentsline {subsection}{\numberline {3.22}Funzione Immersione}{22}{subsection.3.22}%
 \contentsline {subsection}{\numberline {3.23}Funzione Identità}{22}{subsection.3.23}%
 \contentsline {subsection}{\numberline {3.24}Restrizione di una Funzione}{22}{subsection.3.24}%
-\contentsline {subsection}{\numberline {3.25}Prolungamento di una Funzione}{23}{subsection.3.25}%
+\contentsline {subsection}{\numberline {3.25}Prolungamento di una Funzione}{22}{subsection.3.25}%
 \contentsline {subsection}{\numberline {3.26}Funzione Ridotta / Riduzione di una Funzione}{23}{subsection.3.26}%
 \contentsline {subsection}{\numberline {3.27}Applicazione Costante}{23}{subsection.3.27}%
 \contentsline {subsection}{\numberline {3.28}Funzione Immagine}{23}{subsection.3.28}%
 \contentsline {subsection}{\numberline {3.29}Funzione Antimmagine}{23}{subsection.3.29}%
 \contentsline {subsection}{\numberline {3.30}Immagine di un Insieme}{23}{subsection.3.30}%
-\contentsline {subsection}{\numberline {3.31}Antimmagine di un Insieme}{24}{subsection.3.31}%
+\contentsline {subsection}{\numberline {3.31}Antimmagine di un Insieme}{23}{subsection.3.31}%
 \contentsline {subsection}{\numberline {3.32}Immagine del Dominio ed Antimmagine del Codominio}{24}{subsection.3.32}%
 \contentsline {subsection}{\numberline {3.33}Immagine ed Antimmagine dell'Insieme Vuoto}{24}{subsection.3.33}%
 \contentsline {subsection}{\numberline {3.34}Funzione Suriettiva}{24}{subsection.3.34}%
-\contentsline {subsection}{\numberline {3.35}Funzione Iniettiva}{25}{subsection.3.35}%
+\contentsline {subsection}{\numberline {3.35}Funzione Iniettiva}{24}{subsection.3.35}%
 \contentsline {subsection}{\numberline {3.36}Funzione Biettiva}{25}{subsection.3.36}%
 \contentsline {subsection}{\numberline {3.37}Definizione di Iniettivà tramite Antimmagine}{25}{subsection.3.37}%
-\contentsline {subsection}{\numberline {3.38}Definizione di Suriettività tramite Antimmagine}{26}{subsection.3.38}%
+\contentsline {subsection}{\numberline {3.38}Definizione di Suriettività tramite Antimmagine}{25}{subsection.3.38}%
 \contentsline {subsection}{\numberline {3.39}Definizione di Biettività tramite Antimmagine}{26}{subsection.3.39}%
-\contentsline {subsection}{\numberline {3.40}Sezione di una funzione}{27}{subsection.3.40}%
-\contentsline {subsection}{\numberline {3.41}Retazione di una funzione}{27}{subsection.3.41}%
-\contentsline {subsection}{\numberline {3.42}Caratterizzazione di Iniettività tramite Retrazione}{27}{subsection.3.42}%
-\contentsline {subsection}{\numberline {3.43}Caratterizzazione di Suriettività tramite Sezione}{28}{subsection.3.43}%
-\contentsline {subsection}{\numberline {3.44}Inversa di una Funzione}{29}{subsection.3.44}%
-\contentsline {subsection}{\numberline {3.45}Caratterizzazione della Biettività tramite Inversa}{29}{subsection.3.45}%
-\contentsline {subsection}{\numberline {3.46}Unicità dell'Inversa}{30}{subsection.3.46}%
-\contentsline {subsection}{\numberline {3.47}Una funzione con una sola sezione è biettiva}{30}{subsection.3.47}%
-\contentsline {subsection}{\numberline {3.48}Affermazioni equivalenti alla Biettività}{31}{subsection.3.48}%
-\contentsline {section}{\numberline {4}Strutture Algebriche}{32}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Struttura algebrica}{32}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Operazione Interna}{32}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Commutatività}{32}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Associatività}{33}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Operazione Duale o Opposta}{33}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Semigruppo}{33}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Elemento Neutro}{33}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Unicità dell'elemento neutro}{33}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Monoide}{34}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}Elemento invertibile}{34}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}Unicità dell'inverso}{34}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}Gruppo}{35}{subsection.4.12}%
-\contentsline {subsection}{\numberline {4.13}Parte Stabile}{35}{subsection.4.13}%
-\contentsline {subsection}{\numberline {4.14}Operazine Indotta}{36}{subsection.4.14}%
-\contentsline {subsection}{\numberline {4.15}L’intersezione di Parti Stabili è una Parte Stabile}{36}{subsection.4.15}%
-\contentsline {subsection}{\numberline {4.16}Sottostruttura}{37}{subsection.4.16}%
-\contentsline {subsection}{\numberline {4.17}Elemento Neutro di un Sottogruppo}{37}{subsection.4.17}%
-\contentsline {subsection}{\numberline {4.18}Sottostruttura Generata}{37}{subsection.4.18}%
-\contentsline {subsection}{\numberline {4.19}Caratterizzazione dei Sottomonoidi Generati}{38}{subsection.4.19}%
-\contentsline {subsection}{\numberline {4.20}Caratterizzazione dei Gruppi Generati}{38}{subsection.4.20}%
-\contentsline {subsection}{\numberline {4.21}Struttura Ciclica}{39}{subsection.4.21}%
-\contentsline {subsection}{\numberline {4.22}Elemento Cancellabile}{40}{subsection.4.22}%
-\contentsline {subsection}{\numberline {4.23}Invertibilità implica Cancellabilità}{40}{subsection.4.23}%
-\contentsline {subsection}{\numberline {4.24}Funzione Traslazione}{41}{subsection.4.24}%
-\contentsline {subsection}{\numberline {4.25}Tavola di Cayley}{41}{subsection.4.25}%
-\contentsline {subsection}{\numberline {4.26}Omomorfismi fra Strutture Algebriche}{41}{subsection.4.26}%
-\contentsline {subsection}{\numberline {4.27}Monomorfismo}{42}{subsection.4.27}%
-\contentsline {subsection}{\numberline {4.28}Epimorfismo}{42}{subsection.4.28}%
-\contentsline {subsection}{\numberline {4.29}Epimorfismi conservano i Neutri}{42}{subsection.4.29}%
-\contentsline {subsection}{\numberline {4.30}Epimorfismi conservano la Commutatività}{42}{subsection.4.30}%
-\contentsline {subsection}{\numberline {4.31}Isomorfismo}{43}{subsection.4.31}%
-\contentsline {subsection}{\numberline {4.32}L'inversa di un isomorfismo è a sua volta un isomorfismo}{43}{subsection.4.32}%
-\contentsline {subsection}{\numberline {4.33}Automorfismo}{44}{subsection.4.33}%
-\contentsline {subsection}{\numberline {4.34}Anello}{44}{subsection.4.34}%
-\contentsline {subsection}{\numberline {4.35}Anello Commutativo}{45}{subsection.4.35}%
-\contentsline {subsection}{\numberline {4.36}Anello Unitario}{45}{subsection.4.36}%
-\contentsline {subsection}{\numberline {4.37}Il prodotto per lo zero dell'anello è sempre zero}{46}{subsection.4.37}%
-\contentsline {subsection}{\numberline {4.38}Legge di Annullamento del Prodotto}{46}{subsection.4.38}%
-\contentsline {subsection}{\numberline {4.39}Anello Integro}{46}{subsection.4.39}%
-\contentsline {subsection}{\numberline {4.40}Dominio di Integrità}{46}{subsection.4.40}%
-\contentsline {subsection}{\numberline {4.41}Divisore dello Zero}{47}{subsection.4.41}%
-\contentsline {subsection}{\numberline {4.42}Divisore dello zero $\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}$ non Cancellabile}{47}{subsection.4.42}%
-\contentsline {subsection}{\numberline {4.43}Dominio di Integrità \(\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\) è privo di Divisori dello Zero}{48}{subsection.4.43}%
-\contentsline {subsection}{\numberline {4.44}Corpo}{48}{subsection.4.44}%
-\contentsline {subsection}{\numberline {4.45}Campo}{48}{subsection.4.45}%
-\contentsline {subsection}{\numberline {4.46}Ogni Campo è un Dominio di Integrità}{48}{subsection.4.46}%
-\contentsline {section}{\numberline {5}Relazioni binarie}{49}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Riflessività}{49}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Antiriflessività}{49}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Simmetrica}{49}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Asimmetrica}{49}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Transitiva}{49}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Relazione d'Equivalenza}{50}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Relazione d'ordine}{50}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Relazione di Ordine Largo}{50}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Relazione di Ordine Stretto}{50}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Ordine Stretto e Asimmetria}{50}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Relazione Duale}{50}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Diagonale di un Insieme}{51}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Caratterizzazioni delle Proprietà delle Relazioni}{51}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Relazione di Equivalenza Universale}{51}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Congruenza di modulo m}{51}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}La congruenza è una relazione di equivalenza}{52}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}Congruenze notevoli}{52}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}Nucleo di Equivalenza di una Funzione}{52}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}Classe di Equivalenza}{53}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Rappresentante di una classe di equivalenza}{53}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Calsse di Resto}{53}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}Insieme Quoziente}{53}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Prima Proprietà Fondamentale: Nessuna Classe di Equivalenza è Vuota}{53}{subsection.5.23}%
-\contentsline {subsection}{\numberline {5.24}Seconda Proprietà Fondamentale: Le Classi di Equivalenza sono Disgiunte}{54}{subsection.5.24}%
-\contentsline {subsection}{\numberline {5.25}Terza Proprietà Fondamentale: l'Unione Unaria dell'Insieme Quoziente è l'Insieme}{54}{subsection.5.25}%
-\contentsline {subsection}{\numberline {5.26}Proiezione Canonica}{55}{subsection.5.26}%
-\contentsline {subsection}{\numberline {5.27}Suriettività della Proiezione Canonica}{55}{subsection.5.27}%
-\contentsline {subsection}{\numberline {5.28}Partizione}{55}{subsection.5.28}%
-\contentsline {subsection}{\numberline {5.29}Partizioni Banali}{55}{subsection.5.29}%
-\contentsline {subsection}{\numberline {5.30}Insieme delle Relazioni di Equivalenza}{55}{subsection.5.30}%
-\contentsline {subsection}{\numberline {5.31}Insieme delle Partizioni}{55}{subsection.5.31}%
-\contentsline {subsection}{\numberline {5.32}Insiemi Quoziente e Partizioni}{56}{subsection.5.32}%
-\contentsline {subsection}{\numberline {5.33}Teorema Fondamentale su Relazioni di Equivalenza e Partizioni}{56}{subsection.5.33}%
-\contentsline {section}{\numberline {6}Teorema Fondamentale di Omomorfismi per Insiemi}{58}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Premessa del Teorema Fondamentale di Omomorfismo per Insiemi}{58}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Prima tesi del Teorema Fondamentale di Omomorfismi per Insiemi}{59}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Seconda tesi del Teorema Fondamentale di Omomorfismi per Insiemi}{59}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Ogni Funzione è Composizione di una Funzione Iniettiva e di una Funzione Suriettiva}{60}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Teorema Fondamentale dell'Aritmetica}{61}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Lemma sui Divisori dei Primi}{61}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Secondo Lemma per il Teorema Fondamentale dell'Aritmetica}{61}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Lemma sui divisori dei non primi}{62}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}2 è Primo}{63}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Prima Tesi del Teorema fondamentale dell'Aritmetica}{64}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Seconda Tesi del Teorema Fondamentale dell'Aritmetica}{64}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Insiemi Ordinati}{66}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Insieme delle Relaioni d'Ordine}{66}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Le relazioni appartengono a $P(P(P(a \times a)))$}{66}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}DA \textit {OL} a \textit {OS} e viceversa}{67}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Insieme Ordinato}{67}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Relazione d'ordine Indotto}{67}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Sottoinsieme Ordinato}{67}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Elementi Confrontabili}{68}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Relazione d'Ordine Totale}{68}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Minimo e Massimo di un Insieme Ordinato}{68}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}Insieme Ben Ordinato}{68}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}Unicità di Minimi e Massimi di un Insieme Ordinato}{68}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}Notazione di Minimo e Massimo di un Insieme}{69}{subsection.8.12}%
-\contentsline {subsection}{\numberline {8.13}Buon Ordine implica Ordine Totale}{69}{subsection.8.13}%
-\contentsline {subsection}{\numberline {8.14}Relazione di Copertura}{69}{subsection.8.14}%
-\contentsline {subsection}{\numberline {8.15}Predecessore/Successore Immediato}{70}{subsection.8.15}%
-\contentsline {subsection}{\numberline {8.16}Diagramma di Hasse}{70}{subsection.8.16}%
-\contentsline {subsection}{\numberline {8.17}Rappresentazione Grafica del Diagramma di Hasse}{70}{subsection.8.17}%
-\contentsline {subsection}{\numberline {8.18}Ordine Totale e Diagrammi di Hasse}{70}{subsection.8.18}%
-\contentsline {subsection}{\numberline {8.19}Funzione Crescente fra Insiemi Ordinati}{70}{subsection.8.19}%
-\contentsline {subsection}{\numberline {8.20}Isomorfismo di Insiemi Ordinati}{71}{subsection.8.20}%
-\contentsline {subsection}{\numberline {8.21}Insiemi Ordinati Finiti sono Isomorfi solo se hanno lo stesso Diagramma di Hasse }{71}{subsection.8.21}%
-\contentsline {subsection}{\numberline {8.22}Minimali e Massimali di un Insieme Ordinato}{71}{subsection.8.22}%
-\contentsline {subsection}{\numberline {8.23}Maggioranti e Minoranti di un Insieme Ordinato}{72}{subsection.8.23}%
-\contentsline {subsection}{\numberline {8.24}Relazione fra Massimali/Maggioranti/Massimi e Minimali/Minoranti/Minimi}{72}{subsection.8.24}%
-\contentsline {subsection}{\numberline {8.25}Notazione di Insieme dei Maggioranti e di Insieme dei Minoranti}{72}{subsection.8.25}%
-\contentsline {subsection}{\numberline {8.26}Insieme Limitato}{72}{subsection.8.26}%
-\contentsline {subsection}{\numberline {8.27}Insieme Naturalmente Ordinato}{73}{subsection.8.27}%
-\contentsline {subsection}{\numberline {8.28}Il buon ordine implica l'ordine largo}{73}{subsection.8.28}%
-\contentsline {subsection}{\numberline {8.29}Assioma dei Numeri Naturali}{73}{subsection.8.29}%
-\contentsline {subsection}{\numberline {8.30}Principio di Dualità per Insiemi Ordinati}{73}{subsection.8.30}%
-\contentsline {subsection}{\numberline {8.31}Il Minimo (Massimo) è l'unico Minimale (Massimale)}{73}{subsection.8.31}%
-\contentsline {subsection}{\numberline {8.32}Ogni Insieme Ordinato Finito Non Vuoto di Ordine Largo ha Minimali e Massimali}{74}{subsection.8.32}%
-\contentsline {subsection}{\numberline {8.33}In Insiemi Finiti l'unico Minimale (Massimale) è Minimo (Massimo)}{74}{subsection.8.33}%
-\contentsline {subsection}{\numberline {8.34}Relazione d'Ordine Indotta da una Funzione}{74}{subsection.8.34}%
-\contentsline {subsection}{\numberline {8.35}Estremo Superiore ed Estremo Inferiore}{74}{subsection.8.35}%
-\contentsline {section}{\numberline {9}Reticoli}{75}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Reticolo}{75}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Operazioni in un Reticolo}{75}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Notazione di Reticolo come Struttura}{75}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Reticolo Limitato}{75}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Reticolo Completo}{76}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Estremi di Coppie di Elementi Confrontabili di un Reticolo}{76}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Enunciato Duale sui Reticoli}{76}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}Principio di Dualità Per i Reticoli}{76}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}In un Reticolo ogni Minimale è Minimo e ogni Massimale è Massimo}{77}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}In un Reticolo I Minoranti (Maggioranti) dell'Unione sono l'Intersezione dei Minoranti (Maggioranti) di Parti Finite}{77}{subsection.9.10}%
-\contentsline {subsection}{\numberline {9.11}I Minoranti (Maggioranti) di un Insieme Ordinato sono i Minoranti (Maggioranti) dell'Estremo Inferiore (Superiore)}{78}{subsection.9.11}%
-\contentsline {subsection}{\numberline {9.12}Ogni Parte Finita di un Reticolo è dotata di Estremo Inferiore e Superiore}{78}{subsection.9.12}%
-\contentsline {subsection}{\numberline {9.13}Commutatività di \(\wedge \) e \(\vee \)}{80}{subsection.9.13}%
-\contentsline {subsection}{\numberline {9.14}Associatività di \(\wedge \) e \(\vee \)}{80}{subsection.9.14}%
-\contentsline {subsection}{\numberline {9.15}Proprietà di Assorbimento di un Reticolo}{81}{subsection.9.15}%
-\contentsline {subsection}{\numberline {9.16}Proprietà di Idempotenza/Iteratività di \(\wedge \) e \(\vee \)}{81}{subsection.9.16}%
-\contentsline {subsection}{\numberline {9.17}Corrispondenza Biunivoca fra Reticoli e Strutture}{82}{subsection.9.17}%
-\contentsline {subsection}{\numberline {9.18}Isomorfismo fra Reticoli}{84}{subsection.9.18}%
-\contentsline {subsection}{\numberline {9.19}Equivalenza fra Isomorfismo di Reticoli e Isomorfismo di Insiemi Ordinati}{84}{subsection.9.19}%
-\contentsline {subsection}{\numberline {9.20}Sottoreticolo}{86}{subsection.9.20}%
-\contentsline {subsection}{\numberline {9.21}Intervallo e Intervallo Chiuso}{86}{subsection.9.21}%
-\contentsline {subsection}{\numberline {9.22}Ogni Intervallo Chiuso di un Reticolo è un Sottoreticolo}{86}{subsection.9.22}%
-\contentsline {subsection}{\numberline {9.23}Massimo e Minimo sono Elementi Neutri di un Reticolo (e Viceversa)}{86}{subsection.9.23}%
-\contentsline {subsection}{\numberline {9.24}Reticolo Complementato}{87}{subsection.9.24}%
-\contentsline {subsection}{\numberline {9.25}Elementi Confrontabili e Complementati di un Reticolo sono il Minimo e il Massimo}{87}{subsection.9.25}%
-\contentsline {subsection}{\numberline {9.26}Reticolo Distributivo}{87}{subsection.9.26}%
-\contentsline {subsection}{\numberline {9.27}Unicità dei Complementi di Reticoli Distributivi}{88}{subsection.9.27}%
-\contentsline {subsection}{\numberline {9.28}Criterio di Distributività di Birkhoff}{88}{subsection.9.28}%
-\contentsline {section}{\numberline {10}Principio di Induzione}{89}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Prima Forma del Principio di Induzione}{89}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Seconda Forma del Principio di Induzione}{90}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Calcolo Combinatorio}{91}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Equipotenza}{91}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Insieme Infinito}{91}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Insieme Finito}{91}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Cardinalità di un Insieme Finito}{91}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Cardinalità dell'Insieme delle Parti di un Insieme Finito}{91}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Fattoriale}{92}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}Numero di Applicazioni fra Due Insiemi Finiti}{92}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}Condizione di Esistenza di Applicazioni Iniettive fra due Insiemi Finiti}{93}{subsection.11.8}%
-\contentsline {subsection}{\numberline {11.9}Numero di Applicazioni Iniettive fra due Insiemi Finiti}{93}{subsection.11.9}%
-\contentsline {subsection}{\numberline {11.10}Condizione di Esistenza di Applicazioni Suriettive fra due insiemi Finiti}{94}{subsection.11.10}%
-\contentsline {subsection}{\numberline {11.11}Condizione di Esistenza di Applicazioni Biettive fra due Insiemi Finiti}{95}{subsection.11.11}%
-\contentsline {subsection}{\numberline {11.12}Cardinalità dell'Insieme Simmetrico di un Insieme Finito}{95}{subsection.11.12}%
-\contentsline {subsection}{\numberline {11.13}Relazione fra Iniettività e Suriettività di Applicazioni fra Insiemi Finiti di Uguale Cardinalità}{96}{subsection.11.13}%
-\contentsline {subsection}{\numberline {11.14}Cancellabilità implica Invertibilità in un Monoide Commutativo Finito}{96}{subsection.11.14}%
-\contentsline {subsection}{\numberline {11.15}Anelli Unitari Integri Finiti sono Corpi}{97}{subsection.11.15}%
-\contentsline {subsection}{\numberline {11.16}Domini di Integrità Finiti sono Campi}{97}{subsection.11.16}%
-\contentsline {subsection}{\numberline {11.17}Funzione Caratteristica}{97}{subsection.11.17}%
-\contentsline {subsection}{\numberline {11.18}Ogni sottoinsieme è dotato di funzione caratteristica}{98}{subsection.11.18}%
-\contentsline {subsection}{\numberline {11.19}Coefficiente Binomiale}{98}{subsection.11.19}%
-\contentsline {subsection}{\numberline {11.20}Sommatoria di Coefficienti Binomiali}{99}{subsection.11.20}%
-\contentsline {subsection}{\numberline {11.21}Equivalenza di Coefficienti Binomiali}{99}{subsection.11.21}%
-\contentsline {subsection}{\numberline {11.22}Formula Ricorsiva per i Coefficienti Binomiali}{100}{subsection.11.22}%
-\contentsline {subsection}{\numberline {11.23}Triangolo di Tartaglia}{101}{subsection.11.23}%
-\contentsline {subsection}{\numberline {11.24}Formula Matematica per il Calcolo dei Coefficienti Binomiali}{101}{subsection.11.24}%
-\contentsline {section}{\numberline {12}Strutture Booleane}{103}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Reticolo Booleano}{103}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Algebra di Boole}{103}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Anello Booleano}{103}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}In un Anello Booleano ogni elemento è il Proprio Opposto}{103}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Anelli Booleani sono Commutativi}{104}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}Per ogni Anello Booleano esiste un corrispondente Reticolo Booleano}{104}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}Per ogni Reticolo Booleano esiste un corrispondente Anello Booleano}{106}{subsection.12.7}%
-\contentsline {subsection}{\numberline {12.8}Equivalenza di Strutture Booleane}{107}{subsection.12.8}%
-\contentsline {subsection}{\numberline {12.9}L'insieme delle Parti è un Anello Booleano}{108}{subsection.12.9}%
-\contentsline {subsection}{\numberline {12.10}Teorema di Stone}{108}{subsection.12.10}%
-\contentsline {subsection}{\numberline {12.11}Corollari del Teorema di Stone}{108}{subsection.12.11}%
-\contentsline {section}{\numberline {13}Stringhe}{109}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Insieme delle Stringhe}{109}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Somma e Prodotto Puntuali di Stringhe}{109}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Stringhe e Funzioni Caratteristiche}{109}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}L'Anello delle Parti e l'Anello delle Stringhe sono Isomorfi}{109}{subsection.13.4}%
-\contentsline {section}{\numberline {14}Divisibilità}{110}{section.14}%
-\contentsline {subsection}{\numberline {14.1} Divisori e Multipli}{110}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2} Elementi Associati}{110}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3} Associati di un Elemento Cancellabile}{110}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4} Associati hanno stessi Divisori e Multipli}{111}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5} Massimi Comuni Divisori e Minimi Comuni Multipli}{112}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6} Divisori Banali}{112}{subsection.14.6}%
-\contentsline {subsection}{\numberline {14.7} Elemento Irriducibile (in un Dominio di Integrità)}{112}{subsection.14.7}%
-\contentsline {subsection}{\numberline {14.8} Primo}{112}{subsection.14.8}%
-\contentsline {subsection}{\numberline {14.9} Coprimi}{113}{subsection.14.9}%
-\contentsline {subsection}{\numberline {14.10} Monoide Cancellativo}{113}{subsection.14.10}%
-\contentsline {subsection}{\numberline {14.11} Monoide Fattoriale}{113}{subsection.14.11}%
-\contentsline {subsection}{\numberline {14.12} Anello Fattoriale}{113}{subsection.14.12}%
-\contentsline {subsection}{\numberline {14.13} Caratterizzazione di MCD e mcm per Associati}{114}{subsection.14.13}%
-\contentsline {subsection}{\numberline {14.14} Fattorizzazione in Primi in un Monoide Fattoriale}{114}{subsection.14.14}%
-\contentsline {subsection}{\numberline {14.15} Numero di Divisori in \(\mathbb N\)}{115}{subsection.14.15}%
-\contentsline {subsection}{\numberline {14.16} Numero di Divisori in \(\mathbb Z\)}{115}{subsection.14.16}%
-\contentsline {subsection}{\numberline {14.17} MCD e mcm dalle Fattorizzazioni}{116}{subsection.14.17}%
-\contentsline {subsection}{\numberline {14.18} Associati da MCD e mcm}{116}{subsection.14.18}%
-\contentsline {subsection}{\numberline {14.19} Proprietà di Divisione Lineare dei Divisori Comuni}{117}{subsection.14.19}%
-\contentsline {subsection}{\numberline {14.20} Valore Assoluto}{117}{subsection.14.20}%
-\contentsline {subsection}{\numberline {14.21} Teorema della Divisione Euclidea (o con Resto)}{117}{subsection.14.21}%
-\contentsline {subsection}{\numberline {14.22} Algoritmo delle Divisioni Successive}{119}{subsection.14.22}%
-\contentsline {subsection}{\numberline {14.23} Teorema di Bézout}{119}{subsection.14.23}%
-\contentsline {subsection}{\numberline {14.24} Lemma di Euclide}{120}{subsection.14.24}%
-\contentsline {subsection}{\numberline {14.25} In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}{121}{subsection.14.25}%
-\contentsline {subsection}{\numberline {14.26} Caratterizzazione Lineare di Classe di Resto}{121}{subsection.14.26}%
-\contentsline {subsection}{\numberline {14.27} Operazione Parziale: Modulo}{122}{subsection.14.27}%
-\contentsline {subsection}{\numberline {14.28} Caratterizzazione di \(\mathbb Z_m\)}{122}{subsection.14.28}%
-\contentsline {subsection}{\numberline {14.29} Relazione di Equivalenza Compatibile}{123}{subsection.14.29}%
-\contentsline {subsection}{\numberline {14.30} Congruenza}{124}{subsection.14.30}%
-\contentsline {subsection}{\numberline {14.31} Epimorfismo fra Strutture e Strutture Quoziente}{124}{subsection.14.31}%
-\contentsline {subsection}{\numberline {14.32} Congruenza equivale a Compatibilità}{124}{subsection.14.32}%
-\contentsline {subsection}{\numberline {14.33} Anello Quoziente di \(\mathbb Z\)}{125}{subsection.14.33}%
-\contentsline {subsection}{\numberline {14.34} Asserti Equivalenti su Anelli Quoziente di \(\mathbb Z\)}{125}{subsection.14.34}%
-\contentsline {subsection}{\numberline {14.35} Equazione Diofantea}{126}{subsection.14.35}%
-\contentsline {subsection}{\numberline {14.36} Notazione Sintetica di Equazione Diofantea}{127}{subsection.14.36}%
-\contentsline {subsection}{\numberline {14.37} Soluzione dell'Equazione Diofantea}{127}{subsection.14.37}%
-\contentsline {subsection}{\numberline {14.38} Asserti Equivalenti al Teorema di Bézout}{127}{subsection.14.38}%
-\contentsline {subsection}{\numberline {14.39} Caratterizzazione dell'Insieme delle Soluzioni di Equazioni Diofantee}{128}{subsection.14.39}%
-\contentsline {subsection}{\numberline {14.40} Equazione Congruenziale}{129}{subsection.14.40}%
-\contentsline {subsection}{\numberline {14.41} Soluzione dell'Equazione Congruenziale}{129}{subsection.14.41}%
-\contentsline {subsection}{\numberline {14.42} Equazione Congruenziale come Equazione Diofantea}{130}{subsection.14.42}%
-\contentsline {subsection}{\numberline {14.43} Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}{130}{subsection.14.43}%
-\contentsline {subsection}{\numberline {14.44} Primo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{130}{subsection.14.44}%
-\contentsline {subsection}{\numberline {14.45} Secondo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{131}{subsection.14.45}%
-\contentsline {subsection}{\numberline {14.46} Risoluzione di Eq. Congruenziali: Termini Congruenti}{131}{subsection.14.46}%
-\contentsline {subsection}{\numberline {14.47} Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}{132}{subsection.14.47}%
-\contentsline {subsection}{\numberline {14.48} Risoluzione di Eq. Congruenziali: Coprimi del Modulo}{132}{subsection.14.48}%
-\contentsline {subsection}{\numberline {14.49} Algoritmo per la Soluzione di Equazioni Congruenziali}{133}{subsection.14.49}%
-\contentsline {subsection}{\numberline {14.50} Elemento Periodico di un Gruppo}{133}{subsection.14.50}%
-\contentsline {subsection}{\numberline {14.51} Periodo di un Elemento Periodico}{133}{subsection.14.51}%
-\contentsline {subsection}{\numberline {14.52} Relazione fra Periodo e Cardinalità del Sottogruppo Generato}{133}{subsection.14.52}%
-\contentsline {subsection}{\numberline {14.53} Teorema su Esponenti di Elementi Periodici e Congruenza}{134}{subsection.14.53}%
-\contentsline {section}{\numberline {15}Polinomi}{135}{section.15}%
-\contentsline {subsection}{\numberline {15.1} Definizione di Successione di Elementi}{135}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2} Notazione di Successione di Elementi}{135}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3} Polinomio}{135}{subsection.15.3}%
-\contentsline {subsection}{\numberline {15.4} Coefficienti di un Polinomio}{135}{subsection.15.4}%
-\contentsline {subsection}{\numberline {15.5} Notazione di Insieme dei Polinomi}{135}{subsection.15.5}%
-\contentsline {subsection}{\numberline {15.6} Polinomio Zero o Nullo}{136}{subsection.15.6}%
-\contentsline {subsection}{\numberline {15.7} Coefficiente Direttore di un Polinomio}{136}{subsection.15.7}%
-\contentsline {subsection}{\numberline {15.8} Termine Noto di un Polinomio}{136}{subsection.15.8}%
-\contentsline {subsection}{\numberline {15.9} Grado e Coefficiente Direttore del Polinomio Zero}{136}{subsection.15.9}%
-\contentsline {subsection}{\numberline {15.10} Polinomio Monico}{136}{subsection.15.10}%
-\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{136}{subsection.15.11}%
-\contentsline {subsection}{\numberline {15.12} Anello dei Polinomi}{137}{subsection.15.12}%
-\contentsline {subsection}{\numberline {15.13} Polinomio Costante}{137}{subsection.15.13}%
-\contentsline {subsection}{\numberline {15.14} Notazione di Polinomio Costante}{137}{subsection.15.14}%
-\contentsline {subsection}{\numberline {15.15} Monomorfismo dei Polinomi Costanti}{137}{subsection.15.15}%
-\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{137}{subsection.15.16}%
-\contentsline {subsection}{\numberline {15.17} Potenze del Polinomio incognita}{138}{subsection.15.17}%
-\contentsline {subsection}{\numberline {15.18} Monomio}{138}{subsection.15.18}%
-\contentsline {subsection}{\numberline {15.19} Polinomio come Somma di Monomi}{138}{subsection.15.19}%
-\contentsline {subsection}{\numberline {15.20} Proprietà della Somma e Prodotto di Polinomi}{139}{subsection.15.20}%
-\contentsline {subsection}{\numberline {15.21} Proprietà del Grado della Somma di Polinomi}{139}{subsection.15.21}%
-\contentsline {subsection}{\numberline {15.22} Proprietà del Grado di Prodotto di Polinomi}{139}{subsection.15.22}%
-\contentsline {subsection}{\numberline {15.23} Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}{140}{subsection.15.23}%
-\contentsline {subsection}{\numberline {15.24} Condizione Sufficiente e Necessaria per Dominio di Integrità dei Polinomi}{140}{subsection.15.24}%
-\contentsline {subsection}{\numberline {15.25} Condizione di Non Invertibilità di un Polinomio}{140}{subsection.15.25}%
-\contentsline {subsection}{\numberline {15.26} Invertibilità del Polinomio Incognita}{140}{subsection.15.26}%
-\contentsline {subsection}{\numberline {15.27} Teorema della Divisione Lunga tra Polinomi}{141}{subsection.15.27}%
-\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{143}{subsection.15.28}%
-\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{143}{subsection.15.29}%
-\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{143}{subsection.15.30}%
-\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{143}{subsection.15.31}%
-\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{143}{subsection.15.32}%
-\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{143}{subsection.15.33}%
-\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{144}{subsection.15.34}%
-\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{144}{subsection.15.35}%
-\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{144}{subsection.15.36}%
-\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{145}{subsection.15.37}%
-\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di un Polinomio in un Dominio di Integrità}{147}{subsection.15.38}%
-\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{147}{subsection.15.39}%
-\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{148}{subsection.15.40}%
-\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{148}{subsection.15.41}%
-\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{148}{subsection.15.42}%
-\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{149}{subsection.15.43}%
-\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{149}{subsection.15.44}%
-\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{151}{subsection.15.45}%
-\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{151}{subsection.15.46}%
-\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{151}{subsection.15.47}%
-\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{152}{subsection.15.48}%
-\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{152}{subsection.15.49}%
-\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{152}{subsection.15.50}%
-\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{152}{subsection.15.51}%
-\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{152}{subsection.15.52}%
-\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{153}{subsection.15.53}%
-\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{153}{subsection.15.54}%
-\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{153}{subsection.15.55}%
-\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{154}{subsection.15.56}%
-\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{154}{subsection.15.57}%
-\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{154}{subsection.15.58}%
-\contentsline {section}{\numberline {16}Grafi}{155}{section.16}%
-\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{155}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{155}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{155}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{155}{subsection.16.4}%
-\contentsline {subsection}{\numberline {16.5}Multigrafo}{155}{subsection.16.5}%
-\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{155}{subsection.16.6}%
-\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{156}{subsection.16.7}%
-\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{156}{subsection.16.8}%
-\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{156}{subsection.16.9}%
-\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{156}{subsection.16.10}%
-\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{156}{subsection.16.11}%
-\contentsline {subsection}{\numberline {16.12}Grafo Completo}{156}{subsection.16.12}%
-\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{157}{subsection.16.13}%
-\contentsline {subsection}{\numberline {16.14}Sottografo}{157}{subsection.16.14}%
-\contentsline {subsection}{\numberline {16.15}Multigrafo Finito}{157}{subsection.16.15}%
-\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{157}{subsection.16.16}%
-\contentsline {subsection}{\numberline {16.17}Grafo Planare}{157}{subsection.16.17}%
-\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{158}{subsection.16.18}%
-\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{158}{subsection.16.19}%
-\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{158}{subsection.16.20}%
-\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{159}{subsection.16.21}%
-\contentsline {subsection}{\numberline {16.22}Componente Connessa}{159}{subsection.16.22}%
-\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{159}{subsection.16.23}%
-\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{159}{subsection.16.24}%
-\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{159}{subsection.16.25}%
-\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{160}{subsection.16.26}%
-\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{160}{subsection.16.27}%
-\contentsline {subsection}{\numberline {16.28}Foresta}{160}{subsection.16.28}%
-\contentsline {subsection}{\numberline {16.29}Albero}{160}{subsection.16.29}%
-\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{160}{subsection.16.30}%
-\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{161}{subsection.16.31}%
-\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{161}{subsection.16.32}%
-\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{162}{subsection.16.33}%
-\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{162}{subsection.16.34}%
-\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{162}{subsection.16.35}%
-\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{162}{subsection.16.36}%
-\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{163}{subsection.16.37}%
-\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{163}{subsection.16.38}%
-\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{164}{subsection.16.39}%
+\contentsline {subsection}{\numberline {3.40}Sezione di una funzione}{26}{subsection.3.40}%
+\contentsline {subsection}{\numberline {3.41}Retazione di una funzione}{26}{subsection.3.41}%
+\contentsline {subsection}{\numberline {3.42}Caratterizzazione di Iniettività tramite Retrazione}{26}{subsection.3.42}%
+\contentsline {subsection}{\numberline {3.43}Caratterizzazione di Suriettività tramite Sezione}{27}{subsection.3.43}%
+\contentsline {subsection}{\numberline {3.44}Inversa di una Funzione}{28}{subsection.3.44}%
+\contentsline {subsection}{\numberline {3.45}Caratterizzazione della Biettività tramite Inversa}{28}{subsection.3.45}%
+\contentsline {subsection}{\numberline {3.46}Unicità dell'Inversa}{29}{subsection.3.46}%
+\contentsline {subsection}{\numberline {3.47}Una funzione con una sola sezione è biettiva}{29}{subsection.3.47}%
+\contentsline {subsection}{\numberline {3.48}Affermazioni equivalenti alla Biettività}{30}{subsection.3.48}%
+\contentsline {section}{\numberline {4}Strutture Algebriche}{31}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Struttura algebrica}{31}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Operazione Interna}{31}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Commutatività}{31}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Associatività}{32}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Operazione Duale o Opposta}{32}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Semigruppo}{32}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Elemento Neutro}{32}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Unicità dell'elemento neutro}{32}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Monoide}{33}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Elemento invertibile}{33}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Unicità dell'inverso}{33}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Gruppo}{34}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}Parte Stabile}{34}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}Operazine Indotta}{35}{subsection.4.14}%
+\contentsline {subsection}{\numberline {4.15}L’intersezione di Parti Stabili è una Parte Stabile}{35}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}Sottostruttura}{36}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}Elemento Neutro di un Sottogruppo}{36}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}Sottostruttura Generata}{36}{subsection.4.18}%
+\contentsline {subsection}{\numberline {4.19}Caratterizzazione dei Sottomonoidi Generati}{37}{subsection.4.19}%
+\contentsline {subsection}{\numberline {4.20}Caratterizzazione dei Gruppi Generati}{37}{subsection.4.20}%
+\contentsline {subsection}{\numberline {4.21}Struttura Ciclica}{38}{subsection.4.21}%
+\contentsline {subsection}{\numberline {4.22}Elemento Cancellabile}{39}{subsection.4.22}%
+\contentsline {subsection}{\numberline {4.23}Invertibilità implica Cancellabilità}{39}{subsection.4.23}%
+\contentsline {subsection}{\numberline {4.24}Funzione Traslazione}{40}{subsection.4.24}%
+\contentsline {subsection}{\numberline {4.25}Tavola di Cayley}{40}{subsection.4.25}%
+\contentsline {subsection}{\numberline {4.26}Omomorfismi fra Strutture Algebriche}{40}{subsection.4.26}%
+\contentsline {subsection}{\numberline {4.27}Monomorfismo}{41}{subsection.4.27}%
+\contentsline {subsection}{\numberline {4.28}Epimorfismo}{41}{subsection.4.28}%
+\contentsline {subsection}{\numberline {4.29}Epimorfismi conservano i Neutri}{41}{subsection.4.29}%
+\contentsline {subsection}{\numberline {4.30}Epimorfismi conservano la Commutatività}{41}{subsection.4.30}%
+\contentsline {subsection}{\numberline {4.31}Isomorfismo}{42}{subsection.4.31}%
+\contentsline {subsection}{\numberline {4.32}L'inversa di un isomorfismo è a sua volta un isomorfismo}{42}{subsection.4.32}%
+\contentsline {subsection}{\numberline {4.33}Automorfismo}{43}{subsection.4.33}%
+\contentsline {subsection}{\numberline {4.34}Anello}{43}{subsection.4.34}%
+\contentsline {subsection}{\numberline {4.35}Anello Commutativo}{44}{subsection.4.35}%
+\contentsline {subsection}{\numberline {4.36}Anello Unitario}{44}{subsection.4.36}%
+\contentsline {subsection}{\numberline {4.37}Il prodotto per lo zero dell'anello è sempre zero}{45}{subsection.4.37}%
+\contentsline {subsection}{\numberline {4.38}Legge di Annullamento del Prodotto}{45}{subsection.4.38}%
+\contentsline {subsection}{\numberline {4.39}Anello Integro}{45}{subsection.4.39}%
+\contentsline {subsection}{\numberline {4.40}Dominio di Integrità}{45}{subsection.4.40}%
+\contentsline {subsection}{\numberline {4.41}Divisore dello Zero}{46}{subsection.4.41}%
+\contentsline {subsection}{\numberline {4.42}Divisore dello zero $\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}$ non Cancellabile}{46}{subsection.4.42}%
+\contentsline {subsection}{\numberline {4.43}Dominio di Integrità \(\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}\) è privo di Divisori dello Zero}{47}{subsection.4.43}%
+\contentsline {subsection}{\numberline {4.44}Corpo}{47}{subsection.4.44}%
+\contentsline {subsection}{\numberline {4.45}Campo}{47}{subsection.4.45}%
+\contentsline {subsection}{\numberline {4.46}Ogni Campo è un Dominio di Integrità}{47}{subsection.4.46}%
+\contentsline {section}{\numberline {5}Relazioni binarie}{48}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Riflessività}{48}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Antiriflessività}{48}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Simmetrica}{48}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Asimmetrica}{48}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Transitiva}{48}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Relazione d'Equivalenza}{49}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Relazione d'ordine}{49}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Relazione di Ordine Largo}{49}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Relazione di Ordine Stretto}{49}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Ordine Stretto e Asimmetria}{49}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Relazione Duale}{49}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Diagonale di un Insieme}{50}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Caratterizzazioni delle Proprietà delle Relazioni}{50}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Relazione di Equivalenza Universale}{50}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Congruenza di modulo m}{50}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}La congruenza è una relazione di equivalenza}{51}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}Congruenze notevoli}{51}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}Nucleo di Equivalenza di una Funzione}{51}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}Classe di Equivalenza}{52}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}Rappresentante di una classe di equivalenza}{52}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}Calsse di Resto}{52}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}Insieme Quoziente}{52}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}Prima Proprietà Fondamentale: Nessuna Classe di Equivalenza è Vuota}{52}{subsection.5.23}%
+\contentsline {subsection}{\numberline {5.24}Seconda Proprietà Fondamentale: Le Classi di Equivalenza sono Disgiunte}{53}{subsection.5.24}%
+\contentsline {subsection}{\numberline {5.25}Terza Proprietà Fondamentale: l'Unione Unaria dell'Insieme Quoziente è l'Insieme}{53}{subsection.5.25}%
+\contentsline {subsection}{\numberline {5.26}Proiezione Canonica}{54}{subsection.5.26}%
+\contentsline {subsection}{\numberline {5.27}Suriettività della Proiezione Canonica}{54}{subsection.5.27}%
+\contentsline {subsection}{\numberline {5.28}Partizione}{54}{subsection.5.28}%
+\contentsline {subsection}{\numberline {5.29}Partizioni Banali}{54}{subsection.5.29}%
+\contentsline {subsection}{\numberline {5.30}Insieme delle Relazioni di Equivalenza}{54}{subsection.5.30}%
+\contentsline {subsection}{\numberline {5.31}Insieme delle Partizioni}{54}{subsection.5.31}%
+\contentsline {subsection}{\numberline {5.32}Insiemi Quoziente e Partizioni}{55}{subsection.5.32}%
+\contentsline {subsection}{\numberline {5.33}Teorema Fondamentale su Relazioni di Equivalenza e Partizioni}{55}{subsection.5.33}%
+\contentsline {section}{\numberline {6}Teorema Fondamentale di Omomorfismi per Insiemi}{57}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Premessa del Teorema Fondamentale di Omomorfismo per Insiemi}{57}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Prima tesi del Teorema Fondamentale di Omomorfismi per Insiemi}{58}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Seconda tesi del Teorema Fondamentale di Omomorfismi per Insiemi}{58}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Ogni Funzione è Composizione di una Funzione Iniettiva e di una Funzione Suriettiva}{59}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Teorema Fondamentale dell'Aritmetica}{60}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Lemma sui Divisori dei Primi}{60}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Secondo Lemma per il Teorema Fondamentale dell'Aritmetica}{60}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Lemma sui divisori dei non primi}{61}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}2 è Primo}{62}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Prima Tesi del Teorema fondamentale dell'Aritmetica}{63}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Seconda Tesi del Teorema Fondamentale dell'Aritmetica}{63}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Insiemi Ordinati}{65}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Insieme delle Relaioni d'Ordine}{65}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Le relazioni appartengono a $P(P(P(a \times a)))$}{65}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}DA \textit {OL} a \textit {OS} e viceversa}{66}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Insieme Ordinato}{66}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Relazione d'ordine Indotto}{66}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Sottoinsieme Ordinato}{66}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Elementi Confrontabili}{66}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Relazione d'Ordine Totale}{67}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Minimo e Massimo di un Insieme Ordinato}{67}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Insieme Ben Ordinato}{67}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Unicità di Minimi e Massimi di un Insieme Ordinato}{67}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Notazione di Minimo e Massimo di un Insieme}{67}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}Buon Ordine implica Ordine Totale}{68}{subsection.8.13}%
+\contentsline {subsection}{\numberline {8.14}Relazione di Copertura}{68}{subsection.8.14}%
+\contentsline {subsection}{\numberline {8.15}Predecessore/Successore Immediato}{68}{subsection.8.15}%
+\contentsline {subsection}{\numberline {8.16}Diagramma di Hasse}{68}{subsection.8.16}%
+\contentsline {subsection}{\numberline {8.17}Rappresentazione Grafica del Diagramma di Hasse}{68}{subsection.8.17}%
+\contentsline {subsection}{\numberline {8.18}Ordine Totale e Diagrammi di Hasse}{69}{subsection.8.18}%
+\contentsline {subsection}{\numberline {8.19}Funzione Crescente fra Insiemi Ordinati}{69}{subsection.8.19}%
+\contentsline {subsection}{\numberline {8.20}Isomorfismo di Insiemi Ordinati}{69}{subsection.8.20}%
+\contentsline {subsection}{\numberline {8.21}Insiemi Ordinati Finiti sono Isomorfi solo se hanno lo stesso Diagramma di Hasse }{69}{subsection.8.21}%
+\contentsline {subsection}{\numberline {8.22}Minimali e Massimali di un Insieme Ordinato}{69}{subsection.8.22}%
+\contentsline {subsection}{\numberline {8.23}Maggioranti e Minoranti di un Insieme Ordinato}{70}{subsection.8.23}%
+\contentsline {subsection}{\numberline {8.24}Relazione fra Massimali/Maggioranti/Massimi e Minimali/Minoranti/Minimi}{70}{subsection.8.24}%
+\contentsline {subsection}{\numberline {8.25}Notazione di Insieme dei Maggioranti e di Insieme dei Minoranti}{70}{subsection.8.25}%
+\contentsline {subsection}{\numberline {8.26}Insieme Limitato}{70}{subsection.8.26}%
+\contentsline {subsection}{\numberline {8.27}Insieme Naturalmente Ordinato}{71}{subsection.8.27}%
+\contentsline {subsection}{\numberline {8.28}Il buon ordine implica l'ordine largo}{71}{subsection.8.28}%
+\contentsline {subsection}{\numberline {8.29}Assioma dei Numeri Naturali}{71}{subsection.8.29}%
+\contentsline {subsection}{\numberline {8.30}Principio di Dualità per Insiemi Ordinati}{71}{subsection.8.30}%
+\contentsline {subsection}{\numberline {8.31}Il Minimo (Massimo) è l'unico Minimale (Massimale)}{71}{subsection.8.31}%
+\contentsline {subsection}{\numberline {8.32}Ogni Insieme Ordinato Finito Non Vuoto di Ordine Largo ha Minimali e Massimali}{72}{subsection.8.32}%
+\contentsline {subsection}{\numberline {8.33}In Insiemi Finiti l'unico Minimale (Massimale) è Minimo (Massimo)}{72}{subsection.8.33}%
+\contentsline {subsection}{\numberline {8.34}Relazione d'Ordine Indotta da una Funzione}{72}{subsection.8.34}%
+\contentsline {subsection}{\numberline {8.35}Estremo Superiore ed Estremo Inferiore}{72}{subsection.8.35}%
+\contentsline {section}{\numberline {9}Reticoli}{73}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Reticolo}{73}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Operazioni in un Reticolo}{73}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Notazione di Reticolo come Struttura}{73}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Reticolo Limitato}{73}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Reticolo Completo}{73}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Estremi di Coppie di Elementi Confrontabili di un Reticolo}{74}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Enunciato Duale sui Reticoli}{74}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Principio di Dualità Per i Reticoli}{74}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}In un Reticolo ogni Minimale è Minimo e ogni Massimale è Massimo}{75}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}In un Reticolo I Minoranti (Maggioranti) dell'Unione sono l'Intersezione dei Minoranti (Maggioranti) di Parti Finite}{75}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}I Minoranti (Maggioranti) di un Insieme Ordinato sono i Minoranti (Maggioranti) dell'Estremo Inferiore (Superiore)}{76}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}Ogni Parte Finita di un Reticolo è dotata di Estremo Inferiore e Superiore}{76}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}Commutatività di \(\wedge \) e \(\vee \)}{78}{subsection.9.13}%
+\contentsline {subsection}{\numberline {9.14}Associatività di \(\wedge \) e \(\vee \)}{78}{subsection.9.14}%
+\contentsline {subsection}{\numberline {9.15}Proprietà di Assorbimento di un Reticolo}{79}{subsection.9.15}%
+\contentsline {subsection}{\numberline {9.16}Proprietà di Idempotenza/Iteratività di \(\wedge \) e \(\vee \)}{79}{subsection.9.16}%
+\contentsline {subsection}{\numberline {9.17}Corrispondenza Biunivoca fra Reticoli e Strutture}{80}{subsection.9.17}%
+\contentsline {subsection}{\numberline {9.18}Isomorfismo fra Reticoli}{82}{subsection.9.18}%
+\contentsline {subsection}{\numberline {9.19}Equivalenza fra Isomorfismo di Reticoli e Isomorfismo di Insiemi Ordinati}{82}{subsection.9.19}%
+\contentsline {subsection}{\numberline {9.20}Sottoreticolo}{84}{subsection.9.20}%
+\contentsline {subsection}{\numberline {9.21}Intervallo e Intervallo Chiuso}{84}{subsection.9.21}%
+\contentsline {subsection}{\numberline {9.22}Ogni Intervallo Chiuso di un Reticolo è un Sottoreticolo}{84}{subsection.9.22}%
+\contentsline {subsection}{\numberline {9.23}Massimo e Minimo sono Elementi Neutri di un Reticolo (e Viceversa)}{84}{subsection.9.23}%
+\contentsline {subsection}{\numberline {9.24}Reticolo Complementato}{85}{subsection.9.24}%
+\contentsline {subsection}{\numberline {9.25}Elementi Confrontabili e Complementati di un Reticolo sono il Minimo e il Massimo}{85}{subsection.9.25}%
+\contentsline {subsection}{\numberline {9.26}Reticolo Distributivo}{85}{subsection.9.26}%
+\contentsline {subsection}{\numberline {9.27}Unicità dei Complementi di Reticoli Distributivi}{85}{subsection.9.27}%
+\contentsline {subsection}{\numberline {9.28}Criterio di Distributività di Birkhoff}{86}{subsection.9.28}%
+\contentsline {section}{\numberline {10}Principio di Induzione}{87}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Prima Forma del Principio di Induzione}{87}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Seconda Forma del Principio di Induzione}{87}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Calcolo Combinatorio}{89}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Equipotenza}{89}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Insieme Infinito}{89}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Insieme Finito}{89}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Cardinalità di un Insieme Finito}{89}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Cardinalità dell'Insieme delle Parti di un Insieme Finito}{89}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Fattoriale}{90}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Numero di Applicazioni fra Due Insiemi Finiti}{90}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Condizione di Esistenza di Applicazioni Iniettive fra due Insiemi Finiti}{91}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Numero di Applicazioni Iniettive fra due Insiemi Finiti}{91}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Condizione di Esistenza di Applicazioni Suriettive fra due insiemi Finiti}{92}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Condizione di Esistenza di Applicazioni Biettive fra due Insiemi Finiti}{93}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Cardinalità dell'Insieme Simmetrico di un Insieme Finito}{93}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}Relazione fra Iniettività e Suriettività di Applicazioni fra Insiemi Finiti di Uguale Cardinalità}{94}{subsection.11.13}%
+\contentsline {subsection}{\numberline {11.14}Cancellabilità implica Invertibilità in un Monoide Commutativo Finito}{94}{subsection.11.14}%
+\contentsline {subsection}{\numberline {11.15}Anelli Unitari Integri Finiti sono Corpi}{95}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.16}Domini di Integrità Finiti sono Campi}{95}{subsection.11.16}%
+\contentsline {subsection}{\numberline {11.17}Funzione Caratteristica}{95}{subsection.11.17}%
+\contentsline {subsection}{\numberline {11.18}Ogni sottoinsieme è dotato di funzione caratteristica}{95}{subsection.11.18}%
+\contentsline {subsection}{\numberline {11.19}Coefficiente Binomiale}{96}{subsection.11.19}%
+\contentsline {subsection}{\numberline {11.20}Sommatoria di Coefficienti Binomiali}{96}{subsection.11.20}%
+\contentsline {subsection}{\numberline {11.21}Equivalenza di Coefficienti Binomiali}{97}{subsection.11.21}%
+\contentsline {subsection}{\numberline {11.22}Formula Ricorsiva per i Coefficienti Binomiali}{98}{subsection.11.22}%
+\contentsline {subsection}{\numberline {11.23}Triangolo di Tartaglia}{98}{subsection.11.23}%
+\contentsline {subsection}{\numberline {11.24}Formula Matematica per il Calcolo dei Coefficienti Binomiali}{99}{subsection.11.24}%
+\contentsline {section}{\numberline {12}Strutture Booleane}{101}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Reticolo Booleano}{101}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Algebra di Boole}{101}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Anello Booleano}{101}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}In un Anello Booleano ogni elemento è il Proprio Opposto}{101}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Anelli Booleani sono Commutativi}{102}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Per ogni Anello Booleano esiste un corrispondente Reticolo Booleano}{102}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Per ogni Reticolo Booleano esiste un corrispondente Anello Booleano}{104}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Equivalenza di Strutture Booleane}{105}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}L'insieme delle Parti è un Anello Booleano}{106}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Teorema di Stone}{106}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}Corollari del Teorema di Stone}{106}{subsection.12.11}%
+\contentsline {section}{\numberline {13}Stringhe}{107}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Insieme delle Stringhe}{107}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Somma e Prodotto Puntuali di Stringhe}{107}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Stringhe e Funzioni Caratteristiche}{107}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}L'Anello delle Parti e l'Anello delle Stringhe sono Isomorfi}{107}{subsection.13.4}%
+\contentsline {section}{\numberline {14}Divisibilità}{108}{section.14}%
+\contentsline {subsection}{\numberline {14.1} Divisori e Multipli}{108}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2} Elementi Associati}{108}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3} Associati di un Elemento Cancellabile}{108}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4} Associati hanno stessi Divisori e Multipli}{109}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5} Massimi Comuni Divisori e Minimi Comuni Multipli}{110}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6} Divisori Banali}{110}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7} Elemento Irriducibile (in un Dominio di Integrità)}{110}{subsection.14.7}%
+\contentsline {subsection}{\numberline {14.8} Primo}{110}{subsection.14.8}%
+\contentsline {subsection}{\numberline {14.9} Coprimi}{111}{subsection.14.9}%
+\contentsline {subsection}{\numberline {14.10} Monoide Cancellativo}{111}{subsection.14.10}%
+\contentsline {subsection}{\numberline {14.11} Monoide Fattoriale}{111}{subsection.14.11}%
+\contentsline {subsection}{\numberline {14.12} Anello Fattoriale}{111}{subsection.14.12}%
+\contentsline {subsection}{\numberline {14.13} Caratterizzazione di MCD e mcm per Associati}{111}{subsection.14.13}%
+\contentsline {subsection}{\numberline {14.14} Fattorizzazione in Primi in un Monoide Fattoriale}{112}{subsection.14.14}%
+\contentsline {subsection}{\numberline {14.15} Numero di Divisori in \(\mathbb N\)}{113}{subsection.14.15}%
+\contentsline {subsection}{\numberline {14.16} Numero di Divisori in \(\mathbb Z\)}{113}{subsection.14.16}%
+\contentsline {subsection}{\numberline {14.17} MCD e mcm dalle Fattorizzazioni}{114}{subsection.14.17}%
+\contentsline {subsection}{\numberline {14.18} Associati da MCD e mcm}{114}{subsection.14.18}%
+\contentsline {subsection}{\numberline {14.19} Proprietà di Divisione Lineare dei Divisori Comuni}{115}{subsection.14.19}%
+\contentsline {subsection}{\numberline {14.20} Valore Assoluto}{115}{subsection.14.20}%
+\contentsline {subsection}{\numberline {14.21} Teorema della Divisione Euclidea (o con Resto)}{115}{subsection.14.21}%
+\contentsline {subsection}{\numberline {14.22} Algoritmo delle Divisioni Successive}{117}{subsection.14.22}%
+\contentsline {subsection}{\numberline {14.23} Teorema di Bézout}{117}{subsection.14.23}%
+\contentsline {subsection}{\numberline {14.24} Lemma di Euclide}{118}{subsection.14.24}%
+\contentsline {subsection}{\numberline {14.25} In $\mathbb Z$ i primi sono tutti e soli gli irriducibili}{118}{subsection.14.25}%
+\contentsline {subsection}{\numberline {14.26} Caratterizzazione Lineare di Classe di Resto}{119}{subsection.14.26}%
+\contentsline {subsection}{\numberline {14.27} Operazione Parziale: Modulo}{120}{subsection.14.27}%
+\contentsline {subsection}{\numberline {14.28} Caratterizzazione di \(\mathbb Z_m\)}{120}{subsection.14.28}%
+\contentsline {subsection}{\numberline {14.29} Relazione di Equivalenza Compatibile}{121}{subsection.14.29}%
+\contentsline {subsection}{\numberline {14.30} Congruenza}{122}{subsection.14.30}%
+\contentsline {subsection}{\numberline {14.31} Epimorfismo fra Strutture e Strutture Quoziente}{122}{subsection.14.31}%
+\contentsline {subsection}{\numberline {14.32} Congruenza equivale a Compatibilità}{122}{subsection.14.32}%
+\contentsline {subsection}{\numberline {14.33} Anello Quoziente di \(\mathbb Z\)}{123}{subsection.14.33}%
+\contentsline {subsection}{\numberline {14.34} Asserti Equivalenti su Anelli Quoziente di \(\mathbb Z\)}{123}{subsection.14.34}%
+\contentsline {subsection}{\numberline {14.35} Equazione Diofantea}{124}{subsection.14.35}%
+\contentsline {subsection}{\numberline {14.36} Notazione Sintetica di Equazione Diofantea}{124}{subsection.14.36}%
+\contentsline {subsection}{\numberline {14.37} Soluzione dell'Equazione Diofantea}{125}{subsection.14.37}%
+\contentsline {subsection}{\numberline {14.38} Asserti Equivalenti al Teorema di Bézout}{125}{subsection.14.38}%
+\contentsline {subsection}{\numberline {14.39} Caratterizzazione dell'Insieme delle Soluzioni di Equazioni Diofantee}{126}{subsection.14.39}%
+\contentsline {subsection}{\numberline {14.40} Equazione Congruenziale}{127}{subsection.14.40}%
+\contentsline {subsection}{\numberline {14.41} Soluzione dell'Equazione Congruenziale}{127}{subsection.14.41}%
+\contentsline {subsection}{\numberline {14.42} Equazione Congruenziale come Equazione Diofantea}{128}{subsection.14.42}%
+\contentsline {subsection}{\numberline {14.43} Criterio per l'Esistenza di Soluzioni di un'Equazione Congruenziale}{128}{subsection.14.43}%
+\contentsline {subsection}{\numberline {14.44} Primo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{128}{subsection.14.44}%
+\contentsline {subsection}{\numberline {14.45} Secondo Corollario del Teorema sull'Esistenza di Soluzioni di un'Equazione Congruenziale}{129}{subsection.14.45}%
+\contentsline {subsection}{\numberline {14.46} Risoluzione di Eq. Congruenziali: Termini Congruenti}{129}{subsection.14.46}%
+\contentsline {subsection}{\numberline {14.47} Risoluzione di Eq. Congruenziali: Equazione "Multiplo"}{130}{subsection.14.47}%
+\contentsline {subsection}{\numberline {14.48} Risoluzione di Eq. Congruenziali: Coprimi del Modulo}{130}{subsection.14.48}%
+\contentsline {subsection}{\numberline {14.49} Algoritmo per la Soluzione di Equazioni Congruenziali}{131}{subsection.14.49}%
+\contentsline {subsection}{\numberline {14.50} Elemento Periodico di un Gruppo}{131}{subsection.14.50}%
+\contentsline {subsection}{\numberline {14.51} Periodo di un Elemento Periodico}{131}{subsection.14.51}%
+\contentsline {subsection}{\numberline {14.52} Relazione fra Periodo e Cardinalità del Sottogruppo Generato}{131}{subsection.14.52}%
+\contentsline {subsection}{\numberline {14.53} Teorema su Esponenti di Elementi Periodici e Congruenza}{132}{subsection.14.53}%
+\contentsline {section}{\numberline {15}Polinomi}{133}{section.15}%
+\contentsline {subsection}{\numberline {15.1} Definizione di Successione di Elementi}{133}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2} Notazione di Successione di Elementi}{133}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3} Polinomio}{133}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4} Coefficienti di un Polinomio}{133}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5} Notazione di Insieme dei Polinomi}{133}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6} Polinomio Zero o Nullo}{134}{subsection.15.6}%
+\contentsline {subsection}{\numberline {15.7} Coefficiente Direttore di un Polinomio}{134}{subsection.15.7}%
+\contentsline {subsection}{\numberline {15.8} Termine Noto di un Polinomio}{134}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.9} Grado e Coefficiente Direttore del Polinomio Zero}{134}{subsection.15.9}%
+\contentsline {subsection}{\numberline {15.10} Polinomio Monico}{134}{subsection.15.10}%
+\contentsline {subsection}{\numberline {15.11} Somma e Prodotto di Polinomi}{134}{subsection.15.11}%
+\contentsline {subsection}{\numberline {15.12} Anello dei Polinomi}{135}{subsection.15.12}%
+\contentsline {subsection}{\numberline {15.13} Polinomio Costante}{135}{subsection.15.13}%
+\contentsline {subsection}{\numberline {15.14} Notazione di Polinomio Costante}{135}{subsection.15.14}%
+\contentsline {subsection}{\numberline {15.15} Monomorfismo dei Polinomi Costanti}{135}{subsection.15.15}%
+\contentsline {subsection}{\numberline {15.16} Polinomio incognita}{135}{subsection.15.16}%
+\contentsline {subsection}{\numberline {15.17} Potenze del Polinomio incognita}{136}{subsection.15.17}%
+\contentsline {subsection}{\numberline {15.18} Monomio}{136}{subsection.15.18}%
+\contentsline {subsection}{\numberline {15.19} Polinomio come Somma di Monomi}{136}{subsection.15.19}%
+\contentsline {subsection}{\numberline {15.20} Proprietà della Somma e Prodotto di Polinomi}{137}{subsection.15.20}%
+\contentsline {subsection}{\numberline {15.21} Proprietà del Grado della Somma di Polinomi}{137}{subsection.15.21}%
+\contentsline {subsection}{\numberline {15.22} Proprietà del Grado di Prodotto di Polinomi}{137}{subsection.15.22}%
+\contentsline {subsection}{\numberline {15.23} Coefficiente Direttore Cancellabile implica Polinomio Cancellabile}{138}{subsection.15.23}%
+\contentsline {subsection}{\numberline {15.24} Condizione Sufficiente e Necessaria per Dominio di Integrità dei Polinomi}{138}{subsection.15.24}%
+\contentsline {subsection}{\numberline {15.25} Condizione di Non Invertibilità di un Polinomio}{138}{subsection.15.25}%
+\contentsline {subsection}{\numberline {15.26} Invertibilità del Polinomio Incognita}{138}{subsection.15.26}%
+\contentsline {subsection}{\numberline {15.27} Teorema della Divisione Lunga tra Polinomi}{139}{subsection.15.27}%
+\contentsline {subsection}{\numberline {15.28} Condizione per l'Anello dei Polinomi Fattoriale}{141}{subsection.15.28}%
+\contentsline {subsection}{\numberline {15.29} Notazione Funzionale di Polinomio}{141}{subsection.15.29}%
+\contentsline {subsection}{\numberline {15.30} Omomorfismo di Sostituzione dei Polinomi}{141}{subsection.15.30}%
+\contentsline {subsection}{\numberline {15.31} Applicazione Polinomiale}{141}{subsection.15.31}%
+\contentsline {subsection}{\numberline {15.32} Applicazione Polinomiale Costante}{141}{subsection.15.32}%
+\contentsline {subsection}{\numberline {15.33} Radice di un Polinomio}{141}{subsection.15.33}%
+\contentsline {subsection}{\numberline {15.34} Applicazioni Polinomiali di Somme e Prodotti}{142}{subsection.15.34}%
+\contentsline {subsection}{\numberline {15.35} Teorema del Resto}{142}{subsection.15.35}%
+\contentsline {subsection}{\numberline {15.36} Teorema di Ruffini}{142}{subsection.15.36}%
+\contentsline {subsection}{\numberline {15.37} Teorema di Ruffini Generalizzato}{143}{subsection.15.37}%
+\contentsline {subsection}{\numberline {15.38} Teorema sul Numero di Radici di un Polinomio in un Dominio di Integrità}{145}{subsection.15.38}%
+\contentsline {subsection}{\numberline {15.39} Controesempio del "Teorema sul Numero di Radici di Polinomio in un Dominio di Integrità"}{145}{subsection.15.39}%
+\contentsline {subsection}{\numberline {15.40} Principio di Identità dei Polinomi}{146}{subsection.15.40}%
+\contentsline {subsection}{\numberline {15.41} Controesempio del "Principio di Identità dei Polinomi"}{146}{subsection.15.41}%
+\contentsline {subsection}{\numberline {15.42} Rappresentante Monico di un Polinomio}{146}{subsection.15.42}%
+\contentsline {subsection}{\numberline {15.43} Fattorizzazione di Polinomi in un Campo}{147}{subsection.15.43}%
+\contentsline {subsection}{\numberline {15.44} Criterio di Irriducibilità di Polinomi su un Campo}{147}{subsection.15.44}%
+\contentsline {subsection}{\numberline {15.45} Criterio di Esistenza di Radici di un Polinomio in un Campo}{149}{subsection.15.45}%
+\contentsline {subsection}{\numberline {15.46} Condizione di Irriducibillità di un Polinomio in un Dominio}{149}{subsection.15.46}%
+\contentsline {subsection}{\numberline {15.47} Criterio di Irriducibilità per Polinomi di Grado 2/3 su un Campo}{149}{subsection.15.47}%
+\contentsline {subsection}{\numberline {15.48} Condizione di Esistenza delle Radici per un Polinomio di Grado Maggiore di 3 su un Campo}{150}{subsection.15.48}%
+\contentsline {subsection}{\numberline {15.49} Teorema Fondamentale dell'Algebra}{150}{subsection.15.49}%
+\contentsline {subsection}{\numberline {15.50} Criterio di Irriducibilità in \(\mathbb R\text {[}x\text {]}\)}{150}{subsection.15.50}%
+\contentsline {subsection}{\numberline {15.51} Corollario del Criterio di Irriducibilità in \(\mathbb R\)}{150}{subsection.15.51}%
+\contentsline {subsection}{\numberline {15.52} Teorema di Bolzano}{150}{subsection.15.52}%
+\contentsline {subsection}{\numberline {15.53} Regola del Discriminante}{151}{subsection.15.53}%
+\contentsline {subsection}{\numberline {15.54} Ogni Polinomio in $\mathbb Q\text {[}x\text {]}$ ha un Polinomio associato in $\mathbb Z\text {[}x\text {]}$}{151}{subsection.15.54}%
+\contentsline {subsection}{\numberline {15.55} Criterio di Irriducibilità di Eisenstein}{151}{subsection.15.55}%
+\contentsline {subsection}{\numberline {15.56} Conseguenze di Eisenstein}{152}{subsection.15.56}%
+\contentsline {subsection}{\numberline {15.57} Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{152}{subsection.15.57}%
+\contentsline {subsection}{\numberline {15.58} Corollario del Teorema su Radici Razionali di un Polinomio in \(\mathbb Z\text {[}x\text {]}\)}{152}{subsection.15.58}%
+\contentsline {section}{\numberline {16}Grafi}{153}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Grafo Semplice}{153}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Vertici di un Grafo}{153}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Archi (o Lati) di un Grafo}{153}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Grafo Semplice (via Insieme dei Lati)}{153}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Multigrafo}{153}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Estremi di un Arco}{153}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Vertici Adiacenti}{154}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Archi Incidenti}{154}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Grado di un Vertice}{154}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}Vertici Pari o Dispari}{154}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Vertice Isolato}{154}{subsection.16.11}%
+\contentsline {subsection}{\numberline {16.12}Grafo Completo}{154}{subsection.16.12}%
+\contentsline {subsection}{\numberline {16.13}Grafo Complementare}{155}{subsection.16.13}%
+\contentsline {subsection}{\numberline {16.14}Sottografo}{155}{subsection.16.14}%
+\contentsline {subsection}{\numberline {16.15}Multigrafo Finito}{155}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.16}Isomorfismo tra Grafi}{155}{subsection.16.16}%
+\contentsline {subsection}{\numberline {16.17}Grafo Planare}{155}{subsection.16.17}%
+\contentsline {subsection}{\numberline {16.18}Teorema di Kuratowski}{156}{subsection.16.18}%
+\contentsline {subsection}{\numberline {16.19}Teorema su Lati e Gradi}{156}{subsection.16.19}%
+\contentsline {subsection}{\numberline {16.20}Cammino fra due Vertici}{156}{subsection.16.20}%
+\contentsline {subsection}{\numberline {16.21}Cammino Nullo}{157}{subsection.16.21}%
+\contentsline {subsection}{\numberline {16.22}Componente Connessa}{157}{subsection.16.22}%
+\contentsline {subsection}{\numberline {16.23}Grafo Connesso}{157}{subsection.16.23}%
+\contentsline {subsection}{\numberline {16.24}Cammino (di un Multigrafo)}{157}{subsection.16.24}%
+\contentsline {subsection}{\numberline {16.25}Cammino Euleriano}{157}{subsection.16.25}%
+\contentsline {subsection}{\numberline {16.26}Circuito Euleriano}{157}{subsection.16.26}%
+\contentsline {subsection}{\numberline {16.27}Teorema di Eulero}{158}{subsection.16.27}%
+\contentsline {subsection}{\numberline {16.28}Foresta}{158}{subsection.16.28}%
+\contentsline {subsection}{\numberline {16.29}Albero}{158}{subsection.16.29}%
+\contentsline {subsection}{\numberline {16.30}Teorema di Caratterizzazione delle Foreste}{158}{subsection.16.30}%
+\contentsline {subsection}{\numberline {16.31}Corollario di Caratterizzazione degli Alberi}{159}{subsection.16.31}%
+\contentsline {subsection}{\numberline {16.32}Planarità delle Foreste}{159}{subsection.16.32}%
+\contentsline {subsection}{\numberline {16.33}Foglia di un Albero}{160}{subsection.16.33}%
+\contentsline {subsection}{\numberline {16.34}Rappresentazione Radicale di un Albero}{160}{subsection.16.34}%
+\contentsline {subsection}{\numberline {16.35}Un Albero Finito ha almeno Una Foglia}{160}{subsection.16.35}%
+\contentsline {subsection}{\numberline {16.36}Numero di Lati di un Albero}{160}{subsection.16.36}%
+\contentsline {subsection}{\numberline {16.37}Un Albero Finito ha Almeno Due Foglie}{161}{subsection.16.37}%
+\contentsline {subsection}{\numberline {16.38}Caratterizzazione di Foreste di Multigrafi}{161}{subsection.16.38}%
+\contentsline {subsection}{\numberline {16.39}Corollario del Teorema di Caratterizzazione di Foreste di Multigrafi}{162}{subsection.16.39}%
