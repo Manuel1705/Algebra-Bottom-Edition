@@ -10,14 +10,17 @@
     colorlinks,
     citecolor=black,
     filecolor=black,
-    linkcolor=black,
+    linkcolor=lightgray,
     urlcolor=black
 }
-\newcommand{\bottom}[1]{\begin{tcolorbox}[enhanced,colback=white,colframe=black]
+\usepackage{xcolor}
+\pagecolor[rgb]{0.1,0.1,0.1} %black
+\color[rgb]{0.7,0.7,0.7} %grey
+\newcommand{\bottom}[1]{\begin{tcolorbox}[enhanced,colback=gray,colframe=lightgray]
     #1
 \end{tcolorbox}}
 
-\newcommand{\bottomp}[1]{\begin{tcolorbox}[enhanced,colback=white,colframe=black]
+\newcommand{\bottomp}[1]{\begin{tcolorbox}[enhanced,colback=gray,colframe=lightgray]
     \begin{proof}
         #1
     \end{proof}

@@ -973,6 +973,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
