@@ -292,8 +292,8 @@
     
     Supponiamo vero l'asserto per ogni \(r_i: 1 \leq i < t\). Dato che $$r_t = 0 \implies r_{t-1} \in MCD(a, b)$$ 
     $$r_{t-1} = r_{t-3} + r_{t-2}(-q_{t-1})$$
-    perchè
-    $r_{t-3}=r_{t_2}q_{t-1}+r_{t-1}$\\
+    perché
+    $r_{t-3}=r_{t-2}q_{t-1}+r_{t-1}$\\
      Ma per l'ipotesi induttiva, allora $$\exists u, v, w, x \in \mathbb Z\ (r_{t-3} = au + bv \land r_{t-2} = aw + bx)$$
     Quindi $$r_{t-1} = (au + bv) + (aw + bx)(-q_{t-1}) =$$
     $$= aw + bw - awq_{t-1} - bxq_{t-1} = a(w-wq_{t-1}) + b(v - xq_{t-1})$$
